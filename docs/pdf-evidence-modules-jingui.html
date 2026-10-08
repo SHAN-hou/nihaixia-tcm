@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>金匮要略 PDF Evidence · 倪师课库</title>
+<meta name="description" content="金匮要略 PDF Evidence">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-data">🗂️ 资料与索引</a>
+</nav>
+
+<article class="doc" data-slug="pdf-evidence-modules-jingui">
+  <h1>金匮要略 PDF Evidence</h1>
+  <details class="toc" open>
+    <summary>本页目录（3）</summary>
+    <ol>
+      <li class="lv1"><a href="#sources">Sources</a></li>
+      <li class="lv1"><a href="#frequent-evidence-terms">Frequent Evidence Terms</a></li>
+      <li class="lv1"><a href="#representative-cards">Representative Cards</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="金匮要略-pdf-evidence">金匮要略 PDF Evidence</h1>
+<h2 id="sources">Sources</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Doc ID</th>
+<th>PDF</th>
+<th style="text-align: right;">Pages with text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fcf026a0b4f9</code></td>
+<td><code>人纪05金匮视频同步文稿 2024新版.pdf</code></td>
+<td style="text-align: right;">342</td>
+</tr>
+<tr>
+<td><code>ffec061c095e</code></td>
+<td><code>倪海厦人纪系列之金匮要略.pdf</code></td>
+<td style="text-align: right;">419</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="frequent-evidence-terms">Frequent Evidence Terms</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th style="text-align: right;">Evidence pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>三黄泻心汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>四物汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>宜大承气汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>当归四逆汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>所以桂枝汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>承气汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>杵为散</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>桂枝汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>渴欲饮</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>白虎汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>石膏石膏</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>这个汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>这个饮</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>麻黄汤</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>《金匮》</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>《金匮金匮金匮金匮》</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>乌头桂枝汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>乌头汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>乌梅丸</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>五苓散</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>先食饮</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>六味地黄丸</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>吴茱萸汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>四逆汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>大建中汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>大柴胡汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>大青龙汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>大黄牡丹</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>大黄甘草汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>小半夏加茯苓汤</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representative-cards">Representative Cards</h2>
+<ul>
+<li><code>pdf-evidence:fcf026a0b4f9#p12</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 12: 金匮上课前言金匮是延续伤寒论而来的,属于杂病范畴之内,每个章节讨论不同的病,但是其辨证的基础还是以伤寒论为主的,本次伤寒与金匮的解说书籍的撰写,我采用许多过去历代的经方大师如江阴曹颖甫撰写的《伤寒发微》与《金匮发微》,四川唐容川撰写的《中西汇通医书五种》,陆九芝、傅青主、戴天章着,秦伯未、林直清校定《世补紊医书全集》,江忍庵增批,林直清勘的《徐灵胎医书全集》等等。经方也因为这些历代名家的研究发扬,才能流传至今,这些名家也因此流芳百世。</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p13</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 13: 1 【倪师金匮01 视频同步文稿】 续伤寒霍乱篇在正式进入金匮之前,我把上次《续伤寒论》霍乱那篇放在前面。因为当时在介绍《伤寒论》的时候,我们六经辨证很清楚的,太阳、少阳、阳明,太阴、少阴、厥阴, 后面又多了《金匮》。因为当初的伤寒还有金匮,是《伤寒杂病论》一本书,后来到宋朝以后,把它分成两半。那分成两半的时候,有些不属于六经辨证的就放到前面去了,历代争议比较多。那我就把霍乱,还有另外一篇放到金匮里,合并来讲。这样的话伤寒论整本就是很</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p14</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 14: 2 冰箱,那身体也不是冰箱,所以容易食物中毒,也是引起霍乱。当然现在说有吃食物吃什么引起霍乱源,疟疾什么的,那我们不管它,中医不管它。所以说诸位看到这个以后就想到只要有呕吐、利出现,在太阳证的时侯就属于霍乱。 【伤寒,其脉微涩,本是霍乱,今是伤寒,却四五日至阴经,阳转入阴,必利,本呕下利者,不可治也。欲似大便而反矢气,仍不利者,此属阳明也,便必鞕(读: ying 硬), 十三日愈。所以然者,经尽故也。】 下一个条辨:“伤寒,其脉微涩者</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p15</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 15: 3 病在阳明,诸位只要记得,病进入阳明的时候,不会有死症,不会有死症的。“古医家常说阳明无死症”。最初的阳明,就是葛芩连汤证,葛根、黄芩、黄连。这个时病人没有便秘,可能有一点点下利或一点点肚子痛,病在阳明。如果便秘以后开始转成承气汤证。 就是我刚才讲的承气汤或是葛芩连汤都是腑病,病在腑上面。有一种是病在经上面,阳明经上面也是阳明,那就是所谓的白虎,就是我们的石膏会用到。经病出现的时候,一定是病人有燥热,有口渴,有胃口非常地强大,这种就</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p16</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 16: 4 为一下去心脏就在不断地跳,那摩擦力生产了,就这样。 那你已经利到后来没有东西利了,脉又微掉了,心脏力量不够了,代表心脏摩擦力不够,那火就弱了,病人当然会感觉身体冷。为什么常常说,在看病人的时候,“你的脚是热的是冷的?”因为人的心脏刚好设计好就是达到最末梢,脚趾头是最末梢,手指头还不是末梢,脚比手更远一点。所以如果说你的脚趾头末梢是冷的,我们就已经知道, 你心脏的摩擦力不够。所以为什么要用桂附,就是让心的摩擦力加强。我们介绍处方的时</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p17</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 17: 5 个是你岳母,开生附,开太过了不太好,所以四逆汤不要随便乱用,需要用的时候一定要开,这个叫脉微,这已经很危险。那津液又没有了,又不断地利。所以这里讲的是, 已经没有津液了,还在利就是危症。所以说一定用急的来救命,这时就是四逆汤里面加人参,人参四逆汤。 【霍乱,头痛,发热,身疼痛,热多欲饮水者,五苓散主之,寒多不用水者,理中丸主之。】 理中丸方人参、甘草、白术、干姜各三两上四味,捣筛为末,蜜和为丸,如鸡子黄大,以沸汤数合,和一丸研碎,</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p18</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 18: 6 西也很简单,所以有很多药,轻轻推一下就好。如果说吃得很简单,也是会长寿的。 这就是五苓散最常用的地方,所以说五苓散也可以退热,退烧。一般临床上只要看到病人得水则吐,喝水则吐就是五苓散证。小便不利,全身水肿,就已经是五苓散证了。 如果是有里寒的,寒多,肠胃里面有寒的,所谓寒的定义是什么?以后在临床上你摸脉的时候,这病人的脉是一息四至。什么意思?就是吸气,吸,肠,胃,刚好两次, 吐气,刚好两次,所以是四次。寒呢,吸气的时候变成一次,吐</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p19</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 19: 7 里面的湿,一下收起来,水从肠胃里面出来,跑到膀胱里面去,这时下利就会停下来。 在介绍伤寒论时介绍过,当在止利的时候,止不住的时候,最后的方法就是利尿,把水从小便导出来,利就止掉了。但是也不要随便乱止利,要先确定他需要止利,不然明明是大承气汤证,就是下利,下的都是水,“老师,他水很多。你看,我用白术下去。”他是大承气汤证,结果他的下利是因为便秘引起的,结果你白术一下去,干燥的大便更硬, 更凶。如果是你的病人也就罢了,是你的岳母就完了</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p20</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 20: 8 下走,才能走到四肢末梢去,心脏的火走到手指头尖,小肠的火走到脚趾头尖。但小肠的火也是来自于心脏的火,现在心脏的热往上走,因为津液没了,病人的手脚四肢会发冷。四肢上面要有温度,有温度的时候,心脏才会产生速度。所以你看一锅水在里面, 如果没有加热是冷的,水不会动,不会动就痛。所以如果火在下面加热,水开始煮滚了以后,转了以后,中医就称为气。当有气在运转的时候,就很正常。当变成冷水停在里面不动的时候,津液又不够,因为津液发汗流掉了,津液不</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p21</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 21: 9 上四味,以水三升,煮取一升二合,去渣,内猪胆汁,分温再服,其脉即来,无猪胆, 以羊胆代之。 这里就是在伤寒论里跟大家介绍过,通脉四逆汤加猪胆汁。如果“吐已下断,汗出而厥”,病人津液完全没了,汗出的都没有了,人都快昏迷过去了,手脚又拘急不解,只要还有点欲绝,脉微欲绝者,还没有断气,都可以使用。 通脉四逆汤为什么加猪胆汁,猪胆汁比较能取代人的胆汁,因为肠胃里面不好消化, 所以放点猪胆汁下去取代胆汁,能够帮助消化,仅此而已。这里四逆汤有</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p22</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 22: 10 辛散。为什么要用细辛,张仲景都是在用辛散。张仲景的观念非寒不泻,如果不用寒药, 无法达到宣泄的效果。这个寒药就包括了膏黄,就是石膏、大黄、黄芩、黄连这种寒药, 张仲景用寒药来宣泄。温补,非温不补,这个补药不是说我们要去吃四物汤。张仲景认为,药性如果不是温的,是补不到身体里去的。所以大家才会看到像吴茱萸、干姜、附子、蜀椒之类出现,都是张仲景用来做补药用的,温补药用的,所以张仲景的观念一定要用温药来做补药,而不是开些四物汤来做补。</li>
+<li><code>pdf-evidence:fcf026a0b4f9#p23</code> <code>人纪05金匮视频同步文稿 2024新版.pdf</code> page 23: 11 师,黄连最苦了。”然后把《神农本草经》打开一看,黄连是什么?解毒。所以中医,经方家会用黄连来解肾脏的毒。肾脏的毒如果跑到心脏里面去了,代表血液里面很多的尿, 尿毒在里面,会造成很危险的情形。这时用什么?用黄连去解。 临床上看的很好玩,有的病人很固执,美国人。来的时候坐个轮椅,10 年前,西医就给他说:“你该洗肾。”他就坚持不洗。跑到、找别的中医看,反正是找,找了半天, 还是黑的。但他就是不洗肾,坚持不洗。那后来,实在人家看不过去</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/pdf-evidence-modules-shanghan.html"><small>上一篇</small>伤寒论 PDF Evidence</a><a class="pg next" href="../docs/pdf-evidence-modules-zhongjing-xinfa.html"><small>下一篇</small>仲景心法 PDF Evidence</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E9%87%91%E5%8C%AE%E8%A6%81%E7%95%A5%20PDF%20Evidence">💬 就「金匮要略 PDF Evidence」提问</a>
+  <a class="btn" href="../search.html?q=%E9%87%91%E5%8C%AE%E8%A6%81%E7%95%A5%20PDF%20Evidence">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

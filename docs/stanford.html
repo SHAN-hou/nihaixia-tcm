@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪海厦斯坦福大学演讲 — 课程蒸馏笔记 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-dialogue">🎙️ 访谈与演讲</a>
+</nav>
+
+<article class="doc" data-slug="stanford">
+  <h1>倪海厦斯坦福大学演讲 — 课程蒸馏笔记</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（13）</summary>
+    <ol>
+      <li class="lv1"><a href="#一课程概览">一、课程概览</a></li>
+      <li class="lv1"><a href="#二课程体系图">二、课程体系图</a></li>
+      <li class="lv2"><a href="#核心模块划分">核心模块划分</a></li>
+      <li class="lv2"><a href="#模块递进关系">模块递进关系</a></li>
+      <li class="lv1"><a href="#三逐课精要">三、逐课精要</a></li>
+      <li class="lv1"><a href="#四跨课程主题图谱">四、跨课程主题图谱</a></li>
+      <li class="lv1"><a href="#五关键概念词汇表">五、关键概念词汇表</a></li>
+      <li class="lv1"><a href="#方药食疗补遗索引">方药/食疗补遗索引</a></li>
+      <li class="lv1"><a href="#六课程观点摘要">六、课程观点摘要</a></li>
+      <li class="lv1"><a href="#七核心金句集">七、核心金句集</a></li>
+      <li class="lv1"><a href="#附录逐课摘要">附录：逐课摘要</a></li>
+      <li class="lv2"><a href="#倪师-1590分钟">倪师 (159.0分钟)</a></li>
+      <li class="lv2"><a href="#倪师">倪师</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="倪海厦斯坦福大学演讲-课程蒸馏笔记">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+</blockquote>
+<p><strong>课程规模</strong>: 1 课, 2.7 小时</p>
+<hr>
+<hr>
+<h2 id="一课程概览">一、课程概览</h2>
+<p>课程以“中医诊疗逻辑与疾病防治”为核心，系统解析中医从常见病（如感冒）到重大疾病（如癌症）的诊断与治疗思维，对比中西医在疾病认知和干预手段上的差异。目标受众为医疗从业者、中医爱好者及希望提升健康管理能力的普通观众，旨在通过倪师对“八纲辨证”和经方体系的阐释，帮助听众建立中医思维框架，理解中医“调和脏腑”“治未病”的核心理念，并反思现代医学的局限性。课程通过单场演讲浓缩中医辨证论治的精髓，以病例解析、典籍引用和批判性观点为特色。</p>
+<hr>
+<h2 id="二课程体系图">二、课程体系图</h2>
+<h3 id="核心模块划分">核心模块划分</h3>
+<ol>
+<li>
+<p><strong>中医基础理论与诊疗逻辑</strong><br>
+   - 八纲辨证（阴阳、表里、虚实、寒热）的系统性应用。<br>
+   - 主观症状（恶寒、盗汗等）与望诊（面色、舌象）的诊断价值。  </p>
+</li>
+<li>
+<p><strong>癌症的中医病因与治疗策略</strong><br>
+   - 乳癌、肺癌等癌症的病因解析（如乳癌与“奶水”滞留、肺癌与肝脏固守）。<br>
+   - 通过症状反馈（盗汗、脚热等）判断疗效的实践方法。  </p>
+</li>
+<li>
+<p><strong>中西医治疗理念对比</strong><br>
+   - 批判西医过度依赖仪器检查和手术干预的局限性。<br>
+   - 分析西药副作用（如止痛药伤心脏、钙片诱发肾结石）。  </p>
+</li>
+<li>
+<p><strong>生活方式与疾病预防</strong><br>
+   - 强调睡眠规律、饮食调整（禁食牛奶）等预防措施。<br>
+   - “治未病”与自然治愈力的哲学意义。  </p>
+</li>
+<li>
+<p><strong>张仲景经方体系的价值</strong><br>
+   - 当归四逆汤、桂枝汤等方剂的临床实践。<br>
+   - 中药经济性与低副作用的优势案例（如红豆芽治腹膜炎）。  </p>
+</li>
+</ol>
+<h3 id="模块递进关系">模块递进关系</h3>
+<p>课程从中医基础理论切入，逐步深入癌症诊疗逻辑，对比中西医差异，最后落脚于预防与经方应用，形成“理论认知→具体应用→批判反思→实践指导”的递进结构。</p>
+<hr>
+<h2 id="三逐课精要">三、逐课精要</h2>
+<p><strong>倪师课程</strong><br>
+- <strong>核心观点</strong>：中医通过调和脏腑功能恢复身体平衡，而非直接对抗病原体；癌症的早期可通过非侵入性指标（如睡眠、局部温度）精准判断并干预。<br>
+- <strong>方法论</strong>：强调“八纲辨证”为中医诊断根基，主张从主观症状与望诊出发，结合经方治疗（如柴胡、郁金清肝解郁）。<br>
+- <strong>批判视角</strong>：指出西药滥用（止痛药、抗生素）和过度检查可能加速疾病发展，例如降糖药导致糖尿病足、钙片诱发肾结石。<br>
+- <strong>预防建议</strong>：倡导以饮食（五谷精华）、作息（子午流注）和症状观察为主导的健康管理方式，减少对化学药物的依赖。</p>
+<hr>
+<h2 id="四跨课程主题图谱">四、跨课程主题图谱</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>主题</th>
+<th>出现位置</th>
+<th>核心观点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>八纲辨证</strong></td>
+<td>中医基础理论</td>
+<td>通过阴阳、表里、虚实、寒热四对纲领判断疾病根源，强调“观其脉证，知犯何逆”。</td>
+</tr>
+<tr>
+<td><strong>治未病</strong></td>
+<td>中医基础理论、生活方式预防</td>
+<td>重视疾病前兆干预（如盗汗、脚热变化），主张“病在皮毛时治疗”优于手术。</td>
+</tr>
+<tr>
+<td><strong>中西药副作用对比</strong></td>
+<td>中西医治疗理念对比</td>
+<td>止痛药伤心脏、牛奶荷尔蒙残留影响生理；中药副作用小且常具经济性（如红豆芽治腹膜炎）。</td>
+</tr>
+<tr>
+<td><strong>癌症中医病因学</strong></td>
+<td>癌症治疗策略</td>
+<td>乳癌源于乳腺淤积，肺癌与肝脏功能低下相关，治疗需疏导局部淤滞并温补心肾。</td>
+</tr>
+<tr>
+<td><strong>症状反馈疗效观</strong></td>
+<td>癌症治疗策略</td>
+<td>以盗汗停止、疼痛缓解等主观症状作为疗效核心指标，而非单纯依赖影像学检查。</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="五关键概念词汇表">五、关键概念词汇表</h2>
+<ol>
+<li><strong>八纲辨证</strong>：中医诊断的核心框架，通过阴阳、表里、虚实、寒热四组对立统一规律分析病位、性质与状态。  </li>
+<li><strong>发汗疗法</strong>：通过促进汗液排出驱散表邪，体现中医“祛邪外出”的治疗逻辑，常见于感冒初起阶段。  </li>
+<li><strong>当归四逆汤</strong>：《伤寒论》经典方剂，以温经散寒、调和营卫为主，用于治疗癌症等虚寒性疾病。  </li>
+<li><strong>治未病</strong>：中医预防医学理念，强调疾病未发或初起时通过调养避免加重（如观察睡眠、局部温度变化）。  </li>
+<li><strong>营卫不和</strong>：表里失调的病理机制，表现为恶风、汗出异常等，需用桂枝汤类方剂调和。  </li>
+<li><strong>五谷精华</strong>：倡导以天然谷物为基础的饮食观，如每日食用五谷饭以固本培元。  </li>
+<li><strong>子午流注</strong>：中医时辰养生学说，强调依据脏腑经脉气血运行规律调整作息。  </li>
+<li><strong>经方体系</strong>：以张仲景《伤寒论》《金匮要略》为核心的方剂应用，主张“方证对应”不加改动。  </li>
+<li><strong>局部温度</strong>：癌症早期指标之一，通过体表温度异常（如乳房、肺部）辅助诊断。  </li>
+<li><strong>固守肝脏</strong>：针对肺癌的中医治疗策略，通过补肝防止癌细胞转移。  </li>
+</ol>
+<hr>
+<h2 id="方药食疗补遗索引">方药/食疗补遗索引</h2>
+<blockquote>
+<p>本节只补课程蒸馏稿中出现、但最终文档检索不明显的方药与食疗线索；仅作课程学习入口，不构成饮食、用药或治疗建议。</p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>线索</th>
+<th>来源位置</th>
+<th>课程语境</th>
+<th>蒸馏状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>茯苓粥</td>
+<td>课程蒸馏稿“行动清单”第7项</td>
+<td>作为“实脾”思路下的食疗例子出现。</td>
+<td>原最终文档只概括为“五谷/食疗”；现补为可检索条目。</td>
+</tr>
+<tr>
+<td>薏仁</td>
+<td>课程蒸馏稿“行动清单”第10项</td>
+<td>与红豆芽等一起作为药食同源、感染类疾病预防语境的例子出现。</td>
+<td>红豆芽已在正文出现；薏仁此前未单列，现补为检索入口。</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="六课程观点摘要">六、课程观点摘要</h2>
+<blockquote>
+<p>本节仅将原课程中的行动和优先级表述降级为学习主题归纳，不构成可照做的健康、用药或诊疗建议。
+| 课程主题 | 摘要边界 |
+|--------|----------|
+| 作息、五谷、精制碳水 | 作为课程养生观点记录，不作为个体化生活处方。 |
+| 止痛药、抗生素、艾灸 | 涉及用药调整和外治操作时，必须交由医生评估。 |
+| 局部温度、乳腺/肺部疼痛 | 只作为课程观察语言，不能自查后自行判断疾病。 |
+| 牛奶、经方、食疗 | 作为课程观点和经典学习入口，不构成饮食或用药建议。 |
+| 癌症、八纲辨证、药食同源 | 只用于理论阅读和证据索引，不用于个人诊疗。 |</p>
+</blockquote>
+<hr>
+<h2 id="七核心金句集">七、核心金句集</h2>
+<ol>
+<li><strong>“中医不是杀病毒，是发汗把病请出去。”</strong> —— 倪师课程  </li>
+<li><strong>“西医看到黑影就开枪，中医则要辨证施治。”</strong> —— 对比中西医治疗癌症的逻辑差异  </li>
+<li><strong>“持续痛且热，即为胰障癌。”</strong> —— 通过症状快速判断疾病类型  </li>
+<li><strong>“治肝要实脾，脾正则肝不受侵害。”</strong> —— 五脏关联的辨证观  </li>
+<li><strong>“止痛药吃多了，心脏会坏。”</strong> —— 批判西药对脏腑的损伤风险  </li>
+<li><strong>“癌症早期，病人自己就知道了。”</strong> —— 强调症状比影像学更早预警  </li>
+<li><strong>“饮食不进，寒温不调，营卫不和。”</strong> —— 感冒的中医病因学总结  </li>
+<li><strong>“牛奶中的女性荷尔蒙残留在体内，影响男人、女人。”</strong> —— 饮食禁忌的警示  </li>
+<li><strong>“中医看病是看现在，西医是看过去。”</strong> —— 对比诊断依赖症状与检查的区别  </li>
+<li><strong>“生病要找症状，而不是找病。”</strong> —— 主张因人而异的个体化治疗路径  </li>
+</ol>
+<hr>
+<hr>
+<h2 id="附录逐课摘要">附录：逐课摘要</h2>
+<h3 id="倪师-1590分钟">倪师 (159.0分钟)</h3>
+<h3 id="倪师">倪师</h3>
+<p>倪师在课程中系统阐释了中医从感冒到癌症的诊疗逻辑，强调以“八纲辨证”（阴阳、表里、虚实、寒热）为核心的整体观。其核心观点在于，中医通过患者主观症状（如恶寒、盗汗、疼痛）和望诊（如面色、舌象）判断疾病根源，主张通过调和脏腑功能、驱邪外出（如发汗、通便）恢复身体平衡，而非依赖药物直接对抗病原体。他批判西医过度依赖仪器检查与手术干预的局限性，认为西医治疗手段（如止痛药、抗生素）可能损伤脏腑功能，甚至间接导致癌症风险。例如，长期服用止痛药伤心脏，牛奶中女性荷尔蒙残留影响男女生理，癌症早期可通过睡眠规律、局部温度等非侵入性指标精准判断。倪师多次强调：“中医不是杀病毒，是发汗把病请出去；西医看到黑影就开枪”，凸显其对“治未病”和自然治愈力的重视。  </p>
+<p>针对癌症治疗，倪师提出中医通过症状即时反馈疗效的独特优势。例如，乳癌源于“奶水”滞留乳腺压迫成块，治疗需清肝解郁（柴胡、郁金）、温补心肾（当归四逆汤）并调和营卫（桂枝汤类方剂）；肺癌则可通过“固守肝脏”策略防止转移。他主张观察盗汗、脚热、食欲等指标变化判断治疗效果：“若盗汗止、脚热恢复、疼痛减轻即为有效”。同时，他推崇张仲景经方体系，认为中药经济且副作用小（如红豆芽治疗腹膜炎），并警示西药滥用（如降糖药致糖尿病足、钙片诱发肾结石）的危害。金句如“持续痛且热，即为胰障癌”“治肝要实脾”，既体现中医辨证精髓，也直指传统医学与现代科学的碰撞。课程最终呼吁患者关注症状改善而非盲目依赖检查，从饮食、作息等生活方式入手预防疾病。</p></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/liangdong.html"><small>上一篇</small>倪海厦梁冬对话 — 课程蒸馏笔记</a><span></span></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E6%BC%94%E8%AE%B2%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">💬 就「倪海厦斯坦福大学演讲 — 课程蒸馏笔记」提问</a>
+  <a class="btn" href="../search.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%A4%A7%E5%AD%A6%E6%BC%94%E8%AE%B2%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

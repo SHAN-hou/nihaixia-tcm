@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>扶阳论坛截图证据索引 · 倪师课库</title>
+<meta name="description" content="扶阳论坛课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-fuyang">🔥 扶阳论坛</a>
+</nav>
+
+<article class="doc" data-slug="fuyang-screenshot-evidence">
+  <h1>扶阳论坛截图证据索引</h1>
+<p class="lead">扶阳论坛课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。</p>  <details class="toc" open>
+    <summary>本页目录（5）</summary>
+    <ol>
+      <li class="lv1"><a href="#倪师扶阳论坛演讲01">倪师扶阳论坛演讲01</a></li>
+      <li class="lv1"><a href="#倪师扶阳论坛演讲02">倪师扶阳论坛演讲02</a></li>
+      <li class="lv1"><a href="#倪师扶阳论坛演讲03">倪师扶阳论坛演讲03</a></li>
+      <li class="lv1"><a href="#倪师扶阳论坛演讲04">倪师扶阳论坛演讲04</a></li>
+      <li class="lv1"><a href="#倪师扶阳论坛演讲05">倪师扶阳论坛演讲05</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="扶阳论坛截图证据索引">扶阳论坛截图证据索引</h1>
+<blockquote>
+<p>来源：扶阳论坛课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。
+用于检索扶阳论坛课程中的板书、PPT、演讲现场和课程画面证据。
+安全边界：截图条目仅用于定位课程画面证据；其中出现的病案、处方、剂量、针灸或急症内容不得作为个人医疗建议或操作依据。</p>
+</blockquote>
+<h2 id="倪师扶阳论坛演讲01">倪师扶阳论坛演讲01</h2>
+<ul>
+<li><code>20:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书：左侧写有“阴虚 -&gt; 阳虚”及“阴平阳秘”等中医基础概念。</li>
+<li>截图路径：assets/screenshots/fuyang/0001.webp</li>
+<li><code>30:00</code> [扶阳论坛、板书/PPT/现场画面] 白板图解：清晰展示中医脏腑“水火既济”循环示意图，图中标注有“心”、“肾”及表示能量流动的上下循环箭头。</li>
+<li>截图路径：assets/screenshots/fuyang/0002.webp</li>
+<li><code>34:00</code> [扶阳论坛、板书/PPT/现场画面] 白板图解：图表内容进一步丰富，右侧补充写上了“气化”、“水”等生理病机相关概念。</li>
+<li>截图路径：assets/screenshots/fuyang/0003.webp</li>
+<li><code>38:00</code> [扶阳论坛、板书/PPT/现场画面] 白板图解全貌：展示该阶段最完整的板书画面，包含了完整的脏腑循环图解及周边的详细知识点批注。</li>
+<li>截图路径：assets/screenshots/fuyang/0004.webp</li>
+<li><code>40:00</code> [扶阳论坛、板书/PPT/现场画面] 讲师在白板前授课，白板上手绘了展示脏腑关系（可见“心”等字样）与气机运行方向的中医病机关系图。</li>
+<li>截图路径：assets/screenshots/fuyang/0005.webp</li>
+</ul>
+<h2 id="倪师扶阳论坛演讲02">倪师扶阳论坛演讲02</h2>
+<ul>
+<li><code>26:00</code> [扶阳论坛、板书/PPT/现场画面] 蓝底黑字 PPT，详细阐述了桂枝、麻黄的使用与四肢、阳虚、阴实的关系，以及抽阳、排掉内脏阴寒的治疗原则。</li>
+<li>截图路径：assets/screenshots/fuyang/0006.webp</li>
+<li><code>36:00</code> [扶阳论坛、板书/PPT/现场画面] 灰底黑字 PPT，标题为“如何選擇去實與攻堅的藥物二”，列出了咸味与阳性药互动、活血化瘀药物的选择等理论条文。</li>
+<li>截图路径：assets/screenshots/fuyang/0007.webp</li>
+<li><code>38:00</code> [扶阳论坛、板书/PPT/现场画面] 灰底黑字 PPT，展示了关于“積水之患”、“活血化瘀藥物”及“氣實血清為正常”等中医理论条文的放大特写。</li>
+<li>截图路径：assets/screenshots/fuyang/0008.webp</li>
+<li><code>90:00</code> [扶阳论坛、板书/PPT/现场画面] 白板手绘板书，包含人体躯干部位示意图及右侧带有“木”、“土”等字样的病机/五行概念简图</li>
+<li>截图路径：assets/screenshots/fuyang/0009.webp</li>
+<li><code>96:00</code> [扶阳论坛、板书/PPT/现场画面] 满屏 PPT 幻灯片，展示“健康的標準(陰平陽秘)”的 6 项具体指标（包含睡眠、胃口、口渴与流汗比例、大小便、体力、头面与手脚温度）</li>
+<li>截图路径：assets/screenshots/fuyang/0010.webp</li>
+</ul>
+<h2 id="倪师扶阳论坛演讲03">倪师扶阳论坛演讲03</h2>
+<ul>
+<li><code>24:00</code> [扶阳论坛、板书/PPT/现场画面] 讲师在白板前讲解，白板上有手绘的人体脏腑气血运行/病机示意图，包含代表躯干的圆柱体、心与肾的位置标注、以及气机升降的箭头符号。</li>
+<li>截图路径：assets/screenshots/fuyang/0011.webp</li>
+<li><code>32:00</code> [扶阳论坛、板书/PPT/现场画面] PPT 满屏展示“血癌案例2”初诊记录，详细列出了患者信息、病情描述以及包含生附子、干姜、炙甘草、黄连、黄芩等具体药材及剂量的处方。</li>
+<li>截图路径：assets/screenshots/fuyang/0012.webp</li>
+<li><code>38:00</code> [扶阳论坛、板书/PPT/现场画面] PPT 满屏展示“血癌案例2”复诊记录（日期2009/03/13），详细描述了患者服药后的症状变化、大小便情况以及后续的处方调整建议。</li>
+<li>截图路径：assets/screenshots/fuyang/0013.webp</li>
+<li><code>42:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，讲师手绘了人脸侧面轮廓图，并在上面做标注。</li>
+<li>截图路径：assets/screenshots/fuyang/0014.webp</li>
+<li><code>44:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，讲师手绘了眼睛（虹膜）的结构图及相关分区刻度。</li>
+<li>截图路径：assets/screenshots/fuyang/0015.webp</li>
+<li><code>46:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示，标题为“血癌案例2”，满屏文字，包含详细的问诊记录、处方（如黄柏、白术等加减）及诊断。</li>
+<li>截图路径：assets/screenshots/fuyang/0016.webp</li>
+<li><code>50:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，画有两个类似内脏器官（如子宫）的对称简图。</li>
+<li>截图路径：assets/screenshots/fuyang/0017.webp</li>
+<li><code>54:00</code> [扶阳论坛、板书/PPT/现场画面] 满屏蓝色文字PPT，内容为关于小儿麻痹疫苗相关的医案论述。</li>
+<li>截图路径：assets/screenshots/fuyang/0018.webp</li>
+<li><code>64:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示，展示红斑性狼疮病案详情，包含主要症状、诊断以及具体的处方方剂（如生附子、细辛、石膏等及剂量）。</li>
+<li>截图路径：assets/screenshots/fuyang/0019.webp</li>
+<li><code>70:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示，标题“红斑性狼疮（1）”，包含详细的复诊日期、症状变化记录以及处方药物的加减。</li>
+<li>截图路径：assets/screenshots/fuyang/0020.webp</li>
+</ul>
+<h2 id="倪师扶阳论坛演讲04">倪师扶阳论坛演讲04</h2>
+<ul>
+<li><code>04:00</code> [扶阳论坛、板书/PPT/现场画面] 白板手绘头部病机图，包含面部器官及相关气血/经络走向的连线与文字标注</li>
+<li>截图路径：assets/screenshots/fuyang/0021.webp</li>
+<li><code>06:00</code> [扶阳论坛、板书/PPT/现场画面] 全屏 PPT：详细医案记录，包含症状、诊断（里寒重症等）、处方（生附子、黄芩等）及针灸配穴（外关、合谷等）</li>
+<li>截图路径：assets/screenshots/fuyang/0022.webp</li>
+<li><code>08:00</code> [扶阳论坛、板书/PPT/现场画面] 全屏 PPT：“脑瘤(1)”医案随诊记录，描述患者服药后的症状变化及方剂剂量调整（生附子六钱等）</li>
+<li>截图路径：assets/screenshots/fuyang/0023.webp</li>
+<li><code>16:00</code> [扶阳论坛、板书/PPT/现场画面] 全屏 PPT：“脑瘤(2)”初诊医案记录，包含患者背景说明及详细中药处方（生附子4、硫磺3等）</li>
+<li>截图路径：assets/screenshots/fuyang/0024.webp</li>
+<li><code>20:00</code> [扶阳论坛、板书/PPT/现场画面] 白板手绘中医理论概念图，讲师正在讲解带有内部剖面连线的圆形图示</li>
+<li>截图路径：assets/screenshots/fuyang/0025.webp</li>
+<li><code>26:00</code> [扶阳论坛、板书/PPT/现场画面] 全屏 PPT：医案放化疗后症状记录，以及详细的“救急处方”（炙甘草一两、干姜三钱等）</li>
+<li>截图路径：assets/screenshots/fuyang/0026.webp</li>
+<li><code>34:00</code> [扶阳论坛、板书/PPT/现场画面] 全屏 PPT：医案复诊记录，包含患者症状改善描述，以及更改后的详细处方（葶藶子五钱、丹参五钱等）</li>
+<li>截图路径：assets/screenshots/fuyang/0027.webp</li>
+<li><code>40:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，手绘人体局部方位结构图解及相关文字分析。</li>
+<li>截图路径：assets/screenshots/fuyang/0028.webp</li>
+<li><code>42:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，老师正在手写中医方剂分析，可见“桂枝”等药名。</li>
+<li>截图路径：assets/screenshots/fuyang/0029.webp</li>
+<li><code>44:00</code> [扶阳论坛、板书/PPT/现场画面] PPT 展示“腎臟衰竭尿毒症(1)”医案，包含患者初诊时间、具体中药方剂与剂量，以及详细的针刺穴位（如巨阙、关元、中极等）。</li>
+<li>截图路径：assets/screenshots/fuyang/0030.webp</li>
+<li><code>52:00</code> [扶阳论坛、板书/PPT/现场画面] 白板板书，左侧列有多味中药名称，右侧有人体头部及局部的简要手绘图解。</li>
+<li>截图路径：assets/screenshots/fuyang/0031.webp</li>
+<li><code>54:00</code> [扶阳论坛、板书/PPT/现场画面] PPT 展示“腎臟衰竭尿毒症(2)”医案，包含详细的症状描述（便秘、无胃口、双足冰冷等）、初诊处方及更改后的方剂。</li>
+<li>截图路径：assets/screenshots/fuyang/0032.webp</li>
+</ul>
+<h2 id="倪师扶阳论坛演讲05">倪师扶阳论坛演讲05</h2>
+<ul>
+<li><code>02:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示“乳癌(案1)”初诊医案，包含处方（石膏、知母、天花等）及剂量。</li>
+<li>截图路径：assets/screenshots/fuyang/0033.webp</li>
+<li><code>12:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示“二期乳癌的治疗(案2)”医案，包含黄连阿胶汤、酸枣仁汤等处方加减及服药反馈。</li>
+<li>截图路径：assets/screenshots/fuyang/0034.webp</li>
+<li><code>20:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示“肝癌(1)”医案，记录了初诊情况及包含生附子、黄连、黄芩、柴胡等药味的完整处方。</li>
+<li>截图路径：assets/screenshots/fuyang/0035.webp</li>
+<li><code>32:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示“肝癌案(2)余志先生”的初诊日期及极其详细的症状描述（如每日半夜醒、小便次数、胃口等）。</li>
+<li>截图路径：assets/screenshots/fuyang/0036.webp</li>
+<li><code>36:00</code> [扶阳论坛、板书/PPT/现场画面] PPT展示肝癌案(2)的具体处方，包含四逆汤、小建中汤加减，并列出了活血化瘀、壮命门火等治法对应的具体药味剂量。</li>
+<li>截图路径：assets/screenshots/fuyang/0037.webp</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/fuyang.html"><small>上一篇</small>倪海厦扶阳论坛 — 课程蒸馏笔记</a><span></span></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E6%89%B6%E9%98%B3%E8%AE%BA%E5%9D%9B%E6%88%AA%E5%9B%BE%E8%AF%81%E6%8D%AE%E7%B4%A2%E5%BC%95">💬 就「扶阳论坛截图证据索引」提问</a>
+  <a class="btn" href="../search.html?q=%E6%89%B6%E9%98%B3%E8%AE%BA%E5%9D%9B%E6%88%AA%E5%9B%BE%E8%AF%81%E6%8D%AE%E7%B4%A2%E5%BC%95">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

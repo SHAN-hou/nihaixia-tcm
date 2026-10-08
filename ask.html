@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 问答 · 倪师课库</title>
+<meta name="description" content="伤寒论 · 金匮要略 · 针灸 · 本草 · 内经 · 天纪 课程资料检索与学习">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-root="">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="index.html">🏠 首页</a>
+    <a class="drawer-home" href="gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+  </nav>
+</aside>
+
+<main class="wrap">
+<h1 class="page-title">💬 提问式查阅</h1>
+<p class="muted small">
+  先在本站资料里做本地检索，把命中的片段作为依据喂给模型，再回答并给出处。
+  模型接口由你自己配置（Key 只保存在本机浏览器 localStorage，不会上传到本站）。
+</p>
+
+<details class="card pad" id="cfgBox">
+  <summary><b>⚙️ 模型设置</b> <span class="muted small" id="cfgState"></span></summary>
+  <div class="cfg-grid">
+    <label class="wide">服务商
+      <select id="provider" class="fselect"><option value="">加载中…</option></select>
+      <span class="muted small" id="providerNote"></span>
+    </label>
+    <label>接口地址
+      <input type="url" id="baseUrl" placeholder="https://api.deepseek.com/v1" autocomplete="off">
+    </label>
+    <label>模型名
+      <input type="text" id="model" placeholder="deepseek-chat" autocomplete="off">
+    </label>
+    <label class="wide">API Key
+      <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off">
+    </label>
+    <label class="wide">检索范围
+      <span class="cfg-scopes">
+        <label class="chk"><input type="checkbox" id="scDocs" checked> 课程文档</label>
+        <label class="chk"><input type="checkbox" id="scShots" checked> 板书截图说明</label>
+        <label class="chk"><input type="checkbox" id="scEv" checked> PDF 页级证据</label>
+      </span>
+    </label>
+    <div class="wide row">
+      <button class="btn primary" id="saveCfg" type="button">保存设置</button>
+      <button class="btn" id="testCfg" type="button">测试连接</button>
+      <button class="btn" id="clearCfg" type="button">清除</button>
+      <span class="muted small" id="cfgMsg"></span>
+    </div>
+  </div>
+  <p class="muted small" style="margin:.6rem 0 0">
+    Key 只写在本机浏览器 localStorage。本页是浏览器直连模型接口，需要该接口允许跨域（CORS）。
+  </p>
+</details>
+
+<div class="chat" id="chat">
+  <div class="msg bot">
+    <div class="bubble">
+      <p>可以这样问我：</p>
+      <ul>
+        <li>太阳中风和太阳伤寒的区别是什么？</li>
+        <li>桂枝汤、麻黄汤、葛根汤的方证鉴别要点</li>
+        <li>帮我找出与「小柴胡汤」相关的板书截图证据</li>
+        <li>金匮里胸痹、水气、痰饮三条主线讲了什么</li>
+      </ul>
+      <p class="muted small">回答基于本站资料，仅供学习整理，不构成诊疗建议。</p>
+    </div>
+  </div>
+</div>
+
+<div class="composer">
+  <textarea id="input" rows="1" placeholder="输入你的问题…" enterkeyhint="send"></textarea>
+  <button class="btn primary" id="send" type="button">发送</button>
+  <button class="btn" id="stop" type="button" hidden>停止</button>
+</div>
+<div class="row small muted" style="justify-content:space-between">
+  <span id="retrInfo"></span>
+  <button class="linkbtn" id="clearChat" type="button">清空对话</button>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="index.html">首页</a>
+    <a href="search.html">检索</a>
+    <a href="gallery/index.html">截图</a>
+    <a href="evidence.html">PDF证据</a>
+    <a href="ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="assets/js/core.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/ask.js" defer></script>
+</body>
+</html>

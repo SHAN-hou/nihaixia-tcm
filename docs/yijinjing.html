@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪海厦易筋经 — 课程蒸馏笔记 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-yijinjing">🧘 易筋经</a>
+</nav>
+
+<article class="doc" data-slug="yijinjing">
+  <h1>倪海厦易筋经 — 课程蒸馏笔记</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（16）</summary>
+    <ol>
+      <li class="lv1"><a href="#一课程概览">一、课程概览</a></li>
+      <li class="lv1"><a href="#二课程体系图">二、课程体系图</a></li>
+      <li class="lv2"><a href="#核心模块划分">核心模块划分</a></li>
+      <li class="lv2"><a href="#模块递进关系">模块递进关系</a></li>
+      <li class="lv1"><a href="#三逐课精要">三、逐课精要</a></li>
+      <li class="lv1"><a href="#四跨课程主题图谱">四、跨课程主题图谱</a></li>
+      <li class="lv1"><a href="#五关键概念词汇表">五、关键概念词汇表</a></li>
+      <li class="lv1"><a href="#六课程观点摘要">六、课程观点摘要</a></li>
+      <li class="lv1"><a href="#七核心金句集">七、核心金句集</a></li>
+      <li class="lv1"><a href="#附录逐课摘要">附录：逐课摘要</a></li>
+      <li class="lv2"><a href="#五脏逼毒法-已分割-106分钟">五脏逼毒法 已分割 (10.6分钟)</a></li>
+      <li class="lv2"><a href="#五脏逼毒法-已分割">五脏逼毒法 已分割</a></li>
+      <li class="lv2"><a href="#文式易筋经-已分割-78分钟">文式易筋经 已分割 (7.8分钟)</a></li>
+      <li class="lv2"><a href="#文式易筋经-已分割">文式易筋经 已分割</a></li>
+      <li class="lv2"><a href="#武式易筋经-已分割-80分钟">武式易筋经 已分割 (8.0分钟)</a></li>
+      <li class="lv2"><a href="#武式易筋经-已分割">武式易筋经 已分割</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="倪海厦易筋经-课程蒸馏笔记">倪海厦易筋经 — 课程蒸馏笔记</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+</blockquote>
+<p><strong>课程规模</strong>: 3 课, 0.4 小时</p>
+<hr>
+<hr>
+<h2 id="一课程概览">一、课程概览</h2>
+<p><strong>课程主题</strong>：倪海厦易筋经系列课程聚焦于传统中医养生功法的实践应用，通过“五脏逼毒法”“文式易筋经”“武式易筋经”三大模块，结合呼吸调控、特定发音、肌肉控制与内劲运用，帮助学员疏通经络、排出毒素、强化筋骨，实现身心协调与健康提升。<br>
+<strong>目标受众</strong>：对中医养生、传统武术（气功/内功）感兴趣者，希望改善排毒功能、增强体质、学习易筋经基础与进阶技巧的初学者及实践者。<br>
+<strong>课程结构</strong>：<br>
+1. <strong>五脏逼毒法</strong>：通过呼吸与发音结合，针对性地逼出五脏六腑及三焦系统的毒素。<br>
+2. <strong>文式易筋经</strong>：强调肌肉劲力与身体协调，以12个静态动作增强筋骨力量（如“按桥”“握拳”）。<br>
+3. <strong>武式易筋经</strong>：侧重气脉与动态动作配合，通过旋转、拉伸等技巧松解经络压力（如“拔刀式”“倒踩九牛尾”）。<br>
+三节课分别从排毒原理、静态肌力训练到动态气功练习，形成递进式的学习路径。</p>
+<hr>
+<h2 id="二课程体系图">二、课程体系图</h2>
+<h3 id="核心模块划分">核心模块划分</h3>
+<ol>
+<li><strong>五脏逼毒法</strong><br>
+   - 对应课程：五脏逼毒法已分割课<br>
+   - 内容：通过发音（嘘、喝、呼、四、吹）与特定呼吸节奏，结合内劲冲击五脏六腑及三焦系统排毒。  </li>
+<li><strong>文式易筋经</strong><br>
+   - 对应课程：文式易筋经已分割课<br>
+   - 内容：12个动作（如“按桥”“握拳”）锻炼肌肉劲力，注重下半身稳固与上半身柔韧。  </li>
+<li><strong>武式易筋经</strong><br>
+   - 对应课程：武式易筋经已分割课<br>
+   - 内容：动态动作配合呼吸，通过旋转、震动、意念释放经络压力，强调“以柔克刚”。  </li>
+</ol>
+<h3 id="模块递进关系">模块递进关系</h3>
+<ul>
+<li><strong>基础层面</strong>：五脏逼毒法（认识毒素排出原理与呼吸口诀）  </li>
+<li><strong>进阶层面</strong>：文式易筋经（掌握肌肉控制与动作结构）  </li>
+<li><strong>深化层面</strong>：武式易筋经（融合呼吸、意念与动态动作，形成完整气功体系）<br>
+三者形成“排毒-固本-通气”的练习链条，逐步从局部脏器调理过渡到全身气血整合。</li>
+</ul>
+<hr>
+<h2 id="三逐课精要">三、逐课精要</h2>
+<ol>
+<li><strong>五脏逼毒法</strong>：核心是利用“吐气逼毒、吸气净化”原理，结合特定发音与动作（如提肛、全身紧绷）在吐气终了阶段激活内劲冲击脏器排毒区域。  </li>
+<li><strong>文式易筋经</strong>：通过12个动作（如“按桥”“握拳”）实现“下半身如磐石，上半身如流水”的协调训练，强调动作重复（49次）与呼吸配合。  </li>
+<li><strong>武式易筋经</strong>：以动态拉伸与意念结合（如“倒踩九牛尾”“反转练习法”）推动气血流通，主张“动作往返均有”“以柔克刚”，避免硬性发力。</li>
+</ol>
+<hr>
+<h2 id="四跨课程主题图谱">四、跨课程主题图谱</h2>
+<ol>
+<li><strong>呼吸与动作的协同性</strong>（所有课程）<br>
+   - 五脏逼毒法：强调吐气终了时动作发力；<br>
+   - 文式/武式：要求呼吸配合动作节奏，如吸气后吐气发力。  </li>
+<li><strong>内劲的运用</strong>（五脏逼毒法、武式易筋经）<br>
+   - 五脏逼毒法：通过发音与全身紧绷调动内劲冲击脏腑；<br>
+   - 武式易筋经：以意念引导内劲释放经络压力。  </li>
+<li><strong>排毒反应的观察与判断</strong>（五脏逼毒法、文式易筋经）<br>
+   - 五脏逼毒法：咳嗽、吐痰等反应是毒素排出标志；<br>
+   - 文式易筋经：无反应可能提示动作不正确或体质已净化。  </li>
+<li><strong>动作逻辑与意象配合</strong>（武式易筋经）<br>
+   - 通过“拔刀式”“倒踩九牛尾”等动作意象（背后长刀出鞘、反转练习法）协调肢体与呼吸。  </li>
+<li><strong>功法的灵活性</strong>（武式易筋经）<br>
+   - 强调功夫可融入日常生活（如开车、坐车时练习），主张“自然呼吸”与“接地气”原则。</li>
+</ol>
+<hr>
+<h2 id="五关键概念词汇表">五、关键概念词汇表</h2>
+<ol>
+<li><strong>五脏逼毒法</strong>：通过特定呼吸与发音，以内劲冲击五脏六腑及三焦系统排毒。  </li>
+<li><strong>内劲</strong>：通过肌肉收缩与呼吸调控产生的内在力量，用于逼毒和疏通经络。  </li>
+<li><strong>三焦心包</strong>：中医特有的经络系统，负责水液代谢与心脏保护，需配合吸气与拉伸动作清痰。  </li>
+<li><strong>文式易筋经</strong>：侧重静态肌肉控制与力量传导的易筋经体系，强化上下半身协调。  </li>
+<li><strong>武式易筋经</strong>：动态拉伸与气脉疏通结合的易筋经体系，注重呼吸与意念配合。  </li>
+<li><strong>嘘、喝、呼、四、吹</strong>：对应五脏的特定发音，用于针对性排毒（肝、心、脾、肺、肾）。  </li>
+<li><strong>49次重复</strong>：文式易筋经每个动作的标准次数，体现传统功法的专注力与数量要求。  </li>
+<li><strong>反转练习法</strong>：武式易筋经高难度动作（如手脚相触）的替代技巧，先以手引导脚部移动。  </li>
+<li><strong>下半身如磐石</strong>：文式易筋经对腿部、脚部肌肉的要求，需完全绷紧以稳固根基。  </li>
+<li><strong>打坐</strong>：广义的修身练习方法，可灵活运用于日常生活场景。  </li>
+<li><strong>痰湿</strong>：中医概念，指体内湿气与代谢废物的结合，可通过旋转、震动动作松解。  </li>
+<li><strong>气机运行</strong>：内劲与呼吸协同推动体内气血流通的过程。  </li>
+<li><strong>正东方</strong>：文式易筋经建议的练习方向，利用自然气机辅助效果。  </li>
+<li><strong>动作返往均有</strong>：武式易筋经对动作完整性的要求，往返均需配合呼吸与意念。  </li>
+<li><strong>无气发声</strong>：五脏逼毒法中吐气终了阶段“无声发劲”的核心技巧。</li>
+</ol>
+<hr>
+<h2 id="六课程观点摘要">六、课程观点摘要</h2>
+<blockquote>
+<p>本节仅将原课程中的行动和优先级表述降级为学习主题归纳，不构成可照做的健康、用药或诊疗建议。
+<strong>课程主题</strong>
+1. “五脏逼毒法”、文式/武式易筋经等内容作为课程动作与呼吸术语索引。
+2. 重复次数、发力方式、脚趾抓地等细节不作为个人训练处方。
+3. 咳嗽、吐痰等“排毒反应”只保留为课程说法，不能据此判断身体状态。</p>
+</blockquote>
+<p><strong>延伸主题</strong>
+4. 握拳、倒踩九牛尾、反转练习、方位练习等用于回看课程示范。
+5. 打坐和放松内容保留为课程观点，不替代运动或康复建议。</p>
+<p><strong>补充主题</strong>
+6. 三焦、心包、发音、动静差异等内容作为理论背景整理。</p>
+<hr>
+<h2 id="七核心金句集">七、核心金句集</h2>
+<ol>
+<li><strong>“当我们做吐气逼毒的动作，关键在最后吐完气的那一刹那，用无声的力量冲击脏器。”</strong>（五脏逼毒法）  </li>
+<li><strong>“中国功夫与一般运动不同，常以静止姿态发劲。”</strong>（文式易筋经）  </li>
+<li><strong>“若无咳、吐、排反应，可能是动作错误或体质清洁。”</strong>（五脏逼毒法）  </li>
+<li><strong>“动作返往均有，气血才能真正流动全身。”</strong>（武式易筋经）  </li>
+<li><strong>“肝脏排毒需全身紧绷，右侧肋骨区域为冲击重点。”</strong>（五脏逼毒法）  </li>
+<li><strong>“打坐不必拘泥于姿势，生活处处皆可修身。”</strong>（武式易筋经）  </li>
+<li><strong>“四十九次重复不是数字限制，而是专注力与筋骨适应的训练标准。”</strong>（文式易筋经）  </li>
+<li><strong>“武式易筋经的核心是松解痰湿，而非追求动作幅度。”</strong>（武式易筋经）  </li>
+<li><strong>“吸气净化、吐气逼毒，呼吸是练习的灵魂。”</strong>（五脏逼毒法）  </li>
+<li><strong>“手脚相触的秘诀是先以手引导脚部，而非强行下压。”</strong>（武式易筋经）  </li>
+<li><strong>“心包排毒需配合舌抵唇部的‘喝’声，清痰为关键。”</strong>（五脏逼毒法）  </li>
+<li><strong>“传统功法强调‘数量决定质量’，重复是效果保障。”</strong>（文式易筋经）  </li>
+<li><strong>“功夫的智慧在于顺势借力，而非硬性对抗。”</strong>（武式易筋经）  </li>
+</ol>
+<hr>
+<hr>
+<h2 id="附录逐课摘要">附录：逐课摘要</h2>
+<h3 id="五脏逼毒法-已分割-106分钟">五脏逼毒法 已分割 (10.6分钟)</h3>
+<h3 id="五脏逼毒法-已分割">五脏逼毒法 已分割</h3>
+<p>本课程系统介绍了以传统武术动作为核心的“五脏逼毒法”，通过特定发音与呼吸配合，借助内劲冲击五脏六腑及三焦心包，实现自然排毒的养生方式。核心原理是利用“吐气逼毒、吸气净化”的呼吸节奏，将内脏毒素通过气机运行排出体外，无需依赖药物。例如肝脏排毒需配合“嘘”声，在吐气至无气可吐的刹那，通过提肛、全身紧绷等动作，以内劲冲击右侧肋骨区域；心脏排毒则通过“喝”声，配合舌抵唇部的发音动作，清除心包痰液。  </p>
+<p>课程重点提炼了六个排毒口诀与对应脏器的关系：肝（嘘）、心（喝）、脾（呼）、肺（四）、肾（吹）、三焦心包（吸）。每个动作均需遵循“吸气后吐气发力”的原则，尤其强调排毒关键在吐气终了的无声阶段，需集中精神调动内劲。此外，三焦系统与心包的互动被特别关注——吸气时需断续发力，通过手顶、脚抬等动作激活全身水液代谢通道，对水肿、便秘等问题效果显著。讲师提醒，练习时若出现咳嗽、吐痰或口吐精液等反应属正常现象，反映毒素被逼出的过程；若无任何反应，则可能说明练习不到位或体质已较洁净。  </p>
+<p><strong>金句</strong>：<br>
+1. “当你做吐气，我们是在吸气以后才开始做这些逼毒的动作。用吐气来逼毒技巧它的诀窍就是在最后吐完气的那一刹那，你已经没有气了啊，完全没有气了以后呢，最后用无声，用身体里面的所有的力量要发出一个因为没有气了嘛，你发出来个没有声音的一个嘘。”<br>
+2. “如果你从头到尾做完了以后，你都没有咳啊，没有吐啊，什么精液都没有生出来……第二个是你没有做对正确的动作啊。”</p>
+<h3 id="文式易筋经-已分割-78分钟">文式易筋经  已分割 (7.8分钟)</h3>
+<h3 id="文式易筋经-已分割">文式易筋经 已分割</h3>
+<p>文式易筋经是一种传统内功修炼体系，与武士易筋经形成互补关系。武士易筋经侧重气脉疏通，而文式则强调肌肉劲力的锻炼，通过12个动作（又名十二式）实现身体上下半部的协调控制。核心原则在于“下半身如磐石，上半身如流水”，即从肚脐以下的腿部、脚部肌肉需完全绷紧，脚趾抓地稳固如钉，而上半身则保持放松状态。练习时需一松一紧交替进行，每个动作以半身绷紧、半身松动的组合完成49次重复，形成完整的“式”单位。例如第一式“按桥”要求双臂提于大腿侧，腰腿绷紧如桥，上半身自然舒展，通过呼吸配合体会劲力传导。</p>
+<p>该课程详细拆解了动作的呼吸与姿势要领，强调清晨正东方练习以借助自然气机。动作设计中，如第二式“握拳”需拇指上顶、拳底下压，形成肺经发力的特定势能；第七式则通过侧向拉弓、腰部扭转等复合动作强化筋骨关节韧性。特别指出：“中国功夫与一般运动不同，常以静止姿态发劲”是重要特征，而“49下为一个完整练习单元”则体现了传统功法对数量和专注力的要求。针对初学者，建议从单式拆分练习，逐渐过渡到全套连贯，避免因追求完整而损伤筋骨。</p>
+<h3 id="武式易筋经-已分割-80分钟">武式易筋经  已分割 (8.0分钟)</h3>
+<h3 id="武式易筋经-已分割">武式易筋经  已分割</h3>
+<p>本课程围绕武式易筋经的经典动作展开教学，重点解析了呼吸配合、动作要领与特殊练习技巧。讲师通过动作演示与心法讲解，强调每个动作需以放松为基础，避免过度耗力。课程以“拔刀式”“青龙探爪”和“倒踩九牛尾”为核心示例，指出动作的关键在于通过旋转、拉伸和震动释放经络压力，而非单纯追求幅度或强度。例如“拔刀式”需在弓步转换中结合脚部外翻，通过想象背后长刀出鞘的意象协调肢体运动；“倒踩九牛尾”则要求动作往返均有，通过旋转拉伸配合意念牵引，以增强气血流通效果。</p>
+<p>课程还特别强调了易筋经与日常习惯的结合，主张通过自然呼吸与身体振动的同步，松解腿部肌肉、经络中的“痰湿”，并提到“打坐”并非固定姿势，而是可灵活运用于生活各场景的修身方法。讲师指出，部分高难度动作如结尾的“手脚相触”需采用“反转练习法”——先以手触地引导脚部移动，再踮起脚尖完成接触，而非直接由上往下尝试，这一技巧体现了道家“以柔克刚”的练功智慧。最后，讲师以“你一定要首先放到地上，然后脚过去”点明动作逻辑，以“不管你在坐车开车什么状态之下都可以练”倡导功夫练习的灵活性，鼓励学员在实用性中体会传统功法的精髓。</p></div>
+</article>
+
+<nav class="pager">
+<span></span><a class="pg next" href="../docs/yijinjing-screenshot-evidence.html"><small>下一篇</small>倪师易筋经截图证据索引</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%98%93%E7%AD%8B%E7%BB%8F%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">💬 就「倪海厦易筋经 — 课程蒸馏笔记」提问</a>
+  <a class="btn" href="../search.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%98%93%E7%AD%8B%E7%BB%8F%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

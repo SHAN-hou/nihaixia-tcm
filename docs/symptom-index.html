@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>症状入口索引 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-shanghanlun">📜 伤寒论</a>
+</nav>
+
+<article class="doc" data-slug="symptom-index">
+  <h1>症状入口索引</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（11）</summary>
+    <ol>
+      <li class="lv1"><a href="#快速分水岭">快速分水岭</a></li>
+      <li class="lv1"><a href="#发热恶寒汗出">发热、恶寒、汗出</a></li>
+      <li class="lv1"><a href="#往来寒热胸胁苦满恶心">往来寒热、胸胁苦满、恶心</a></li>
+      <li class="lv1"><a href="#口渴与饮水">口渴与饮水</a></li>
+      <li class="lv1"><a href="#便秘">便秘</a></li>
+      <li class="lv1"><a href="#下利腹泻假水泻">下利、腹泻、假水泻</a></li>
+      <li class="lv1"><a href="#腹胀腹痛腹诊">腹胀、腹痛、腹诊</a></li>
+      <li class="lv1"><a href="#睡眠烦躁心悸">睡眠、烦躁、心悸</a></li>
+      <li class="lv1"><a href="#小便不利尿频尿血结石">小便不利、尿频、尿血、结石</a></li>
+      <li class="lv1"><a href="#手足冷厥逆">手足冷、厥逆</a></li>
+      <li class="lv1"><a href="#妇科血证瘀血">妇科、血证、瘀血</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="症状入口索引">症状入口索引</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+<p>从用户主诉反推课程中的辨证分水岭。使用时先收集缺失信息，再进入六经和方证模块。仅供学习。</p>
+</blockquote>
+<h2 id="快速分水岭">快速分水岭</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>用户症状</th>
+<th>第一分水岭</th>
+<th>偏向课程模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>发热恶寒</td>
+<td>有汗/无汗，脉缓/脉紧</td>
+<td>太阳中风/太阳伤寒</td>
+</tr>
+<tr>
+<td>往来寒热</td>
+<td>是否恶心、胸胁苦满、经期</td>
+<td>少阳病、小柴胡汤类</td>
+</tr>
+<tr>
+<td>高热大渴</td>
+<td>大便通不通、腹是否拒按</td>
+<td>阳明经热/腑实</td>
+</tr>
+<tr>
+<td>便秘</td>
+<td>小便深黄还是清白，腹痛拒按否</td>
+<td>热实/寒实/脾约/蓄血</td>
+</tr>
+<tr>
+<td>下利</td>
+<td>热利/寒利/假水泻，小便颜色</td>
+<td>葛根黄芩黄连汤（葛芩连汤）/桂枝人参汤/热结旁流</td>
+</tr>
+<tr>
+<td>腹胀腹痛</td>
+<td>喜按/拒按，时痛/持续痛</td>
+<td>虚胀/实胀/太阴/阳明</td>
+</tr>
+<tr>
+<td>失眠烦躁</td>
+<td>汗吐下后虚烦，昼日烦躁，心中烦不得卧</td>
+<td>栀子豉汤/干姜附子汤/黄连阿胶汤</td>
+</tr>
+<tr>
+<td>心悸胸满</td>
+<td>发汗后心下悸、胸满、脉结代</td>
+<td>桂枝甘草汤/去芍药/炙甘草汤</td>
+</tr>
+<tr>
+<td>小便不利</td>
+<td>口渴、尿血、结石、水逆</td>
+<td>五苓散/猪苓汤/少阴水气</td>
+</tr>
+<tr>
+<td>手足冷</td>
+<td>冷到手足末端还是肘膝，是否下利脉微</td>
+<td>当归四逆汤/四逆汤辈/厥阴厥</td>
+</tr>
+<tr>
+<td>经期感冒</td>
+<td>是否正在月经，是否往来寒热/如见鬼状</td>
+<td>热入血室，小柴胡汤</td>
+</tr>
+<tr>
+<td>咽痛</td>
+<td>少阴咽痛、下利、心烦、声不出</td>
+<td>甘草汤/桔梗汤/猪肤汤/半夏散及汤</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="发热恶寒汗出">发热、恶寒、汗出</h2>
+<p>必须问：</p>
+<ul>
+<li>有汗还是无汗。</li>
+<li>恶风还是恶寒。</li>
+<li>身痛、项背强、喘、烦躁有无。</li>
+<li>口渴、小便颜色、大便情况。</li>
+<li>咽喉是否干燥，尺脉是否迟微。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>有汗、恶风、脉缓：太阳中风，桂枝汤方向。</li>
+<li>无汗、体痛、脉紧：太阳伤寒，麻黄汤方向。</li>
+<li>项背强几几、无汗、恶风：葛根汤方向。</li>
+<li>无汗烦躁、表寒里热：大青龙汤方向。</li>
+<li>但热不寒、大渴：阳明经热，白虎汤方向。</li>
+</ul>
+<p>禁忌：</p>
+<ul>
+<li>咽干、淋家、疮家、尺脉迟微，课程均列为发汗禁忌。</li>
+<li>少阴病脉微细但欲寐不可按太阳病发汗。</li>
+</ul>
+<h2 id="往来寒热胸胁苦满恶心">往来寒热、胸胁苦满、恶心</h2>
+<p>必须问：</p>
+<ul>
+<li>寒热是否“来回发作”，还是持续高热。</li>
+<li>是否胸胁苦满、口苦、恶心。</li>
+<li>女性是否月经期。</li>
+<li>是否已有误下、误汗。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>少阳枢机不利：小柴胡汤方向。</li>
+<li>一半太阳一半少阳：柴胡桂枝汤方向。</li>
+<li>经期外感：热入血室，课程强调直接和解，不发汗。</li>
+<li>少阳兼阳明实热：柴胡加芒硝汤方向。</li>
+</ul>
+<h2 id="口渴与饮水">口渴与饮水</h2>
+<p>必须问：</p>
+<ul>
+<li>渴欲饮水还是口渴不欲饮。</li>
+<li>小便深黄/清白/不利。</li>
+<li>有无高热、大汗、大便结。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>阳明大热大渴：白虎汤或白虎加人参汤方向。</li>
+<li>蓄血常见口渴不欲饮、小便自利。</li>
+<li>少阴自利而渴，小便色白，偏下焦寒水不能气化。</li>
+<li>水逆：喝水反吐，五苓散方向。</li>
+</ul>
+<h2 id="便秘">便秘</h2>
+<p>必须问：</p>
+<ul>
+<li>几天不便，是否痛苦。</li>
+<li>是否放屁，是否能食。</li>
+<li>大便气味和形状：臭秽、羊屎、黑便。</li>
+<li>小便深黄还是清白。</li>
+<li>腹部喜按还是拒按，天枢是否压痛。</li>
+</ul>
+<p>课程辨法：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>表现</th>
+<th>课程辨证</th>
+<th>方证方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小便深黄、大便臭、腹拒按</td>
+<td>热实便秘/阳明腑实</td>
+<td>承气汤类</td>
+</tr>
+<tr>
+<td>不放屁、无食欲、谵语、天枢剧痛</td>
+<td>阳明腑实重</td>
+<td>大承气汤</td>
+</tr>
+<tr>
+<td>尚能食且放屁</td>
+<td>阳明腑实轻</td>
+<td>小承气汤</td>
+</tr>
+<tr>
+<td>羊屎状便</td>
+<td>脾约、津液枯竭</td>
+<td>麻子仁丸</td>
+</tr>
+<tr>
+<td>十日不便无痛苦、小便清白</td>
+<td>寒实便秘</td>
+<td>温阳去寒方向</td>
+</tr>
+<tr>
+<td>善忘、黑便、少腹硬满、小便自利</td>
+<td>蓄血</td>
+<td>抵当汤方向</td>
+</tr>
+</tbody>
+</table></div>
+<p>高风险：</p>
+<ul>
+<li>承气汤急下存阴为危重理论，不可自行用药。</li>
+<li>急性腹痛、停止排气排便、呕吐、发热、神志异常需急诊。</li>
+</ul>
+<h2 id="下利腹泻假水泻">下利、腹泻、假水泻</h2>
+<p>必须问：</p>
+<ul>
+<li>大便是清稀、臭秽、便脓血，还是清水样。</li>
+<li>腹部喜按还是拒按。</li>
+<li>小便深黄还是清白。</li>
+<li>口渴与否，肛门灼热与否。</li>
+<li>是否误下后发生。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>热利：葛根黄芩黄连汤（葛芩连汤）方向。</li>
+<li>寒利：桂枝人参汤、四逆汤辈方向。</li>
+<li>太阴自利不渴：温中利湿，利小便。</li>
+<li>少阴下利清谷、脉微欲寐：少阴里寒，高风险。</li>
+<li>热结旁流：看似拉清水，实则腹拒按、小便深黄、里面燥屎堵塞，大承气汤急下方向。</li>
+<li>少阴便脓血：桃花汤方向。</li>
+</ul>
+<h2 id="腹胀腹痛腹诊">腹胀、腹痛、腹诊</h2>
+<p>必须问：</p>
+<ul>
+<li>喜按还是拒按。</li>
+<li>腹满时痛还是持续剧痛。</li>
+<li>小便颜色。</li>
+<li>大便通不通、是否放屁。</li>
+<li>痛在少腹、心下、胸胁还是全腹。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>拒按：偏实，阳明燥屎、蓄血、结胸等方向。</li>
+<li>喜按：偏虚，虚胀、太阴寒湿方向。</li>
+<li>少腹急结或硬满，小便自利：蓄血方向。</li>
+<li>胸满用枳实思路，腹满用厚朴思路，课程多次强调厚朴/枳实分工。</li>
+</ul>
+<h2 id="睡眠烦躁心悸">睡眠、烦躁、心悸</h2>
+<p>必须问：</p>
+<ul>
+<li>是否汗吐下之后出现。</li>
+<li>是虚烦不得眠，还是昼日烦躁不得眠。</li>
+<li>是否心中烦不得卧、心悸、脉结代、胸痛。</li>
+<li>手足温度、大便、胃口。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>汗吐下后虚烦不得眠：栀子豉汤方向。</li>
+<li>发汗伤阳，昼日烦躁不得眠：干姜附子汤方向。</li>
+<li>发汗后心下悸：桂枝甘草汤方向。</li>
+<li>脉结代、心动悸：炙甘草汤方向。</li>
+<li>少阴心中烦不得卧：黄连阿胶汤方向。</li>
+</ul>
+<p>心脏恢复四指标：</p>
+<ul>
+<li>恢复安眠。</li>
+<li>大便正常。</li>
+<li>手脚温热。</li>
+<li>无胸痛。</li>
+</ul>
+<h2 id="小便不利尿频尿血结石">小便不利、尿频、尿血、结石</h2>
+<p>必须问：</p>
+<ul>
+<li>小便不利还是尿频。</li>
+<li>尿色深黄、清白、血尿。</li>
+<li>口渴、发热、下利、腹痛。</li>
+<li>是否有结石诊断或绞痛。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>水液代谢失常、水逆：五苓散方向。</li>
+<li>泌尿结石、小便不利兼阴虚火旺/血尿：猪苓汤方向。</li>
+<li>少阴下焦寒水不能气化：小便色白、压迫性尿频，真武汤/四逆类高风险方向。</li>
+</ul>
+<h2 id="手足冷厥逆">手足冷、厥逆</h2>
+<p>必须问：</p>
+<ul>
+<li>冷到手指脚趾，还是到腕踝、肘膝。</li>
+<li>是否下利清谷、脉微细、但欲寐。</li>
+<li>是否口渴、烦躁、腹痛、小便颜色。</li>
+<li>是否胸痛、气短、意识异常。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>手足末梢厥寒、血脉寒凝：当归四逆汤方向。</li>
+<li>下利清谷、脉微、手足厥冷：四逆汤辈方向，高风险。</li>
+<li>四逆但气机郁滞：四逆散方向，与四逆汤不同。</li>
+<li>厥阴厥：阴阳不相顺接，需辨寒热真假。</li>
+</ul>
+<p>现代安全：</p>
+<ul>
+<li>手足冷伴胸痛、呼吸困难、意识改变、低血糖样表现、休克样表现，必须急诊。</li>
+</ul>
+<h2 id="妇科血证瘀血">妇科、血证、瘀血</h2>
+<p>必须问：</p>
+<ul>
+<li>是否经期、经前后。</li>
+<li>少腹痛是否急结/硬满。</li>
+<li>小便是否自利。</li>
+<li>是否黑便、善忘、肌肤甲错。</li>
+</ul>
+<p>课程辨法：</p>
+<ul>
+<li>经期感冒：热入血室，小柴胡汤方向，绝不普通发汗。</li>
+<li>少腹急结、小便自利、口渴不欲饮：桃核承气汤方向。</li>
+<li>少腹硬满、善忘、黑便：抵当汤/丸方向。</li>
+<li>干血痨、肌肤甲错：课程联系瘀血久病与重大病机。</li>
+</ul>
+<p>高风险：</p>
+<ul>
+<li>妇科出血、孕产妇、剧烈腹痛、疑似急腹症或肿瘤，必须就医。</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/formula-patterns.html"><small>上一篇</small>方剂方证模块</a><a class="pg next" href="../docs/lesson-map.html"><small>下一篇</small>逐课学习地图</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E7%97%87%E7%8A%B6%E5%85%A5%E5%8F%A3%E7%B4%A2%E5%BC%95">💬 就「症状入口索引」提问</a>
+  <a class="btn" href="../search.html?q=%E7%97%87%E7%8A%B6%E5%85%A5%E5%8F%A3%E7%B4%A2%E5%BC%95">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>针灸大成笔记 扫描版要点补充 · 倪师课库</title>
+<meta name="description" content="针灸大成笔记 扫描版要点补充">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-notes">📝 文字笔记</a>
+</nav>
+
+<article class="doc" data-slug="notes-acupuncture-dacheng-scan-essence">
+  <h1>针灸大成笔记 扫描版要点补充</h1>
+  <details class="toc" open>
+    <summary>本页目录（10）</summary>
+    <ol>
+      <li class="lv1"><a href="#人纪-针灸篇pdf">人纪-针灸篇.pdf</a></li>
+      <li class="lv1"><a href="#精华要点">精华要点</a></li>
+      <li class="lv1"><a href="#核心条目">核心条目</a></li>
+      <li class="lv1"><a href="#检索关键词">检索关键词</a></li>
+      <li class="lv1"><a href="#风险与边界">风险与边界</a></li>
+      <li class="lv1"><a href="#针灸大成笔记-彩版70页pdf">针灸大成笔记 (彩版70页).pdf</a></li>
+      <li class="lv1"><a href="#精华要点_1">精华要点</a></li>
+      <li class="lv1"><a href="#核心条目_1">核心条目</a></li>
+      <li class="lv1"><a href="#检索关键词_1">检索关键词</a></li>
+      <li class="lv1"><a href="#风险与边界_1">风险与边界</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="针灸大成笔记-扫描版要点补充">针灸大成笔记 扫描版要点补充</h1>
+<p>以下为针灸大成相关扫描版资料的整理要点，保留与课程学习和检索直接相关的内容，并补充必要风险提示。内容仅供课程资料学习，不作为诊断、处方或自行操作建议。</p>
+<h2 id="人纪-针灸篇pdf">人纪-针灸篇.pdf</h2>
+<p>以下内容汇总《针灸大成》（人纪-针灸篇）四部分笔记的核心要点，便于中医理论学习与文献检索。</p>
+<h2 id="精华要点">精华要点</h2>
+<ul>
+<li><strong>针灸时机与解剖原则</strong>：气血大虚、大汗、酒醉时不宜下针。进针需在“肌肉与骨、肌肉与筋或两肌之间的缝隙”，绝不可直接扎在骨、筋或血管上。</li>
+<li><strong>特定时辰与流注诊断</strong>：结合“十二经纳地支”（如寅时肺、丑时肝、子时胆），若特定时辰规律发病（如半夜定时苏醒提示脏病），可辅助定位病变经络。</li>
+<li><strong>五输穴与子母补泻</strong>：阴经五输穴（井荣俞经合）属性为“木火土金水”，阳经为“金水木火土”。循“虚则补其母，实则泻其子”原则；遇“泻井当泻荣，补井当补合”之特殊情况需灵活变通。</li>
+<li><strong>经典配穴治疗法</strong>：</li>
+<li><strong>原络治疗</strong>：病经取“原穴”，表里经取“络穴”。</li>
+<li><strong>俞募治疗</strong>：治内脏病，背部“俞穴”（如肺俞）与胸腹“募穴”（如中府）同用。</li>
+<li><strong>会郄治疗</strong>：八大会穴（如骨会大杼、血会膈俞）配合郄穴（主消炎镇痛）合用。</li>
+<li><strong>脏腑气化与经乳同源</strong>：小肠（火）加热下焦，使膀胱（水）气化升腾。妇科理论认为“奶水等于月经”，受心阳向下消导至子宫；若心力弱导致停滞，在乳房易结乳岩，在子宫易生痞块。</li>
+<li><strong>心与心包界定</strong>：心脏为“君主之官”本身不受病，病邪皆在心包络。心脏移热于小肠，若手足冰冷、失眠，常提示心阳不足、小肠火衰，为心脏病发之前兆。</li>
+<li><strong>寒热虚实辨证</strong>：隐痛喜按、分泌物清白多属虚寒，宜用灸法（中脘、足三里）；拒按剧痛、分泌物深黄粘稠多属实热，宜用针刺。左侧少腹压痛多提示瘀血（如肌肤甲错）。</li>
+<li><strong>气机导引与对称治疗</strong>：上焦大穴（如肩井）行针引气向下时，必须配伍下焦穴位（如足三里）以防气血逆乱晕厥。痛症可采用左病右治，或类比取穴（如承山类比肛门治腰痛）。</li>
+<li><strong>婴幼儿针刺原则</strong>：十四岁以下幼儿采用“单刺”不留针（针入捻转即出）或采用指针推拿（如开天河水）；十四岁以上视同成人留针并施以补泻。</li>
+</ul>
+<h2 id="核心条目">核心条目</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">术语</th>
+<th style="text-align: left;">蒸馏说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>同身寸</strong></td>
+<td style="text-align: left;">以患者中指弯曲时中节两横纹间距离为一寸，用于四肢取穴；腹胸部则需用按解剖比例的“骨度分寸法”。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>开四关</strong></td>
+<td style="text-align: left;">同时针刺左右双合谷与双太冲。合谷主气，太冲主血，用于调和全身气血，排查不明原因的全身痛症。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中风八大穴</strong></td>
+<td style="text-align: left;">临床常用治中风重症之大穴，包含百会、风府、肩髃、曲池、合谷透后溪等，主治半身不遂或口噤不语。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>三皇穴</strong></td>
+<td style="text-align: left;">脾经之阴陵泉（天皇）、地机（地皇）、三阴交（人皇）。以“强土制水”之理，主治水肿、下肢无力及少腹病。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>四花灸</strong></td>
+<td style="text-align: left;">肺痨（肺结核）及久病虚损的经典灸法。选取背部双侧膈俞与胆俞（或肺俞/膏肓组合，视具体派别而定）共四个穴位施灸。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>烧山火/透天凉</strong></td>
+<td style="text-align: left;">传统强刺激补泻手法。烧山火为大补（天人地三部紧按慢提，行九阳数）；透天凉为大泻（地人天三部紧提慢按，行六阴数）。须先引气方可施术。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>飞经引气</strong></td>
+<td style="text-align: left;">包含青龙摆尾、白虎摇头、苍龟探穴、赤凤迎源四种手法，用于本穴补泻、通关交经及消散体内痞块。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>十三鬼穴</strong></td>
+<td style="text-align: left;">孙思邈所创特定穴位序列，主治癫、痫、狂等因痰涎壅塞引起的神志失常，有严格的下针顺序与男女左右捻转规定。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>奇经交会八穴</strong></td>
+<td style="text-align: left;">公孙/内关（冲脉/阴维主胃心胸）、后溪/申脉（督脉/阳跷主颈项督脉）、临泣/外关（带脉/阳维主侧面）、列缺/照海（任脉/阴跷主肺系咽喉）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>诊断奇穴</strong></td>
+<td style="text-align: left;"><strong>肝三穴</strong>（右腿内侧）诊治肝硬化/肝癌；<strong>胆石点</strong>（阳陵泉下一寸）诊治胆结石；<strong>痞根穴</strong>（第十三椎旁）查探肿瘤根气。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="检索关键词">检索关键词</h2>
+<p>十二经纳地支、五输穴、子母补泻、原络治疗、俞募治疗、会郄治疗、同身寸、反关脉、肌肤甲错、导痰术、雀啄术、担法、截法、隔姜灸、隔蒜灸、开天河水、指纹三关、五门十变、子午流注、灵龟八法、奔豚症、朝食暮吐、经乳同源、耳针全息。</p>
+<h2 id="风险与边界">风险与边界</h2>
+<ul>
+<li><strong>急救与强刺激警示</strong>：资料提及的十宣/百会/井穴放血、回阳九针、十三鬼穴、癫痫/心脏骤停急救、化脓灸等，均为古代重症处置理论，<strong>仅作课程资料索引，严禁非执业医师模仿操作。</strong></li>
+<li><strong>孕产妇禁忌</strong>：合谷、三阴交、昆仑、至阴等穴位涉及堕胎/安胎及下胎盘机理，补泻手法极具风险；腹部与骶部穴位（八髎穴等）在孕期通常禁针禁灸，误操作易致落胎。</li>
+<li><strong>解剖危险区域</strong>：缺盆、巨骨、肩井深刺易致气胸；颈部（天突、人迎）、面部（承泣）、腋下深部有大血管或脏器，严禁深刺及大幅度提插捻转。内脏出血（如胃出血）时禁用本经本穴（如足三里）以免加重出血。</li>
+<li><strong>肿瘤与重症边界</strong>：关于乳岩（乳腺癌）、血癌、肝癌、脑瘤的针灸消导理论（如火针/铍针刺痞块、毒药外敷灸），仅供中医病机探究与文献学习，<strong>绝不构成替代现代规范化疗/手术的医疗建议。确有疾病请务必遵从正规医疗机构施治。</strong></li>
+</ul>
+<h2 id="针灸大成笔记-彩版70页pdf">针灸大成笔记 (彩版70页).pdf</h2>
+<h2 id="精华要点_1">精华要点</h2>
+<ul>
+<li><strong>辨证与取穴原则</strong>：遵循“左病右治、右病左治”的对称治疗，以及“病进（向身体蔓延）、病出（向四肢退）”的传变规律。取穴常结合同身寸，并根据病邪位置决定针刺深浅（如冬天宜深，腹深似井、背薄似饼）。</li>
+<li><strong>经络气血流注</strong>：十二经脉配合地支有明确的时辰规律（如寅时肺、卯时大肠、辰时胃等），临床常据此进行时辰辨证与子母补泻（如肝病在凌晨1-3点发作或失眠）。</li>
+<li><strong>痛症辨证</strong>：痛症按压时，若“拒按、痛处固定”多为实证、瘀血，宜用泻法或放血；若“喜按”多为虚证，宜用补法。</li>
+<li><strong>五俞穴应用</strong>：各经均有“井、荣、俞、经、合”五穴。治疗遵循“虚则补其母，实则泻其子”；急救多取井穴，内脏病多取合穴；原络治疗法常用于表里经同病。</li>
+<li><strong>俞募治疗法</strong>：主要用于内科脏腑疾病，选取背部的俞穴（属阳）与胸腹部的募穴（属阴）相配合，俞穴不论虚实寒热皆可使用。</li>
+<li><strong>针刺补泻</strong>：补泻手法涉及呼吸法、迎随法、提插法与捻转法。阳数为补（如奇数、九数），阴数为泻（如偶数、六数）。气至（得气）表现为酸麻胀或针孔周围呈粉红色。</li>
+<li><strong>艾灸法则</strong>：适用于寒证、虚证及部分急症（如毒虫咬伤）。隔姜灸温通，隔盐灸（神阙）回阳救逆，隔蒜灸多用于久咳或毒疮。热证、多汗、面部及孕妇禁灸或慎灸。</li>
+<li><strong>奇经八脉与八脉交会</strong>：任督二脉统领阴阳，冲脉为血海。临床常配合“灵龟八法”按日干支开穴，或使用八脉交会穴（如公孙配内关、列缺配照海）治疗全身性复杂疾病。</li>
+</ul>
+<h2 id="核心条目_1">核心条目</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">术语</th>
+<th style="text-align: left;">蒸馏说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>十二经纳地支</strong></td>
+<td style="text-align: left;">经气流注时间：肺寅（3-5点）、大卯（5-7点）、胃辰（7-9点）、脾巳（9-11点）、心午（11-13点）、小未（13-15点）、膀胱申（15-17点）、肾酉（17-19点）、心包戌（19-21点）、三焦亥（21-23点）、胆子（23-1点）、肝丑（1-3点）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>子母补泻</strong></td>
+<td style="text-align: left;">根据五行生克及五俞穴属性进行治疗的法则。“虚则补其母，实则泻其子”，如胆经（木）实证，可泻其子穴阳辅（火）或用同属相生经络的穴位。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>俞募治疗法</strong></td>
+<td style="text-align: left;">脏腑病证的核心疗法。取背部膀胱经的脏腑“俞穴”搭配胸腹部对应的“募穴”（如胃病取中脘配胃俞，肺病取中府配肺俞）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>原络治疗法</strong></td>
+<td style="text-align: left;">主客原络法。主病经取“原穴”，相表里的客经取“络穴”。用于两经并发疾病或表里同病（如肺为主、大肠为客，取太渊配偏历）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>烧山火 / 透天凉</strong></td>
+<td style="text-align: left;">经典强刺激补泻手法。<strong>烧山火</strong>为强补法，分天、人、地三部重插轻提（九数），治虚寒厥冷；<strong>透天凉</strong>为强泻法，重提轻插（六数），治高热实热。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>导痰术</strong></td>
+<td style="text-align: left;">专治顽痰、癫痫的针刺手法。常取胃经络穴“丰隆”，进针得气后退至皮下，改变角度斜刺并捻转引气，留针以化痰。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>四花灸</strong></td>
+<td style="text-align: left;">特定灸法，常取背部膈俞、胆俞（或类似组合），用于治疗久病虚损、气血大亏、肺部重疾（如肺痨、严重咳喘）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>三皇穴</strong></td>
+<td style="text-align: left;">脾经的阴陵泉（天皇）、地机（地皇）、三阴交（人皇）。为治疗水肿、泌尿生殖系统及妇科病（如下焦虚寒、痛经）的核心要穴组合。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>灵龟八法</strong></td>
+<td style="text-align: left;">结合天干地支此时辰的“八脉交会穴”开穴法。强调“先开主穴，后开配穴”（如临泣配外关），用于疑难杂症的应急或起手治疗。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>五脏气乱</strong></td>
+<td style="text-align: left;">因高处跌落或严重外伤导致脏腑气机逆乱，临床常取天柱、大杼等穴位平抑气机，不补不泻。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>痞块 / 积聚</strong></td>
+<td style="text-align: left;">腹部或体表的硬块（良性或恶性）。诊断常参考“痞根穴”（第13椎下旁开3.5寸）。治疗强调“行阳化阴”，多用艾灸或特定消导穴位。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="检索关键词_1">检索关键词</h2>
+<ul>
+<li>同身寸、子午流注、十二经纳天干、五俞穴、原络治疗、俞募治疗、会郄治疗、八脉交会穴、灵龟八法</li>
+<li>隔姜灸、隔盐灸、米粒灸、梅花针、三棱针放血、火罐拔毒</li>
+<li>烧山火、透天凉、苍龟探穴、赤凤迎源、青龙摆尾、白虎摇头、阳中隐阴、阴中隐阳</li>
+<li>回阳九针、鬼门十三针、膝五针、四关穴、三皇穴、四花灸、导痰术、报刺</li>
+<li>中脘、关元、神阙、足三里、合谷、三阴交、委中、膏肓、丰隆、太渊、太冲</li>
+</ul>
+<h2 id="风险与边界_1">风险与边界</h2>
+<ul>
+<li><strong>急症与重症警示</strong>：笔记中提及的中风急救（十宣/人中/百会放血）、溺水急救、癫痫发作、心脏急救（极泉/少府/关元）、大出血、尸厥等，仅作为中医针灸理论的病机与治法索引。现实中遇到此类急症，必须立即寻求现代急诊医疗救治。</li>
+<li><strong>高风险针刺手法</strong>：烧山火、透天凉、报刺、深刺透穴（如阴陵泉透阳陵泉、条口透承山）、眼区针刺（睛明、球后）及强刺激的“导痰术”，操作不当极易造成气胸、神经损伤、脏器穿孔或晕针，非专业执业医师严禁操作。</li>
+<li><strong>放血与火罐风险</strong>：三棱针放血（如委中、耳尖、十宣）及火罐吸脓血属于创伤性操作，有严重的感染风险，严禁自行模仿。</li>
+<li><strong>孕产与儿童禁忌</strong>：孕妇严格禁针合谷、三阴交、肩井及腹部穴位（可能导致流产）。14岁以下儿童针灸需采用“单刺不留针”法。婴幼儿推拿退热手法仅供理论参考。</li>
+<li><strong>肿瘤与外用秘方</strong>：提及的肺癌、乳癌、脑瘤、脾肿大、肝硬化等重疾的针灸思路仅供中医学习探讨。文中提及的“巴豆、硫磺、生附子、麝香”等属于剧毒或峻猛中药，相关外敷灸法（如伤寒结胸灸、化脓灸）具有极高危险性，可能导致严重皮肤坏死或中毒，绝对禁止自行配制和使用。</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/notes-acupuncture-dacheng.html"><small>上一篇</small>02.针灸大成笔记 — 文字资料蒸馏</a><a class="pg next" href="../docs/notes-huangdi.html"><small>下一篇</small>04.黄帝内经笔记 — 文字资料蒸馏</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E9%92%88%E7%81%B8%E5%A4%A7%E6%88%90%E7%AC%94%E8%AE%B0%20%E6%89%AB%E6%8F%8F%E7%89%88%E8%A6%81%E7%82%B9%E8%A1%A5%E5%85%85">💬 就「针灸大成笔记 扫描版要点补充」提问</a>
+  <a class="btn" href="../search.html?q=%E9%92%88%E7%81%B8%E5%A4%A7%E6%88%90%E7%AC%94%E8%AE%B0%20%E6%89%AB%E6%8F%8F%E7%89%88%E8%A6%81%E7%82%B9%E8%A1%A5%E5%85%85">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

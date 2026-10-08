@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>黄帝内经 PDF Evidence · 倪师课库</title>
+<meta name="description" content="黄帝内经 PDF Evidence">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-data">🗂️ 资料与索引</a>
+</nav>
+
+<article class="doc" data-slug="pdf-evidence-modules-huangdi">
+  <h1>黄帝内经 PDF Evidence</h1>
+  <details class="toc" open>
+    <summary>本页目录（3）</summary>
+    <ol>
+      <li class="lv1"><a href="#sources">Sources</a></li>
+      <li class="lv1"><a href="#frequent-evidence-terms">Frequent Evidence Terms</a></li>
+      <li class="lv1"><a href="#representative-cards">Representative Cards</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="黄帝内经-pdf-evidence">黄帝内经 PDF Evidence</h1>
+<h2 id="sources">Sources</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Doc ID</th>
+<th>PDF</th>
+<th style="text-align: right;">Pages with text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1ae6e7523f17</code></td>
+<td><code>人纪02内经视频同步文稿 2024新版.pdf</code></td>
+<td style="text-align: right;">311</td>
+</tr>
+<tr>
+<td><code>d91c6e1e158c</code></td>
+<td><code>黄帝内经原文和翻译.pdf</code></td>
+<td style="text-align: right;">461</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="frequent-evidence-terms">Frequent Evidence Terms</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th style="text-align: right;">Evidence pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>《易经》</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>气穴</code></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><code>《金匮》</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>《难经》</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>《针灸大成》</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>《伤寒论》</code></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><code>《伤寒金匮》</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>《神农本草经》</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>《黄帝内经》</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>井穴</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>左右共十穴</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>脉至如丸</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>这个穴</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>阿是穴</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><code>《伤寒》</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>《本草纲目》</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>《诊要经终论》</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>俞穴</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>六味地黄丸</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>共二十五穴</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>软而散</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>风府穴</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>《史记》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《天纪》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《孟子》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《左传》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《战国策》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《论语》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>《针灸》</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>不适饮</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="representative-cards">Representative Cards</h2>
+<ul>
+<li><code>pdf-evidence:1ae6e7523f17#p9</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 9: 1 【倪师内经01 视频同步文稿】 前言讲《黄帝内经》时,有很多无关重要的生理学、病理学方面的,就好象讲《论语》、 《孟子》、《大学》、《中庸》一样,很快地带过去。一些对话、重点的事会特别讲。 《黄帝内经》的前言、来源,书上都都有。怎么来的、怎么样子、中间过程、散失了什么,都在前言里面都有。这里开始讲的就是DVD 的内容,就是把《黄帝内经》所有有关系到人体的,我都尽量做,尽可能地详细解释,让你们能够完全了解。 第一篇上古天真论今天第一</li>
+<li><code>pdf-evidence:1ae6e7523f17#p10</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 10: 2 岁,上古天真论谈得就是百岁之人,所以超过一百岁才是对的。那现在,实际上真正的寿命是往下降,可是,政府发布的都是我们寿命长寿,总是让老百姓知道政府做这些事情。实际上,人一直在减寿,你们可以看到很多人,很年轻就死掉,这个死掉不是说车祸和意外横死,而是就生个病就走人了。那现在的死亡率一定不是对的,已经不是正确的死亡率。 这一篇,上古天真论一开始,就是说黄帝,我们叫岐黄,中医叫岐黄之术,就是从内经开始的,黄帝跟岐伯之间的对话,叫岐黄之术。</li>
+<li><code>pdf-evidence:1ae6e7523f17#p11</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 11: 3 产生心脏的问题,这时就定个名词,称为“虚邪”。所以肝是木,木能够生火,所以肝脏生病时,害到心脏,这是虚。如果是脾脏有问题,反过来影响了心脏时,就定义为“实邪”。本身心脏,火是克金的,五行相生相克,诸位都有个概念,木生火,火生土,土生金,金生水,水生木,这是五行相生,相克:木克土,火克金,土克水,水克火,金又去克木。这种相克相生的情形,后面还会再介绍,我们现在讲的,现在提到贼邪跟虚邪。 本来是火来克金的,这是正常,常态的火来制金,两</li>
+<li><code>pdf-evidence:1ae6e7523f17#p12</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 12: 4 我现在带诸位,我们把五套东西讲完,这个重心抓到了之后,你会把中医简化。所以, 等到你的《黄帝内经》讲完以后,讲了《神农本草经》以后,再去打开伤寒金匮的书, 一看,这个处方是我开的,自然会天成,应该是要这样。 所以我带诸位走,顺着张仲景的思路去看,你读《伤寒金匮》时,你回头看,张仲景怎么想到的,张仲景就是看的《黄帝内经》跟《神农本草经》,才写出来这个东西。那诸位之后,等到《神农本草经》讲完了之后,伤寒金匮变得很简单才对,如果打开来,</li>
+<li><code>pdf-evidence:1ae6e7523f17#p13</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 13: 5 整本《黄帝内经》从头到尾,并没有赞成人跑步,都是走路是最好的运动,所以我常常跟病人说,你们不要去做其他运动,走路最好,因为我们在诊所看病时,不可能都说,一票人,每一个人我都教他一套《易筋经》,哪有那时间啊叫他走路就好了,走路, 慢慢走,慢慢走就好了。因为跟他讲《黄帝内经》他也不懂,不见得都是美国人,中国人也不见得懂,就跟他讲,人是两只脚的,上帝设计两只脚就是给你走路的,如果给你四只脚就是让你跑。所以你看,猫和狗,老虎都跑得很快,人</li>
+<li><code>pdf-evidence:1ae6e7523f17#p14</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 14: 6 很细,不会有这些问题。 第五节女性经期与脾脏太冲脉盛时,我画人体的剖面图。乳房的乳头通到内部,正下方直接络到肝脏,正络到肝脏那里。所以肝经,太冲脉盛时,肝气一旺时,肝是木,木出来能够生火,推动到心脏,心脏就加速。月事以时下,一次正常的周期是 28 天,为什么?是 7 的倍数,女人都是 7 的倍数,四个 7 天 28 天是一个周期。那当周期到了时候,中医的观念里面认为,女人的奶水就是女人的月经。这两个(奶水、月经)是一样的东西。平常</li>
+<li><code>pdf-evidence:1ae6e7523f17#p15</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 15: 7 以后才会生心,所以筋膜,后面产生的一个跳动的东西就是心。那西方医学认为,我只相信我看到的,那问他空气里面看到什么呢?他说看不到啊。 不能这样相信你看到的!很多事情你看不到啊。他没看到来自水,所以我们中医从头到尾非常注重这个水,中医的观点是这样的。那西方医学的观点会破坏这个水,他不晓得他去破坏,那认为他不需要。所以西方医学就是验血报告,你看到验水报告吗?没有,都是验血报告。他不管水,可是不晓得水最重要,是生存所有东西的来源。所以你看</li>
+<li><code>pdf-evidence:1ae6e7523f17#p16</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 16: 8 男人是 8 岁,男人比较慢一点,8 岁时肾气最实,所以开始长真正的头发,胎毛开始掉了,乳毛开始退了,牙齿开始生长时,男人是以 8 岁为主。那二八 16 岁,肾气最盛了,男人也有天癸,就是精子,精气溢泄,这时如果男女交合的话,他就会生子。如果男人标准是 8 岁和 16 岁,如果到了小朋友 6 岁开始换牙,那还是发育太早,发育太早其实不是人体的问题,当初人体没有问题,就是饮食太补了,给小孩子吃太多了。尤其喝牛奶,喝牛奶是非常不好的,人</li>
+<li><code>pdf-evidence:1ae6e7523f17#p17</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 17: 9 第5 页,有的人过了年龄,我们的标准还是会生小孩。黄帝问岐伯,岐伯说这是【天数过度】,就是有的人天赋异禀,【气脉常通,而肾气有余】。但是就算有小孩,男人到八八 64 岁,64 岁以前,到头来就算再过度,到了极限64 就没有了,女人不过进七七 49 岁就不会生小孩。这时天地的精气从我们体内,现在是讲的一般的人。这是它的定义。 第6 页,黄帝说,得道的人都是上百岁的人,能不能有孩子?岐伯就说得道人就例外了, 就算再老,他的形不会改变,</li>
+<li><code>pdf-evidence:1ae6e7523f17#p18</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 18: 10 过去我就碰到很多,这些人可以看到,看到这些,在所谓的四度空间,这些真人还在,会常常耳边讲话,有的人就遇到这种事情。那到底怎么样子,我也不敢讲。我们听人家说,比如我在诊所里面,有时老外啊,这个老外没有看过中医,什么中医的书,《黄帝内经》什么,他根本都不知道中国人的东西,讲的都是英文,那他会看到一些东西在我诊所里面,把我也吓一跳。那真人会在旁边,我就不知道了,只是说出这种事情。那可能很多地方,你们都会遇到,那这种事情,姑且听之,姑且</li>
+<li><code>pdf-evidence:1ae6e7523f17#p19</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 19: 11 时,这个燥热的气就会散掉,这是夏气之应,夏天时我们的养生之道。如果没有做到, 你讨厌太阳,也不发汗,反逆,就会伤害到心脏,心脏受伤后,当时不会发,当时不会发,到秋天时,就会产生痎疟的现象,比如一些往来寒热,一些咳嗽。到冬天时,因为冬天是肾脏,肾脏是水,冬天和心脏是相克的,病就会加重。这就是预防医学,同时提出来,如何养生。 秋三月,称为容平,这是收的时节。这时天气非常的急,所谓天气急就是,因为秋天属于金,金气主肃杀,非常干燥,非常</li>
+<li><code>pdf-evidence:1ae6e7523f17#p20</code> <code>人纪02内经视频同步文稿 2024新版.pdf</code> page 20: 12 就邪害空窍,所谓的空窍,身上有很多的俞穴在背后上,讲针灸时,很多的俞穴都是所谓的,如果哪一个脏腑不是很强时,在天气不明朗时,阴天雨天时,最容易受到伤害, 天气之间的这种不正的气,就会利用这个时候,伤害到人体空虚的地方。 举例,你一直在担忧,忧,儿子或女儿的婚姻不好或怎么样,一再忧忧忧,忧能伤肺,伤到肺部后,结果天气不是很好,象今天的阴雨绵绵或怎样,这时你没有把肺窍管好,比如肺的俞穴,肺俞、云门穴没有管好,在肩背这面没有戴围巾,照</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/pdf-evidence-modules-acupuncture.html"><small>上一篇</small>针灸 PDF Evidence</a><a class="pg next" href="../docs/pdf-evidence-modules-bencao.html"><small>下一篇</small>神农本草 PDF Evidence</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%20PDF%20Evidence">💬 就「黄帝内经 PDF Evidence」提问</a>
+  <a class="btn" href="../search.html?q=%E9%BB%84%E5%B8%9D%E5%86%85%E7%BB%8F%20PDF%20Evidence">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

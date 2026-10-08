@@ -1,0 +1,10 @@
+PDF Evidence Modules
+This directory groups public-safe PDF evidence cards by course/source module. Use these summaries for quick review, then resolve exact page citations through ../evidence-cards.jsonl and ../source-manifest.json.
+ Module File 
+ 
+ 针灸 acupuncture.md 
+ 黄帝内经 huangdi.md 
+ 神农本草 bencao.md 
+ 伤寒论 shanghan.md 
+ 金匮要略 jingui.md 
+ 仲景心法 zhongjing-xinfa.md

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪海厦仲景心法传讲 — 课程蒸馏笔记 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-zhongjing-xinfa">💡 仲景心法</a>
+</nav>
+
+<article class="doc" data-slug="zhongjing-xinfa">
+  <h1>倪海厦仲景心法传讲 — 课程蒸馏笔记</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（20）</summary>
+    <ol>
+      <li class="lv1"><a href="#一课程概览">一、课程概览</a></li>
+      <li class="lv1"><a href="#二课程体系图">二、课程体系图</a></li>
+      <li class="lv1"><a href="#三逐课精要">三、逐课精要</a></li>
+      <li class="lv1"><a href="#四跨课程主题图谱">四、跨课程主题图谱</a></li>
+      <li class="lv1"><a href="#五关键概念词汇表">五、关键概念词汇表</a></li>
+      <li class="lv1"><a href="#六课程观点摘要">六、课程观点摘要</a></li>
+      <li class="lv1"><a href="#七核心金句集">七、核心金句集</a></li>
+      <li class="lv1"><a href="#附录逐课摘要">附录：逐课摘要</a></li>
+      <li class="lv2"><a href="#仲景心法01-字幕版-1572分钟">仲景心法01-字幕版 (157.2分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法01-字幕版">仲景心法01-字幕版</a></li>
+      <li class="lv2"><a href="#仲景心法02-字幕版-892分钟">仲景心法02-字幕版 (89.2分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法02-字幕版">仲景心法02-字幕版</a></li>
+      <li class="lv2"><a href="#仲景心法03-字幕版-1633分钟">仲景心法03-字幕版 (163.3分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法03-字幕版">仲景心法03-字幕版</a></li>
+      <li class="lv2"><a href="#仲景心法04-字幕版-1108分钟">仲景心法04-字幕版 (110.8分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法04-字幕版">仲景心法04-字幕版</a></li>
+      <li class="lv2"><a href="#仲景心法05-字幕版-1421分钟">仲景心法05-字幕版 (142.1分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法05-字幕版">仲景心法05-字幕版</a></li>
+      <li class="lv2"><a href="#仲景心法06-字幕版-1555分钟">仲景心法06-字幕版 (155.5分钟)</a></li>
+      <li class="lv2"><a href="#仲景心法06-字幕版">仲景心法06-字幕版</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="倪海厦仲景心法传讲-课程蒸馏笔记">倪海厦仲景心法传讲 — 课程蒸馏笔记</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+</blockquote>
+<p><strong>课程规模</strong>: 6 课, 13.6 小时</p>
+<hr>
+<p>这是一份根据您提供的《倪海厦仲景心法传讲》全6课视频摘要，为您精心策划并生成的结构化课程蒸馏笔记：</p>
+<hr>
+<h2 id="一课程概览">一、课程概览</h2>
+<p><strong>课程主题</strong>：《倪海厦仲景心法传讲》是一门深剖张仲景《伤寒杂病论》经方体系的高阶中医面授课程。课程打破了现代医学微观、化学的视角，重塑了中医作为一门讲究“温度、压力、速度和时间”的<strong>物理医学</strong>大局观。</p>
+<p><strong>目标受众</strong>：适合有一定中医基础的中医师、中医学子，以及希望通过正统经方思维解决重症、疑难杂症的中医爱好者。
+<strong>课程结构</strong>：全集共6课（约13.6小时），以“阴阳”为核心诊断准则，从最基础的桂枝汤法度入手，循序渐进地剖析了消化道攻下药的运用、乳癌与失眠的心脏病机、便秘的阴阳辨证，最终延伸至尿毒症、虚劳等重症的经方化裁。课程不仅传授用药技法，更着重培养医者“中虚为明”的临证心法。</p>
+<hr>
+<h2 id="二课程体系图">二、课程体系图</h2>
+<ul>
+<li><strong>模块一：医理基石与物理医学观</strong></li>
+<li><em>包含课程</em>：第01课、第06课</li>
+<li><em>模块说明</em>：奠定中医是“物理医学”的底层逻辑，确立“健康常人”的生理标准（额凉、手足温），并以桂枝汤为例拆解经方调节动静脉的阴阳法度。</li>
+<li><strong>模块二：脏腑气机与经方靶向化裁</strong></li>
+<li><em>包含课程</em>：第01课、第02课、第06课</li>
+<li><em>模块说明</em>：沿着人体解剖与气机流转（如心肺热能下达小肠、胃肠消化道顺序），详细讲解承气汤家族、黄连阿胶汤、建中汤等方剂的精准投放与加减。</li>
+<li><strong>模块三：重症病机破解与临床实战</strong></li>
+<li><em>包含课程</em>：第03课、第04课、第05课</li>
+<li><em>模块说明</em>：直击现代重症。破解乳腺癌（奶水同源）、尿毒症（治水先治火）、糖尿病足（排脓拔毒）、严重虚劳抖动的深层病机及经方治法。</li>
+<li><strong>模块四：医者修养与临证心法</strong></li>
+<li><em>包含课程</em>：第04课、第05课</li>
+<li><em>模块说明</em>：超越具体方药，传授“中虚为明”的问诊哲学，教导医者摒弃西医病名标签，直击疾病阴阳形神本质。</li>
+</ul>
+<p><em>递进关系</em>：从宏观物理理念（模块一）到具体脏腑气血运行（模块二），再将理论应用于攻克现代重症（模块三），最后升华至医者的心性与诊疗境界（模块四），知行合一。</p>
+<hr>
+<h2 id="三逐课精要">三、逐课精要</h2>
+<ul>
+<li><strong>第01课</strong>：确立中医“物理医学”观，以桂枝汤解析调和动静脉的阴阳法度，揭示失眠本质及黄连阿胶汤（蛋黄导引入心）的精妙。</li>
+<li><strong>第02课</strong>：沿消化道解剖顺序系统梳理“攻下药”（承气汤家族等）的辨证，提出中西医“动态修车”与“静态拆解”的本质差异，分享糖尿病足独特疗法。</li>
+<li><strong>第03课</strong>：阐述“治心脏即治癌症”理念，揭示“月经等于奶水”的乳癌病机，强调“宁可虚不可实”的防病智慧。</li>
+<li><strong>第04课</strong>：解析便秘的“少阴寒实”与“阳明热实”辨证，明确乳癌患者的饮食禁忌，提出“中虚为明”的临证放空心法。</li>
+<li><strong>第05课</strong>：深究阴阳气机流转，以尿毒症（治水必治火）和严重虚劳抖动为例，展示经方“阳复阴生”的实战化裁魅力。</li>
+<li><strong>第06课</strong>：总结三十年海外临床经验，重申中医“物理医学”与西医“化学医学”的区别，推演桂枝汤到小建中汤等经典的灵活加减。</li>
+</ul>
+<hr>
+<h2 id="四跨课程主题图谱">四、跨课程主题图谱</h2>
+<ol>
+<li><strong>“物理医学”与“化学医学”之辨</strong>
+   - <em>出现位置</em>：第01课、第06课
+   - <em>核心观点</em>：中医不能用西医微观的化学指标来衡量，中医看重的是人体的温度、压力、速度和时间。用化学观点看物理医学，永远看不懂。</li>
+<li><strong>“治心”是攻克重症/癌症的锁钥</strong>
+   - <em>出现位置</em>：第01课、第03课、第04课、第05课
+   - <em>核心观点</em>：心脏是人体的引擎（火）。失眠是心脏失血，乳癌是心脏受损导致奶水无法下行，尿毒症是心火不足无法治水。会治心脏病的人才会治癌症。</li>
+<li><strong>极简而精准的“阴阳诊断法”</strong>
+   - <em>出现位置</em>：第01课、第03课、第05课、第06课
+   - <em>核心观点</em>：正常人应是“额头凉、手脚温热”；手掌（阴中之阳）应热，手背（阳中之阴）应凉。通过简单的温度触诊，即可早于西医仪器发现阴阳失衡。</li>
+<li><strong>“奶水与月经同源”的女性病理</strong>
+   - <em>出现位置</em>：第03课、第04课
+   - <em>核心观点</em>：未受孕的奶水在心肺功能推动下下行成为月经。断奶不当、情绪压力或穿刺会导致残乳郁结钙化，进而突变为乳腺癌。</li>
+<li><strong>“中虚为明”的医者心法</strong>
+   - <em>出现位置</em>：第04课、第05课
+   - <em>核心观点</em>：医者问诊必须“放空如空杯”，摒弃先入为主的偏见和西医病名标签，单纯通过睡眠、二便等真实的生理信号来决定处方。</li>
+</ol>
+<hr>
+<h2 id="五关键概念词汇表">五、关键概念词汇表</h2>
+<ol>
+<li><strong>物理医学</strong>：中医的本质属性，强调通过调节人体气血的温度、压力、速度和时间来祛病。</li>
+<li><strong>司外揣内</strong>：中医诊断精髓，即“站在外面看到里面藏什么”，通过外在体征判断内脏机能。</li>
+<li><strong>桂枝汤法度</strong>：桂枝（辛甘发散）主阳管动脉，白芍（酸苦收敛）主阴管静脉，通过等量配伍调节动静脉循环。</li>
+<li><strong>奶水同源</strong>：中医认为女性的月经是由未受孕的奶水在心脏热力作用下下行转化而成。</li>
+<li><strong>热结旁流</strong>：大肠燥屎结块严重时，引发的一种伴随清水下利的便秘假象，需用大承气汤急下存阴。</li>
+<li><strong>脾约证</strong>：小肠堵塞导致大便呈“羊屎状”颗粒的病证，适用麻子仁丸。</li>
+<li><strong>少阴寒实</strong>：便秘分型之一，多日无便但无痛楚，小便清白，需用大黄附子细辛汤温通。</li>
+<li><strong>阳明热实</strong>：便秘分型之一，腹痛焦躁，小便黄浊，需用大承气汤峻下热结。</li>
+<li><strong>中虚为明</strong>：医者在问诊时放空自我，不被既往病史或西医病名干扰，纯粹依症状辨证的境界。</li>
+<li><strong>宁可虚不可实</strong>：防病养生理念，强调不要盲目补充无法消化的营养剂，避免体内积累“实证”。</li>
+<li><strong>治水必先治火</strong>：治疗水肿、尿毒症等水液代谢障碍时，必须先强心（火），恢复阳气化水的功能。</li>
+<li><strong>阳复阴生</strong>：经方治疗的底层逻辑，扶正祛寒恢复阳气后，阴血和津液会自动生成。</li>
+</ol>
+<hr>
+<h2 id="六课程观点摘要">六、课程观点摘要</h2>
+<blockquote>
+<p>本节仅将原课程中的行动和优先级表述降级为学习主题归纳，不构成可照做的健康、用药或诊疗建议。</p>
+</blockquote>
+<p><strong>课程主题（临床诊断与思维重塑）</strong>
+1. [诊断] “额头凉、手脚温热”、手部阴阳触诊等内容保留为课程观察语言。
+2. [心法] “中虚为明”用于说明课程中如何看待病名与症状。
+3. [用药] 桂枝、白芍等方药内容只作为课程配伍观点，不作为用药建议。</p>
+<p><strong>延伸主题（疾病与处方讨论）</strong>
+4. [妇科/肠胃/外科/精神] 乳癌、便秘、糖尿病足、阑尾炎、失眠等条目均改为课程案例索引。
+5. [高风险] 生附子、黄连阿胶汤、大黄牡丹皮汤等内容不得转写成个人处方或处理流程。</p>
+<p><strong>补充主题（饮食与养生观点）</strong>
+6. [饮食] 牛奶、白糖、营养素等讨论保留为课程观点，不替代营养学或临床建议。
+7. [情志] 情绪与疾病的关系作为课程观点整理，不作为癌症预防结论。</p>
+<hr>
+<h2 id="七核心金句集">七、核心金句集</h2>
+<ol>
+<li><strong>“中国医学就是站在外面看到里面藏什么的一个医学。”</strong> —— 第01课 (点透“司外揣内”的诊断本质)</li>
+<li><strong>“会治疗心脏病的人，才是真正会治疗癌症的。”</strong> —— 第01课 (揭示重症治疗的关键靶点)</li>
+<li><strong>“我们中医治病出神入化到什么程度，车子还在开，在开车中间帮你修好；西医不行，一定要停下来把它从中分解开来才能动。”</strong> —— 第02课 (生动比喻中西医动态与静态的差异)</li>
+<li><strong>“宁可虚不可实。”</strong> —— 第03课 (直击现代人营养过剩引发疾病的痛点)</li>
+<li><strong>“把你自己放空成为一个空杯子，我（真理）才能倒到最好的水平。中虚为明，当你心脏功能恢复后，你会非常明确地知道你要做什么。”</strong> —— 第04课 (临证必备的医者心境)</li>
+<li><strong>“经典之方就是药简力专，一味药不多，一味药不少，下去就中。”</strong> —— 第04课 (赞叹张仲景组方的严谨与威力)</li>
+<li><strong>“当我们把阳恢复了以后，阴自己就会回来，血液自己就开始制造。”</strong> —— 第05课 (道破“阳化气，阴成形”的底层逻辑)</li>
+<li><strong>“问诊一定要放空，中虚为明，听病人讲症状，用症状来决定处方。”</strong> —— 第05课 (强调不被病名裹挟的实战原则)</li>
+<li><strong>“中医是物理医学，西医是化学医学。你用化学的观点来看物理，都看不懂。”</strong> —— 第06课 (一针见血指出中西医体系的根本错位)</li>
+<li><strong>“所谓正确的医学，就是我们能够给病人最好的服务，很多病人可以不用死。”</strong> —— 第06课 (彰显大医精诚的医者仁心)</li>
+</ol>
+<hr>
+<h2 id="附录逐课摘要">附录：逐课摘要</h2>
+<h3 id="仲景心法01-字幕版-1572分钟">仲景心法01-字幕版 (157.2分钟)</h3>
+<h3 id="仲景心法01-字幕版">仲景心法01-字幕版</h3>
+<p>本视频为《仲景心法》面授课程的第一讲。讲师以深厚的经方功底，从最基础的阴阳观念入手，深入浅出地剖析了张仲景经方的组方逻辑与剂量奥秘。课程打破了现代医学纯粹的化学微观视角，强调要先建立“健康常人”的标准，指出中医本质上是一门讲究温度、压力、速度和时间的“物理医学”，旨在通过调节人体气血与寒热的动态平衡来祛除百病。</p>
+<p>课程中涵盖了极具临床价值的核心知识点：首先是<strong>药性与组方的阴阳拆解</strong>。讲师以“经方之祖”桂枝汤为例，指出桂枝（辛甘发散）主阳管动脉，白芍（酸苦收敛）主阴管静脉，生姜大枣补充津液，炙甘草缓和心悸，配伍极具法度；其次是<strong>剂量的灵活化裁</strong>。例如治疗静脉曲张时需重用白芍以酸收静脉，治疗风湿痛风时则在桂枝甘草汤基础上加入炮附子与白术以去风寒湿邪；第三是<strong>失眠的深层病机与治法</strong>。讲师剖析了黄连阿胶汤，指出受惊吓导致心脏中心“一滴血”流失是失眠主因，而生鸡蛋黄因其悬浮特性，能作为导引将药力精准送达心脏补血安神；最后，结合黑板上详细的<strong>脏腑图解与眼诊分区图</strong>，讲师还延伸讲解了心与小肠互为表里的热能转化过程，以及大肠癌病灶与肝脏直接络属的病理机制。</p>
+<p>讲师在授课中金句频出，不仅澄清了诸多中医误区，更令人醍醐灌顶。他点明了中医诊断的精髓：“<strong>中国医学就是站在外面看到里面藏什么的一个医学。</strong>”这正是中医“司外揣内”的至高智慧。同时，他也抛出了极具启发性的实战观点：“<strong>会治疗心脏病的人，才是真正会治疗癌症的。</strong>”勉励后学要透过疾病表象看清脏腑的物理机能本质，真正掌握仲景心法。</p>
+<h3 id="仲景心法02-字幕版-892分钟">仲景心法02-字幕版 (89.2分钟)</h3>
+<h3 id="仲景心法02-字幕版">仲景心法02-字幕版</h3>
+<p>本期课程系统梳理了《伤寒论》与《金匮要略》中关于“攻下药”的方剂应用。讲师结合丰富的黑板手绘脏腑解剖与病机示意图，沿着“胃-小肠-大肠-肛门”的消化道解剖顺序，详细拆解了不同部位淤堵的辨证思路与临床处方。课程不仅传授了经典经方的加减心法，还深刻剖析了中西医在治疗理念（如糖尿病治疗）上的根本差异。</p>
+<p>课程重点涵盖了四个核心医疗知识点：首先，胃部宿食停滞（如“朝食暮吐”或食物中毒）可用大黄甘草汤快速攻下，若心下有硬块且拒按则用调胃承气汤；其次，小肠堵塞若表现为“羊屎状”颗粒（脾约证）适用麻子仁丸，若排气极多则用小承气汤；再者，大肠部位的急性阑尾炎（右下腹及足部有压痛点）可用大黄牡丹皮汤化瘀免于开刀，而大肠燥屎结块甚至引发“热结旁流”（因便秘引起的清水下利）时，必须重用大承气汤急下存阴；最后，针对西医降糖药导致残渣沉积引发的糖尿病足病变，讲师提出了内服“术附汤”（排脓汤）配合外用蔗糖水泡脚拔脓收口的独特疗法。</p>
+<p>在探讨中西医差异时，讲师留下了引人深思的金句：“<strong>我们中医治病出神入化到什么程度，车子还在开，在开车中间帮你修好；西医不行，一定要停下来把它从中分解开来才能动。</strong>”这不仅生动点出了中医动态、整体观的治疗优势，也提醒医者治病应探求人体气血津液的宏观全貌，而非仅仅依赖局部或片面的血液检验指标。</p>
+<h3 id="仲景心法03-字幕版-1633分钟">仲景心法03-字幕版 (163.3分钟)</h3>
+<h3 id="仲景心法03-字幕版">仲景心法03-字幕版</h3>
+<p>本期《仲景心法》课程深刻阐述了经方中医的核心理念，即“<strong>把心脏治好，才是真正能够把癌症治好的医生</strong>”。讲师重点传授了中医阴阳诊断法，指出正常人的生理标准应是“额头凉、手脚温热”，这一状态依赖于心脏（火，犹如汽车引擎）与肺脏（金，犹如冷却水箱）的相互制衡（详见视频[04:00]至[14:00]的脏腑气血运行板书）。通过直接触摸手掌温度与观察掌心颜色（如肝脏病变会导致手掌异常暗红），中医能够早于西医影像学检验，敏锐捕捉到体内的阴阳失衡并提前介入。</p>
+<p>课程详细剖析了女性乳腺癌的成因与预防之道。讲师结合黑板上的病理机制图[20:00]指出一个重要概念：“月经等于奶水”。在正常心肺功能的推动下，未受孕的奶水会下行至子宫成为月经。若断奶方式不当（如打退奶针）或进行不必要的乳房穿刺切片，极易导致乳汁残留在受损的乳腺管内，日久钙化变质从而引发细胞突变产生乳癌。为此，讲师给出了“四物汤加炒麦芽”的对症方剂[24:00]，用于补足心血并彻底排出残乳。同时，因心脏主管奶水下行，保持心情开朗（“心主喜”）是预防乳癌的根本。</p>
+<p>在具体用药心法上，讲师结合板书[110:00]与[156:00]解析了经方药物的精妙运用。例如，选用桂枝去风寒，是因为其色红且形似血管，能直接入心脉；而使用生附子时，虽有毒性，但经过一小时以上的高温煎煮去毒后，其药力能直达心脏，迅速恢复心脏的搏动热力。在面对现代人盲目补充营养剂的乱象时，讲师反复告诫“<strong>宁可虚不可实</strong>”的治疗金句，强调切勿让体内累积过多无法消化的营养（实证），展现了经方中医直击病机、道法自然的治病智慧。</p>
+<h3 id="仲景心法04-字幕版-1108分钟">仲景心法04-字幕版 (110.8分钟)</h3>
+<h3 id="仲景心法04-字幕版">仲景心法04-字幕版</h3>
+<p>本期视频深入解析了《伤寒杂病论》中经典方剂在重症临床中的应用，核心探讨了乳癌的成因、饮食禁忌以及便秘的阴阳辨证。讲师指出，中医认为“奶水与月经同源”，乳癌的真正病机在于抗生素、止痛药滥用及情绪压力导致心脏受损，使得胸腔内的奶水无法完全下行转化为月经，进而郁结于乳房。治疗上，应把握女性月经来潮的“开窗期（Window）”将积聚的奶水顺势排出，并强烈建议患者戒除牛奶（奶制品）和人工白糖，改用呈碱性、能杀菌的天然蔗糖。</p>
+<p>结合黑板上的脏腑气化与水液代谢图解，讲师详细辨析了便秘的两大经典分型及用药思路。其一为“少阴寒实”，患者虽多日不大便但无痛楚且小便清白，需采用大黄附子细辛汤温通肠道，依靠附子与细辛恢复肠道蠕动；其二为“阳明热实”，患者腹痛、焦躁且小便黄浊，此时需用大承气汤（大黄、芒硝、枳实、厚朴）峻下热结，利用芒硝攻坚宿便。讲师在此强调了经方使用的严谨性：“经典之方就是药简力专，一味药不多，一味药不少，下去就中。”</p>
+<p>在临证心法与医者修养方面，讲师提出了“中虚为明”的诊断智慧。医生在问诊时必须摒弃先入为主的偏见和患者以往的错误病史，通过捕捉睡眠、二便等真实的生理信号来判断阴阳顺逆与药效进退。正如视频中所言：“把你自己放空成为一个空杯子，我（真理）才能倒到最好的水平。中虚为明，当你心脏功能恢复后，你会非常明确地知道你要做什么。”这不仅是辨证论治的法门，更是中医大夫必修的心性境界。</p>
+<h3 id="仲景心法05-字幕版-1421分钟">仲景心法05-字幕版 (142.1分钟)</h3>
+<h3 id="仲景心法05-字幕版">仲景心法05-字幕版</h3>
+<p>本节课程主要围绕中医的阴阳气机流转与五行生克理论展开，深入讲解了重症及疑难杂症的辨证与经方治疗心法。讲师首先传授了极简的“阴阳诊断法”，指出阴阳最平衡的状态是“手掌热而手背凉”，通过触摸手掌与额头的温凉差异，以及观察手掌颜色的红白比例（心火与肺寒的体现），即可快速判断患者体内阴阳是否交济或分离。结合黑板上的五脏关系与水火气机图解，课程详细剖析了心肺相连、水火升降的生理病理机制，强调医者当具“上工治未病”的思维，通过截断脏腑传变来控制病情恶化。</p>
+<p>在临床实战方面，视频重点解析了尿毒症（肾功能衰竭）与严重神经性抖动（劳症）的治疗逻辑。针对肾病引起的水肿与恶心眩晕，讲师提出“治水必先治火（强心）”的核心观点，详细对比了真武汤与五苓散在分段治水中的区别，并强调使用生附子、干姜破除极度里寒的关键作用。随后，通过一位全身僵硬、不自主抖动且伴有严重盗汗的现场问诊案例，讲师精准指出其本质为极度里寒引发的虚劳，在黑板上推演并开具了桂枝芍药知母汤合当归四逆汤加减，巧妙运用麻黄、白术，并辅以龙骨、牡蛎来潜阳固表、镇惊止汗，展现了经方灵活加减的实战魅力。</p>
+<p>课程不仅传授方剂，更传递了中医治本的底层哲学。讲师反复强调，使用经方的根本原则在于扶正祛寒，阳气一复，阴血自生。正如课程中的金句所言：“<strong>当我们把阳恢复了以后，阴自己就会回来，血液自己就开始制造。</strong>”同时，讲师告诫医者在面对如肺癌、红斑狼疮（SLE）等现代重症时，不可被西医病名所局限，需秉持“<strong>问诊一定要放空，中虚为明，听病人讲症状，用症状来决定处方</strong>”的心态，直击疾病形神与阴阳失衡的本质。</p>
+<h3 id="仲景心法06-字幕版-1555分钟">仲景心法06-字幕版 (155.5分钟)</h3>
+<h3 id="仲景心法06-字幕版">仲景心法06-字幕版</h3>
+<p>本视频为知名中医专家李教授主讲的《仲景心法》第六集，核心主题为“经方（经典之方）的临床运用与中医阴阳思维”。李教授结合其在海外三十余年的高强度临床经验，指出西医在治疗感冒等疾病时的局限性（如用抗生素对抗病毒的双重伤害），强调中医作为一门严谨的“物理医学”，其经方力量强大，医者需透彻理解药性与人体阴阳的运作规律，方能做到行云流水、效如桴鼓。</p>
+<p>结合黑板上密集的方剂板书与人体图解，教授重点提取并推演了以下核心知识点：
+1. <strong>阴阳是最高诊断准则</strong>：掌握阴阳即可“无语众医”。例如正常人手背（阳中之阴）应是凉的，手掌（阴中之阳）应是温的，额头（法象天）应是凉的，通过简单的温度触诊即可快速判断人体健康状态。
+2. <strong>桂枝汤的阴阳方义</strong>：桂枝（辛甘发散为阳，入动脉）与白芍（酸苦涌泄为阴，入静脉）等量配伍，配合生姜、大枣补充肠胃津液，炙甘草缓冲护心。此方通过加速动静脉循环完美实现“解表”功效。
+3. <strong>脏腑气机的物理图解</strong>：讲师在黑板画图推演，指出心脏不断跳动产生高热，须借由肺（冷、主肃降）的压力将热量向下导引入小肠，使得心与小肠温度相同，从而完成食物的消化。
+4. <strong>经方的灵活加减法</strong>：在桂枝汤基础上，若遇到腹痛（腹为阴），只需将白芍加倍以加速腹腔静脉回流，并加入饴糖（土味甘）建中，即成“小建中汤”，能迅速止痛并恢复脾胃功能；后续还进一步延伸至无汗恶寒的麻黄汤证及大黄、芒硝等药理。</p>
+<p>李教授在授课中金句频出，他一针见血地指出中西医的本质区别：“<strong>中医是物理医学，西医是化学医学。你用化学的观点来看物理，都看不懂。</strong>”同时也表达了大医精诚的仁心：“<strong>所谓正确的医学，就是我们能够给病人最好的服务，很多病人可以不用死。</strong>”这堂课不仅系统拆解了张仲景的用药心法，更重塑了学者们以“温度、速度、压力”看待人体的中医大局观。</p></div>
+</article>
+
+<nav class="pager">
+<span></span><a class="pg next" href="../docs/zhongjing-xinfa-screenshot-evidence.html"><small>下一篇</small>仲景心法传讲截图证据索引</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E4%BB%B2%E6%99%AF%E5%BF%83%E6%B3%95%E4%BC%A0%E8%AE%B2%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">💬 就「倪海厦仲景心法传讲 — 课程蒸馏笔记」提问</a>
+  <a class="btn" href="../search.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E4%BB%B2%E6%99%AF%E5%BF%83%E6%B3%95%E4%BC%A0%E8%AE%B2%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

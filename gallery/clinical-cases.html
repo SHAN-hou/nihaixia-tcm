@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>临床案例截图 · 倪师课库</title>
+<meta name="description" content="伤寒论 · 金匮要略 · 针灸 · 本草 · 内经 · 天纪 课程资料检索与学习">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a><span>/</span>
+  <a href="../gallery/index.html">截图画廊</a><span>/</span><span>临床案例</span>
+</nav>
+
+<div class="gallery-head">
+  <h1 class="page-title">临床案例 · 截图证据</h1>
+  <p class="muted small">
+    共 <b>88</b> 张 · 来源：<a href="../docs/clinical-cases-screenshot-evidence.html">证据索引文档</a>
+    · 每张截图对应课程视频中的一个时间点
+  </p>
+</div>
+
+<div class="filters" id="filters">
+  <input type="search" id="q" placeholder="筛选：描述关键词 / 方名 / 穴位…" autocomplete="off">
+  <div class="filter-scroll">
+    <button class="fbtn active" data-tag="">全部</button>
+    <button class="fbtn" data-tag="临床案例">临床案例 <i>88</i></button>
+    <button class="fbtn" data-tag="板书/处方/病机图">板书/处方/病机图 <i>88</i></button>
+  </div>
+  <select id="lessonSel" class="fselect">
+    <option value="">全部课次</option>
+<option value="01">01</option><option value="01倪师医案--淋巴癌">01倪师医案--淋巴癌</option><option value="02">02</option><option value="02倪师医案--处方一">02倪师医案--处方一</option><option value="03">03</option><option value="03倪师医案--僵冻人">03倪师医案--僵冻人</option><option value="04">04</option><option value="04倪师医案--处方二">04倪师医案--处方二</option><option value="05">05</option><option value="05倪师医案--案例补充">05倪师医案--案例补充</option><option value="06">06</option><option value="06倪师医案--人与天地">06倪师医案--人与天地</option><option value="07倪师医案--胆一阳始生">07倪师医案--胆一阳始生</option><option value="08倪师医案--肝硬化">08倪师医案--肝硬化</option><option value="09倪师医案--分消汤">09倪师医案--分消汤</option><option value="10倪师医案--分消汤加味">10倪师医案--分消汤加味</option><option value="11倪师医案--生附子硫磺">11倪师医案--生附子硫磺</option><option value="13倪师医案--大柴胡汤">13倪师医案--大柴胡汤</option><option value="14倪师医案--胃苓汤">14倪师医案--胃苓汤</option><option value="16倪师医案--动脉血管堵塞">16倪师医案--动脉血管堵塞</option><option value="17倪师医案--心脏处方">17倪师医案--心脏处方</option><option value="18倪师医案--心脏处方续">18倪师医案--心脏处方续</option><option value="19倪师医案--细辛_炮附子">19倪师医案--细辛_炮附子</option><option value="20倪师医案--旋覆花代赭石汤">20倪师医案--旋覆花代赭石汤</option><option value="23倪师医案--肝病">23倪师医案--肝病</option><option value="24倪师医案--处方加减">24倪师医案--处方加减</option><option value="25倪师医案--肝处方">25倪师医案--肝处方</option><option value="26倪师医案--三黄泻心汤">26倪师医案--三黄泻心汤</option><option value="27倪师医案--栀子豆豉汤">27倪师医案--栀子豆豉汤</option><option value="28倪师医案--乳癌例">28倪师医案--乳癌例</option><option value="29倪师医案--乳岩处方">29倪师医案--乳岩处方</option><option value="30倪师医案--酸枣仁_知母">30倪师医案--酸枣仁_知母</option><option value="31倪师医案--制鳖甲">31倪师医案--制鳖甲</option><option value="32倪师医案--大黄_海藻">32倪师医案--大黄_海藻</option><option value="34倪师医案--肾方">34倪师医案--肾方</option><option value="35倪师医案--败龟板">35倪师医案--败龟板</option><option value="36倪师医案--乌药_泽泻">36倪师医案--乌药_泽泻</option><option value="38倪师医案--红斑性狼疮案">38倪师医案--红斑性狼疮案</option><option value="39倪师医案--主力处方">39倪师医案--主力处方</option><option value="40倪师医案--桑螵蛸">40倪师医案--桑螵蛸</option><option value="41倪师医案--桔梗">41倪师医案--桔梗</option><option value="42倪师医案--经方思路">42倪师医案--经方思路</option>  </select>
+  <span class="muted small" id="count"></span>
+</div>
+
+<div class="shot-grid" id="grid">
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="00:00"
+          data-img="../screenshots/clinical-cases/0001.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0001.webp"
+           alt="讲师在患者后头部及颈部进行手法示范与穴位定位。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">00:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">讲师在患者后头部及颈部进行手法示范与穴位定位。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0002.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0002.webp"
+           alt="讲师在患者腹部进行针灸进针实操演示。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">讲师在患者腹部进行针灸进针实操演示。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0003.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0003.webp"
+           alt="患者腹部针灸留针特写画面，展示具体进针位置。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">患者腹部针灸留针特写画面，展示具体进针位置。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="06:00"
+          data-img="../screenshots/clinical-cases/0004.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0004.webp"
+           alt="患者面部/额头区域针灸留针特写画面。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">06:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">患者面部/额头区域针灸留针特写画面。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="08:00"
+          data-img="../screenshots/clinical-cases/0005.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0005.webp"
+           alt="讲师在患者小腿下段及脚踝区域进行按压诊察与定位示范。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">08:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">讲师在患者小腿下段及脚踝区域进行按压诊察与定位示范。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="10:00"
+          data-img="../screenshots/clinical-cases/0006.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0006.webp"
+           alt="讲师在患者腰背部进行按压，寻找压痛点或进行穴位定位。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">10:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">讲师在患者腰背部进行按压，寻找压痛点或进行穴位定位。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="12:00"
+          data-img="../screenshots/clinical-cases/0007.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0007.webp"
+           alt="患者小腿后侧针灸留针特写画面。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">12:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">患者小腿后侧针灸留针特写画面。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="14:00"
+          data-img="../screenshots/clinical-cases/0008.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0008.webp"
+           alt="患者足部特写，展示脚趾部位的具体病理特征或施针点。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">14:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">患者足部特写，展示脚趾部位的具体病理特征或施针点。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="18:00"
+          data-img="../screenshots/clinical-cases/0009.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0009.webp"
+           alt="患者足底特写画面，展示局部情况。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">18:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">患者足底特写画面，展示局部情况。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="30:00"
+          data-img="../screenshots/clinical-cases/0010.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0010.webp"
+           alt="黑板板书画面，讲师正在讲解左侧梳理的“阴阳、表里、寒热、虚实”等中医辨证框架。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">30:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">黑板板书画面，讲师正在讲解左侧梳理的“阴阳、表里、寒热、虚实”等中医辨证框架。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="38:00"
+          data-img="../screenshots/clinical-cases/0011.webp"
+          data-lesson-name="01">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0011.webp"
+           alt="相对完整的黑板板书画面，除了左侧的辨证框架，右侧增加了“颜面潮红”等具体症状表现的板书分析。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">38:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01</span>
+      <span class="shot-desc">相对完整的黑板板书画面，除了左侧的辨证框架，右侧增加了“颜面潮红”等具体症状表现的板书分析。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="01倪师医案--淋巴癌"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="06:00"
+          data-img="../screenshots/clinical-cases/0012.webp"
+          data-lesson-name="01倪师医案--淋巴癌">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0012.webp"
+           alt="黑板板书画面，内容包含病案相关的日期时间记录（如“2006/10/25”等），以及讲师圈划标注的“精”、“极寒”等中医…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">06:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">01倪师医案--淋巴癌</span>
+      <span class="shot-desc">黑板板书画面，内容包含病案相关的日期时间记录（如“2006/10/25”等），以及讲师圈划标注的“精”、“极寒”等中医病机分析概念文字。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="00:00"
+          data-img="../screenshots/clinical-cases/0013.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0013.webp"
+           alt="面部（眼周）针灸实操定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">00:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">面部（眼周）针灸实操定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0014.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0014.webp"
+           alt="头部（发际线处）针灸实操定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">头部（发际线处）针灸实操定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0015.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0015.webp"
+           alt="面部（鼻翼旁）穴位按压或针灸定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">面部（鼻翼旁）穴位按压或针灸定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="06:00"
+          data-img="../screenshots/clinical-cases/0016.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0016.webp"
+           alt="后颈部穴位触摸定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">06:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">后颈部穴位触摸定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="08:00"
+          data-img="../screenshots/clinical-cases/0017.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0017.webp"
+           alt="腿部穴位触摸定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">08:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">腿部穴位触摸定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="10:00"
+          data-img="../screenshots/clinical-cases/0018.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0018.webp"
+           alt="腹部/腰侧穴位触摸定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">10:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">腹部/腰侧穴位触摸定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="12:00"
+          data-img="../screenshots/clinical-cases/0019.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0019.webp"
+           alt="中医经络穴位人体模型展示与讲解" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">12:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">中医经络穴位人体模型展示与讲解</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="14:00"
+          data-img="../screenshots/clinical-cases/0020.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0020.webp"
+           alt="颈部针灸实操画面（已扎针）" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">14:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">颈部针灸实操画面（已扎针）</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="16:00"
+          data-img="../screenshots/clinical-cases/0021.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0021.webp"
+           alt="足部穴位触摸定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">16:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">足部穴位触摸定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="20:00"
+          data-img="../screenshots/clinical-cases/0022.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0022.webp"
+           alt="面部（眼部）针灸实操定位示范" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">20:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">面部（眼部）针灸实操定位示范</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="22:00"
+          data-img="../screenshots/clinical-cases/0023.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0023.webp"
+           alt="面部针灸实操特写画面（额头、眼周已扎针）" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">22:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">面部针灸实操特写画面（额头、眼周已扎针）</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="28:00"
+          data-img="../screenshots/clinical-cases/0024.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0024.webp"
+           alt="黑板板书：列有关于“肝癌”的中医症状或病理术语" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">28:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">黑板板书：列有关于“肝癌”的中医症状或病理术语</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="29:30"
+          data-img="../screenshots/clinical-cases/0025.webp"
+          data-lesson-name="02">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0025.webp"
+           alt="黑板板书：关于“肝癌”的中医症状或病理术语内容更加完整" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">29:30</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02</span>
+      <span class="shot-desc">黑板板书：关于“肝癌”的中医症状或病理术语内容更加完整</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02倪师医案--处方一"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0026.webp"
+          data-lesson-name="02倪师医案--处方一">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0026.webp"
+           alt="讲师正在书写黑板板书，记录了就诊日期、患者基本信息及部分症状。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02倪师医案--处方一</span>
+      <span class="shot-desc">讲师正在书写黑板板书，记录了就诊日期、患者基本信息及部分症状。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02倪师医案--处方一"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0027.webp"
+          data-lesson-name="02倪师医案--处方一">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0027.webp"
+           alt="满屏黑板板书，较为完整地记录了该医案患者的脉象、症状等详细病情分析。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02倪师医案--处方一</span>
+      <span class="shot-desc">满屏黑板板书，较为完整地记录了该医案患者的脉象、症状等详细病情分析。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="02倪师医案--处方一"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0028.webp"
+          data-lesson-name="02倪师医案--处方一">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0028.webp"
+           alt="画面右侧叠加了清晰的绿色印刷体中药方剂列表，包含柴胡、黄芩、党参、瓦楞子、牡蛎、防己等药材。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">02倪师医案--处方一</span>
+      <span class="shot-desc">画面右侧叠加了清晰的绿色印刷体中药方剂列表，包含柴胡、黄芩、党参、瓦楞子、牡蛎、防己等药材。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="03"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="08:00"
+          data-img="../screenshots/clinical-cases/0029.webp"
+          data-lesson-name="03">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0029.webp"
+           alt="黑板板书关于“肝癌”的治疗思路，清晰可见右上角补充了“脾约麻仁丸”等方剂相关内容。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">08:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">03</span>
+      <span class="shot-desc">黑板板书关于“肝癌”的治疗思路，清晰可见右上角补充了“脾约麻仁丸”等方剂相关内容。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="03"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="26:00"
+          data-img="../screenshots/clinical-cases/0030.webp"
+          data-lesson-name="03">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0030.webp"
+           alt="关于“三叉神经痛”的完整黑板板书，包含表明痛点位置的面部简图，以及右侧丰富的病机与经络分析文字（如“阳明”等）。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">26:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">03</span>
+      <span class="shot-desc">关于“三叉神经痛”的完整黑板板书，包含表明痛点位置的面部简图，以及右侧丰富的病机与经络分析文字（如“阳明”等）。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="03倪师医案--僵冻人"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0031.webp"
+          data-lesson-name="03倪师医案--僵冻人">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0031.webp"
+           alt="满屏黑板板书，记录了病案的基本信息（如“2006.10/25”、“1945年男”）以及密集的辨证分析文字。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">03倪师医案--僵冻人</span>
+      <span class="shot-desc">满屏黑板板书，记录了病案的基本信息（如“2006.10/25”、“1945年男”）以及密集的辨证分析文字。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="03倪师医案--僵冻人"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0032.webp"
+          data-lesson-name="03倪师医案--僵冻人">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0032.webp"
+           alt="满屏黑板板书，除了详细的病案文字记录外，右侧还画出了带有圆圈连线的图解（推测为脏腑/五行关系图）。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">03倪师医案--僵冻人</span>
+      <span class="shot-desc">满屏黑板板书，除了详细的病案文字记录外，右侧还画出了带有圆圈连线的图解（推测为脏腑/五行关系图）。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="04"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="06:00"
+          data-img="../screenshots/clinical-cases/0033.webp"
+          data-lesson-name="04">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0033.webp"
+           alt="黑板左侧画出包含“心”、“火”、“小肠”、“虚”、“实”等字样的脏腑病机关系初步图解。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">06:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">04</span>
+      <span class="shot-desc">黑板左侧画出包含“心”、“火”、“小肠”、“虚”、“实”等字样的脏腑病机关系初步图解。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="04"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="14:00"
+          data-img="../screenshots/clinical-cases/0034.webp"
+          data-lesson-name="04">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0034.webp"
+           alt="满屏板书，左侧为包含“木-&gt;火”、“水-&gt;木”、“阳”等字样的五行生克病机完整关系图，右侧列出“生附子”、“干姜”、“…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">14:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">04</span>
+      <span class="shot-desc">满屏板书，左侧为包含“木-&gt;火”、“水-&gt;木”、“阳”等字样的五行生克病机完整关系图，右侧列出“生附子”、“干姜”、“石膏”、“知母”等中药名…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="04"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="29:29"
+          data-img="../screenshots/clinical-cases/0035.webp"
+          data-lesson-name="04">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0035.webp"
+           alt="满屏板书更新，在原五行病机图和中药分析基础上，黑板左侧新增了用圆圈重点圈出的“阴”、“阳”、“虚”、“实”等辨证理论概…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">29:29</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">04</span>
+      <span class="shot-desc">满屏板书更新，在原五行病机图和中药分析基础上，黑板左侧新增了用圆圈重点圈出的“阴”、“阳”、“虚”、“实”等辨证理论概括，且左下角有新增板书内容。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="04倪师医案--处方二"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0036.webp"
+          data-lesson-name="04倪师医案--处方二">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0036.webp"
+           alt="黑板板书医案分析，画面右侧叠加了清晰的方剂药组成：生附子、干姜、炙甘草、茯苓、白术、牛膝、桂枝、芍药、当归、细辛、补骨脂、泽泻。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">04倪师医案--处方二</span>
+      <span class="shot-desc">黑板板书医案分析，画面右侧叠加了清晰的方剂药组成：生附子、干姜、炙甘草、茯苓、白术、牛膝、桂枝、芍药、当归、细辛、补骨脂、泽泻。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="05"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="00:00"
+          data-img="../screenshots/clinical-cases/0037.webp"
+          data-lesson-name="05">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0037.webp"
+           alt="黑板板书：左侧有“阴”、“阳”、“气”、“血”等中医概念分类，下方列有一些中药名称。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">00:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">05</span>
+      <span class="shot-desc">黑板板书：左侧有“阴”、“阳”、“气”、“血”等中医概念分类，下方列有一些中药名称。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="05"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="08:00"
+          data-img="../screenshots/clinical-cases/0038.webp"
+          data-lesson-name="05">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0038.webp"
+           alt="黑板板书：写有中药方剂组成，可见“大黄”、“芒硝”等药名。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">08:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">05</span>
+      <span class="shot-desc">黑板板书：写有中药方剂组成，可见“大黄”、“芒硝”等药名。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="05"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="18:00"
+          data-img="../screenshots/clinical-cases/0039.webp"
+          data-lesson-name="05">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0039.webp"
+           alt="黑板板书：详细列出了多味中药，包括“桂枝”、“白芍”、“玉竹”、“吴茱萸”等。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">18:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">05</span>
+      <span class="shot-desc">黑板板书：详细列出了多味中药，包括“桂枝”、“白芍”、“玉竹”、“吴茱萸”等。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="05"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="24:00"
+          data-img="../screenshots/clinical-cases/0040.webp"
+          data-lesson-name="05">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0040.webp"
+           alt="黑板板书：展示了穴位相关的配伍或对应关系，包含“心俞”、“胃俞”、“脾俞”等穴位及箭头指向说明。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">24:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">05</span>
+      <span class="shot-desc">黑板板书：展示了穴位相关的配伍或对应关系，包含“心俞”、“胃俞”、“脾俞”等穴位及箭头指向说明。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="05倪师医案--案例补充"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0041.webp"
+          data-lesson-name="05倪师医案--案例补充">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0041.webp"
+           alt="黑板满屏板书，可见日期“3/29/07”以及“缓”、“快”、“高热”、“温病”、“四肢冰冷”等中医辨证论治相关的医案笔记内容。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">05倪师医案--案例补充</span>
+      <span class="shot-desc">黑板满屏板书，可见日期“3/29/07”以及“缓”、“快”、“高热”、“温病”、“四肢冰冷”等中医辨证论治相关的医案笔记内容。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="06"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="00:00"
+          data-img="../screenshots/clinical-cases/0042.webp"
+          data-lesson-name="06">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0042.webp"
+           alt="老师在黑板前讲解，黑板上写有涉及中医穴位或理论的板书（可见“第2椎”、“心俞”、“膏肓”等字样）。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">00:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">06</span>
+      <span class="shot-desc">老师在黑板前讲解，黑板上写有涉及中医穴位或理论的板书（可见“第2椎”、“心俞”、“膏肓”等字样）。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="06倪师医案--人与天地"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0043.webp"
+          data-lesson-name="06倪师医案--人与天地">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0043.webp"
+           alt="老师在黑板前讲解，板书可见“大易”、“参同契”、“阴阳”等中医及道家经典著作和概念名词。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">06倪师医案--人与天地</span>
+      <span class="shot-desc">老师在黑板前讲解，板书可见“大易”、“参同契”、“阴阳”等中医及道家经典著作和概念名词。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="06倪师医案--人与天地"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0044.webp"
+          data-lesson-name="06倪师医案--人与天地">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0044.webp"
+           alt="老师正在书写板书，黑板上可见“天”、“日”、“月”、“大易”等字样，以及坎卦、离卦等八卦符号。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">06倪师医案--人与天地</span>
+      <span class="shot-desc">老师正在书写板书，黑板上可见“天”、“日”、“月”、“大易”等字样，以及坎卦、离卦等八卦符号。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="06倪师医案--人与天地"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:50"
+          data-img="../screenshots/clinical-cases/0045.webp"
+          data-lesson-name="06倪师医案--人与天地">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0045.webp"
+           alt="呈现较完整的板书内容，左侧画有简单的人体躯干轮廓示意图，右侧详细列有“天”、“日”、“月”、“火”、“坎”、“离”等文…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:50</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">06倪师医案--人与天地</span>
+      <span class="shot-desc">呈现较完整的板书内容，左侧画有简单的人体躯干轮廓示意图，右侧详细列有“天”、“日”、“月”、“火”、“坎”、“离”等文字及对应的八卦卦象符号，…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="07倪师医案--胆一阳始生"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0046.webp"
+          data-lesson-name="07倪师医案--胆一阳始生">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0046.webp"
+           alt="黑板板书，包含手绘的人体躯干简图，以及“初阳”、“半夜子时 胆”等中医概念文字和类似卦象的符号。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">07倪师医案--胆一阳始生</span>
+      <span class="shot-desc">黑板板书，包含手绘的人体躯干简图，以及“初阳”、“半夜子时 胆”等中医概念文字和类似卦象的符号。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="08倪师医案--肝硬化"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0047.webp"
+          data-lesson-name="08倪师医案--肝硬化">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0047.webp"
+           alt="画面右侧通过后期绿色高亮字幕清晰列出了治疗方剂的具体药材：柴胡、黄芩、龙胆草、川芎、白芍、金铃子、延胡索、补骨脂、玉金…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">08倪师医案--肝硬化</span>
+      <span class="shot-desc">画面右侧通过后期绿色高亮字幕清晰列出了治疗方剂的具体药材：柴胡、黄芩、龙胆草、川芎、白芍、金铃子、延胡索、补骨脂、玉金、炮附子、桂枝。黑板上也…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="09倪师医案--分消汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0048.webp"
+          data-lesson-name="09倪师医案--分消汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0048.webp"
+           alt="讲师授课画面，屏幕两侧通过绿色文本框清晰列出了详细的方剂组成，左侧包括“白术 茯苓 泽泻”等，右侧包括“柴胡 黄芩 龙胆草”等。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">09倪师医案--分消汤</span>
+      <span class="shot-desc">讲师授课画面，屏幕两侧通过绿色文本框清晰列出了详细的方剂组成，左侧包括“白术 茯苓 泽泻”等，右侧包括“柴胡 黄芩 龙胆草”等。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="09倪师医案--分消汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0049.webp"
+          data-lesson-name="09倪师医案--分消汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0049.webp"
+           alt="讲师板书画面，黑板上写有“分消汤”等字样，屏幕右侧通过绿色文本框列出了“泽泻 猪苓 茯苓 半夏 陈皮”等方剂组成。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">09倪师医案--分消汤</span>
+      <span class="shot-desc">讲师板书画面，黑板上写有“分消汤”等字样，屏幕右侧通过绿色文本框列出了“泽泻 猪苓 茯苓 半夏 陈皮”等方剂组成。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="10倪师医案--分消汤加味"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0050.webp"
+          data-lesson-name="10倪师医案--分消汤加味">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0050.webp"
+           alt="讲师授课画面，右侧有后期添加的绿色字幕，清晰列出了药方内容，包括当归、巴戟天、阳起石、补骨脂、菟丝子、黄精、龟板、木香…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">10倪师医案--分消汤加味</span>
+      <span class="shot-desc">讲师授课画面，右侧有后期添加的绿色字幕，清晰列出了药方内容，包括当归、巴戟天、阳起石、补骨脂、菟丝子、黄精、龟板、木香、干姜、熟地等药材。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="11倪师医案--生附子硫磺"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0051.webp"
+          data-lesson-name="11倪师医案--生附子硫磺">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0051.webp"
+           alt="满屏黑板板书，记录有医案相关内容，左侧可见日期“7/15/07”以及顶部“创伤”等字样（后续 04:00 及 05:4…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">11倪师医案--生附子硫磺</span>
+      <span class="shot-desc">满屏黑板板书，记录有医案相关内容，左侧可见日期“7/15/07”以及顶部“创伤”等字样（后续 04:00 及 05:49 为同一板书的讲解过程…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="13倪师医案--大柴胡汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0052.webp"
+          data-lesson-name="13倪师医案--大柴胡汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0052.webp"
+           alt="屏幕右侧以绿色字体清晰列出方剂药材，包括柴胡、黄芩、大黄、枳实、半夏、芒硝、玉金、龙胆草、当归、细辛、桂枝、麻黄、炮附…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">13倪师医案--大柴胡汤</span>
+      <span class="shot-desc">屏幕右侧以绿色字体清晰列出方剂药材，包括柴胡、黄芩、大黄、枳实、半夏、芒硝、玉金、龙胆草、当归、细辛、桂枝、麻黄、炮附、白术、茯苓、大枣、生姜、炙甘草。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="14倪师医案--胃苓汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0053.webp"
+          data-lesson-name="14倪师医案--胃苓汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0053.webp"
+           alt="画面右侧清晰显示方剂的药物组成：炙甘草、茯苓、白芍、猪苓、泽泻、白术、苍术、厚朴、陈皮。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">14倪师医案--胃苓汤</span>
+      <span class="shot-desc">画面右侧清晰显示方剂的药物组成：炙甘草、茯苓、白芍、猪苓、泽泻、白术、苍术、厚朴、陈皮。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="16倪师医案--动脉血管堵塞"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0054.webp"
+          data-lesson-name="16倪师医案--动脉血管堵塞">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0054.webp"
+           alt="黑板板书医案信息与症状，可见“6/8/2004 1941男”及编号列表如“1. 身冷”、“2. 心律不整”、“5. 手…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">16倪师医案--动脉血管堵塞</span>
+      <span class="shot-desc">黑板板书医案信息与症状，可见“6/8/2004 1941男”及编号列表如“1. 身冷”、“2. 心律不整”、“5. 手足冰冷”等病症记录。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="17倪师医案--心脏处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0055.webp"
+          data-lesson-name="17倪师医案--心脏处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0055.webp"
+           alt="画面右侧叠加显示清晰的方剂组成文本框，包含中药：川芎、丹皮、桃仁、红花、细辛、麦冬、薤白、桂枝。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">17倪师医案--心脏处方</span>
+      <span class="shot-desc">画面右侧叠加显示清晰的方剂组成文本框，包含中药：川芎、丹皮、桃仁、红花、细辛、麦冬、薤白、桂枝。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="18倪师医案--心脏处方续"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0056.webp"
+          data-lesson-name="18倪师医案--心脏处方续">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0056.webp"
+           alt="讲师在黑板前授课，画面右侧以绿色高亮文本框清晰展示了包含川芎、丹皮、桃仁、红花、桂枝、地龙、枳实、薤白、当归、牛膝、木…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">18倪师医案--心脏处方续</span>
+      <span class="shot-desc">讲师在黑板前授课，画面右侧以绿色高亮文本框清晰展示了包含川芎、丹皮、桃仁、红花、桂枝、地龙、枳实、薤白、当归、牛膝、木通、白芍、黄连、黄芩、细…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="19倪师医案--细辛_炮附子"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0057.webp"
+          data-lesson-name="19倪师医案--细辛_炮附子">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0057.webp"
+           alt="老师在黑板前板书，记录医案信息，黑板上可见多行手写文字，包含就诊日期及患者的症状表现，为本组中板书内容最完整的一帧。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">19倪师医案--细辛_炮附子</span>
+      <span class="shot-desc">老师在黑板前板书，记录医案信息，黑板上可见多行手写文字，包含就诊日期及患者的症状表现，为本组中板书内容最完整的一帧。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="20倪师医案--旋覆花代赭石汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0058.webp"
+          data-lesson-name="20倪师医案--旋覆花代赭石汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0058.webp"
+           alt="老师在黑板前讲解医案，黑板上有粉笔板书，记录了就诊日期（如6/8/2004）及相关病症（如“胃痛”、“打嗝”等字样）。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">20倪师医案--旋覆花代赭石汤</span>
+      <span class="shot-desc">老师在黑板前讲解医案，黑板上有粉笔板书，记录了就诊日期（如6/8/2004）及相关病症（如“胃痛”、“打嗝”等字样）。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="20倪师医案--旋覆花代赭石汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0059.webp"
+          data-lesson-name="20倪师医案--旋覆花代赭石汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0059.webp"
+           alt="画面右侧叠加了清晰的绿色方剂字幕，列出具体药物及剂量：“旋覆花3 代赭石3、半夏3 枳实3、黄连1 地龙2、薤白3 红花1”。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">20倪师医案--旋覆花代赭石汤</span>
+      <span class="shot-desc">画面右侧叠加了清晰的绿色方剂字幕，列出具体药物及剂量：“旋覆花3 代赭石3、半夏3 枳实3、黄连1 地龙2、薤白3 红花1”。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="23倪师医案--肝病"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0060.webp"
+          data-lesson-name="23倪师医案--肝病">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0060.webp"
+           alt="黑板板书，列举了患者的症状表现，清晰可见“1. 睡不好 (1-3:00 AM)”、“2. 胃口好”、“3. 大便正常”…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">23倪师医案--肝病</span>
+      <span class="shot-desc">黑板板书，列举了患者的症状表现，清晰可见“1. 睡不好 (1-3:00 AM)”、“2. 胃口好”、“3. 大便正常”、“4. 小便”。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="23倪师医案--肝病"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0061.webp"
+          data-lesson-name="23倪师医案--肝病">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0061.webp"
+           alt="讲师指点黑板上的板书，黑板左侧绘有一个包含方框的脏腑图解，右侧列有多条症状相关的文字板书。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">23倪师医案--肝病</span>
+      <span class="shot-desc">讲师指点黑板上的板书，黑板左侧绘有一个包含方框的脏腑图解，右侧列有多条症状相关的文字板书。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="23倪师医案--肝病"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0062.webp"
+          data-lesson-name="23倪师医案--肝病">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0062.webp"
+           alt="讲师正在黑板左侧绘制带有诸多箭头的人体气机运行或脏腑关系图解，图解旁有文字标注，右侧保留了之前的症状条目板书。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">23倪师医案--肝病</span>
+      <span class="shot-desc">讲师正在黑板左侧绘制带有诸多箭头的人体气机运行或脏腑关系图解，图解旁有文字标注，右侧保留了之前的症状条目板书。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="24倪师医案--处方加减"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0063.webp"
+          data-lesson-name="24倪师医案--处方加减">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0063.webp"
+           alt="讲师在黑板前讲解，画面右侧叠加绿色方剂文字“柴胡 黄芩 半夏 党参 郁金 龙胆”，黑板上有手写的症状分析板书，隐约可见…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">24倪师医案--处方加减</span>
+      <span class="shot-desc">讲师在黑板前讲解，画面右侧叠加绿色方剂文字“柴胡 黄芩 半夏 党参 郁金 龙胆”，黑板上有手写的症状分析板书，隐约可见“睡不好 (1-3:00…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="25倪师医案--肝处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0064.webp"
+          data-lesson-name="25倪师医案--肝处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0064.webp"
+           alt="带有绿色叠加层的授课画面，展示了详细的中药方剂，包含：柴胡、黄芩、半夏、党参、郁金、龙胆、川芎、丹皮、白芍、苍术、泽泻…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">25倪师医案--肝处方</span>
+      <span class="shot-desc">带有绿色叠加层的授课画面，展示了详细的中药方剂，包含：柴胡、黄芩、半夏、党参、郁金、龙胆、川芎、丹皮、白芍、苍术、泽泻、白术、茯苓、茵陈、熟地…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="26倪师医案--三黄泻心汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0065.webp"
+          data-lesson-name="26倪师医案--三黄泻心汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0065.webp"
+           alt="完整的医案分析黑板板书，清晰可见患者症状列表（如“1. 小便好许多”、“2. 大便绿色”等）以及黑板左侧和右侧的中医理…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">26倪师医案--三黄泻心汤</span>
+      <span class="shot-desc">完整的医案分析黑板板书，清晰可见患者症状列表（如“1. 小便好许多”、“2. 大便绿色”等）以及黑板左侧和右侧的中医理论图解与推演过程，画面带…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="27倪师医案--栀子豆豉汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0066.webp"
+          data-lesson-name="27倪师医案--栀子豆豉汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0066.webp"
+           alt="讲师在黑板前讲解，画面右侧叠加绿色字幕框，列出药方组成：大黄、白术、茯苓、茵陈、黄芩、黄连、黄柏。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">27倪师医案--栀子豆豉汤</span>
+      <span class="shot-desc">讲师在黑板前讲解，画面右侧叠加绿色字幕框，列出药方组成：大黄、白术、茯苓、茵陈、黄芩、黄连、黄柏。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="27倪师医案--栀子豆豉汤"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0067.webp"
+          data-lesson-name="27倪师医案--栀子豆豉汤">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0067.webp"
+           alt="讲师在黑板前板书，画面右侧叠加绿色字幕框，列出药方组成：黄柏、大黄、黄连、栀子、豆豉。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">27倪师医案--栀子豆豉汤</span>
+      <span class="shot-desc">讲师在黑板前板书，画面右侧叠加绿色字幕框，列出药方组成：黄柏、大黄、黄连、栀子、豆豉。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="28倪师医案--乳癌例"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0068.webp"
+          data-lesson-name="28倪师医案--乳癌例">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0068.webp"
+           alt="老师在黑板前讲解，黑板上写有密集的粉笔板书，包含文字和圈注，疑似病机分析或理论推导。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">28倪师医案--乳癌例</span>
+      <span class="shot-desc">老师在黑板前讲解，黑板上写有密集的粉笔板书，包含文字和圈注，疑似病机分析或理论推导。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="28倪师医案--乳癌例"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0069.webp"
+          data-lesson-name="28倪师医案--乳癌例">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0069.webp"
+           alt="老师在黑板前讲解，黑板上写有日期“2/21/2007”以及带有序号的条目式板书。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">28倪师医案--乳癌例</span>
+      <span class="shot-desc">老师在黑板前讲解，黑板上写有日期“2/21/2007”以及带有序号的条目式板书。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="29倪师医案--乳岩处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0070.webp"
+          data-lesson-name="29倪师医案--乳岩处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0070.webp"
+           alt="黑板板书画面，右侧有清晰的绿色字幕展示方剂药材：“柴胡 防己 黄芩 郁金 黄连 白芍 阿胶 牡蛎 紫根 瓦楞子”，画面…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">29倪师医案--乳岩处方</span>
+      <span class="shot-desc">黑板板书画面，右侧有清晰的绿色字幕展示方剂药材：“柴胡 防己 黄芩 郁金 黄连 白芍 阿胶 牡蛎 紫根 瓦楞子”，画面下方有绿色字幕“疏肝气”</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="29倪师医案--乳岩处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0071.webp"
+          data-lesson-name="29倪师医案--乳岩处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0071.webp"
+           alt="黑板板书画面，右侧继续保留方剂组成的绿色字幕，黑板左下方新增了相关的示意图画板书" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">29倪师医案--乳岩处方</span>
+      <span class="shot-desc">黑板板书画面，右侧继续保留方剂组成的绿色字幕，黑板左下方新增了相关的示意图画板书</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="30倪师医案--酸枣仁_知母"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0072.webp"
+          data-lesson-name="30倪师医案--酸枣仁_知母">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0072.webp"
+           alt="黑板板书展示，包含日期“2/21/2007”以及完整的药方内容，可见“柴胡”、“黄芩”、“玉金”、“龙胆草”等药材名及…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">30倪师医案--酸枣仁_知母</span>
+      <span class="shot-desc">黑板板书展示，包含日期“2/21/2007”以及完整的药方内容，可见“柴胡”、“黄芩”、“玉金”、“龙胆草”等药材名及相关病状分析。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="31倪师医案--制鳖甲"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0073.webp"
+          data-lesson-name="31倪师医案--制鳖甲">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0073.webp"
+           alt="黑板板书，左侧记录了患者多次就诊的追踪日期（如 2/21/07、3/7/07、3/20/07、4/1/07、4/2/0…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">31倪师医案--制鳖甲</span>
+      <span class="shot-desc">黑板板书，左侧记录了患者多次就诊的追踪日期（如 2/21/07、3/7/07、3/20/07、4/1/07、4/2/07 等），右侧写有对应的…</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="32倪师医案--大黄_海藻"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0074.webp"
+          data-lesson-name="32倪师医案--大黄_海藻">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0074.webp"
+           alt="老师在黑板前授课，黑板上书写了多组按日期（如2/21/2007等）排列的医案记录和处方内容。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">32倪师医案--大黄_海藻</span>
+      <span class="shot-desc">老师在黑板前授课，黑板上书写了多组按日期（如2/21/2007等）排列的医案记录和处方内容。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="34倪师医案--肾方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0075.webp"
+          data-lesson-name="34倪师医案--肾方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0075.webp"
+           alt="画面左侧清晰列出了方剂的药材组成：炮附子、木通 当归 细辛、平姜 白术 茯苓、生姜 大枣 生附子、桂枝 白芍 炙甘草。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">34倪师医案--肾方</span>
+      <span class="shot-desc">画面左侧清晰列出了方剂的药材组成：炮附子、木通 当归 细辛、平姜 白术 茯苓、生姜 大枣 生附子、桂枝 白芍 炙甘草。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="35倪师医案--败龟板"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0076.webp"
+          data-lesson-name="35倪师医案--败龟板">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0076.webp"
+           alt="黑板板书，记录了患者就诊日期及病理机制分析图解" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">35倪师医案--败龟板</span>
+      <span class="shot-desc">黑板板书，记录了患者就诊日期及病理机制分析图解</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="35倪师医案--败龟板"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0077.webp"
+          data-lesson-name="35倪师医案--败龟板">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0077.webp"
+           alt="黑板板书，讲解检验指标的变化，底部伴有字幕“原来是4.7 掉到3.1”" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">35倪师医案--败龟板</span>
+      <span class="shot-desc">黑板板书，讲解检验指标的变化，底部伴有字幕“原来是4.7 掉到3.1”</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="35倪师医案--败龟板"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0078.webp"
+          data-lesson-name="35倪师医案--败龟板">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0078.webp"
+           alt="黑板板书，画面右侧出现核心用药“补骨脂 败龟板”的重点提示字幕" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">35倪师医案--败龟板</span>
+      <span class="shot-desc">黑板板书，画面右侧出现核心用药“补骨脂 败龟板”的重点提示字幕</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="36倪师医案--乌药_泽泻"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0079.webp"
+          data-lesson-name="36倪师医案--乌药_泽泻">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0079.webp"
+           alt="黑板板书医案分析，左侧列出了从“2/9/2007”到“5/4/07”等多个复诊日期的时间线，中间偏右位置画有“胃→心”…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">36倪师医案--乌药_泽泻</span>
+      <span class="shot-desc">黑板板书医案分析，左侧列出了从“2/9/2007”到“5/4/07”等多个复诊日期的时间线，中间偏右位置画有“胃→心”等脏腑病机传变示意图。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="36倪师医案--乌药_泽泻"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0080.webp"
+          data-lesson-name="36倪师医案--乌药_泽泻">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0080.webp"
+           alt="黑板板书内容更新，老师在原有时间线右侧上方补充了新的复诊日期“6/1/07”，并指着该日期进行讲解。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">36倪师医案--乌药_泽泻</span>
+      <span class="shot-desc">黑板板书内容更新，老师在原有时间线右侧上方补充了新的复诊日期“6/1/07”，并指着该日期进行讲解。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="38倪师医案--红斑性狼疮案"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0081.webp"
+          data-lesson-name="38倪师医案--红斑性狼疮案">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0081.webp"
+           alt="讲师在黑板前授课，黑板上写有满屏的手写板书，记录了多个日期（如 2/19/2007, 6/1/07 等）及相关医案病程…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">38倪师医案--红斑性狼疮案</span>
+      <span class="shot-desc">讲师在黑板前授课，黑板上写有满屏的手写板书，记录了多个日期（如 2/19/2007, 6/1/07 等）及相关医案病程或用药记录文字。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="39倪师医案--主力处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="04:00"
+          data-img="../screenshots/clinical-cases/0082.webp"
+          data-lesson-name="39倪师医案--主力处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0082.webp"
+           alt="黑板板书，记录了医案患者的问诊症状，可见“睡眠不好：失眠”、“大便”、“胃口”、“口渴”等项目。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">04:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">39倪师医案--主力处方</span>
+      <span class="shot-desc">黑板板书，记录了医案患者的问诊症状，可见“睡眠不好：失眠”、“大便”、“胃口”、“口渴”等项目。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="39倪师医案--主力处方"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0083.webp"
+          data-lesson-name="39倪师医案--主力处方">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0083.webp"
+           alt="画面左上角叠加了清晰的绿色底色处方方剂表，列出“生附子 细辛、石膏 知母、防己 泽泻、茯苓 黄精”等药材。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">39倪师医案--主力处方</span>
+      <span class="shot-desc">画面左上角叠加了清晰的绿色底色处方方剂表，列出“生附子 细辛、石膏 知母、防己 泽泻、茯苓 黄精”等药材。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="40倪师医案--桑螵蛸"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0084.webp"
+          data-lesson-name="40倪师医案--桑螵蛸">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0084.webp"
+           alt="黑板满屏板书，左侧详细记录了Lupus（红斑狼疮）医案患者的各项症状表现（如“睡眠不好”、“胃口”、“大便”等），右侧…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">40倪师医案--桑螵蛸</span>
+      <span class="shot-desc">黑板满屏板书，左侧详细记录了Lupus（红斑狼疮）医案患者的各项症状表现（如“睡眠不好”、“胃口”、“大便”等），右侧为相关的病机或方剂分析。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="40倪师医案--桑螵蛸"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:02"
+          data-img="../screenshots/clinical-cases/0085.webp"
+          data-lesson-name="40倪师医案--桑螵蛸">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0085.webp"
+           alt="老师结合背景板书讲解医案用药，画面右下角弹出了绿底白字的药材名称“郁金”重点提示字幕。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:02</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">40倪师医案--桑螵蛸</span>
+      <span class="shot-desc">老师结合背景板书讲解医案用药，画面右下角弹出了绿底白字的药材名称“郁金”重点提示字幕。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="41倪师医案--桔梗"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="02:00"
+          data-img="../screenshots/clinical-cases/0086.webp"
+          data-lesson-name="41倪师医案--桔梗">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0086.webp"
+           alt="老师在黑板前书写，画面右侧有醒目的绿色高亮标注“乌药 白术”中药配伍信息。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">02:00</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">41倪师医案--桔梗</span>
+      <span class="shot-desc">老师在黑板前书写，画面右侧有醒目的绿色高亮标注“乌药 白术”中药配伍信息。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="41倪师医案--桔梗"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:49"
+          data-img="../screenshots/clinical-cases/0087.webp"
+          data-lesson-name="41倪师医案--桔梗">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0087.webp"
+           alt="老师在满屏手写板书前讲解，板书内容涉及医案分析，左侧依稀可见“乌药”等中药名称。" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:49</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">41倪师医案--桔梗</span>
+      <span class="shot-desc">老师在满屏手写板书前讲解，板书内容涉及医案分析，左侧依稀可见“乌药”等中药名称。</span>
+    </figcaption>
+  </figure>
+  <figure class="shot"
+          data-lesson="42倪师医案--经方思路"
+          data-tags="临床案例|板书/处方/病机图"
+          data-t="05:23"
+          data-img="../screenshots/clinical-cases/0088.webp"
+          data-lesson-name="42倪师医案--经方思路">
+    <button class="shot-btn" type="button">
+      <img src="../screenshots/thumb/clinical-cases/0088.webp"
+           alt="讲师位于画面右侧，呈现了当前时间段内被遮挡最少、最完整的黑板板书。板书左侧较为清晰，可见“乌梅丸”、带有圆圈标记的“阴…" loading="lazy" decoding="async" width="420">
+      <span class="shot-time">05:23</span>
+    </button>
+    <figcaption>
+      <span class="shot-lesson">42倪师医案--经方思路</span>
+      <span class="shot-desc">讲师位于画面右侧，呈现了当前时间段内被遮挡最少、最完整的黑板板书。板书左侧较为清晰，可见“乌梅丸”、带有圆圈标记的“阴”字以及其他散落的中医理论笔记文字。</span>
+    </figcaption>
+  </figure>
+</div>
+<p class="muted small" id="empty" hidden>没有符合条件的截图。</p>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
+  <img id="lbImg" alt="">
+  <div class="lb-bar">
+    <div class="lb-meta" id="lbMeta"></div>
+    <div class="lb-actions">
+      <button class="btn small" id="lbCopy" type="button">复制引用</button>
+      <a class="btn small" id="lbOpen" href="#" target="_blank" rel="noreferrer">打开原图</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+<script src="../assets/js/gallery.js" defer></script>
+</body>
+</html>

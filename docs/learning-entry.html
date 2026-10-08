@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>用户学习入口 · 倪师课库</title>
+<meta name="description" content="这是 `$nihaisha` 的用户首页。它不按课程目录组织，而是按用户“学这个是为了做什么”来组织。所有内容只用于倪海厦课程学习与中医理论整理，不作诊断、处方或个人用药建议。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-intro">🧭 总览与入门</a>
+</nav>
+
+<article class="doc" data-slug="learning-entry">
+  <h1>用户学习入口</h1>
+<p class="lead">这是 `$nihaisha` 的用户首页。它不按课程目录组织，而是按用户“学这个是为了做什么”来组织。所有内容只用于倪海厦课程学习与中医理论整理，不作诊断、处方或个人用药建议。</p>  <details class="toc" open>
+    <summary>本页目录（15）</summary>
+    <ol>
+      <li class="lv1"><a href="#用户学这个的核心目的">用户学这个的核心目的</a></li>
+      <li class="lv1"><a href="#首屏入口">首屏入口</a></li>
+      <li class="lv2"><a href="#1-我有一个症状想按课程思路学习辨证">1. 我有一个症状，想按课程思路学习辨证</a></li>
+      <li class="lv2"><a href="#2-我想查一个方子">2. 我想查一个方子</a></li>
+      <li class="lv2"><a href="#3-我想系统学六经辨证">3. 我想系统学六经辨证</a></li>
+      <li class="lv2"><a href="#4-我想按课程复习">4. 我想按课程复习</a></li>
+      <li class="lv2"><a href="#5-我想理解一个课程概念">5. 我想理解一个课程概念</a></li>
+      <li class="lv2"><a href="#6-我想查板书截图或课程依据">6. 我想查板书截图或课程依据</a></li>
+      <li class="lv2"><a href="#7-我想做安全边界判断">7. 我想做安全边界判断</a></li>
+      <li class="lv1"><a href="#推荐学习路径">推荐学习路径</a></li>
+      <li class="lv2"><a href="#入门路径先会分辨不急着记方">入门路径：先会分辨，不急着记方</a></li>
+      <li class="lv2"><a href="#方证路径适合已有中医基础的人">方证路径：适合已有中医基础的人</a></li>
+      <li class="lv2"><a href="#逐课路径适合跟视频复习">逐课路径：适合跟视频复习</a></li>
+      <li class="lv2"><a href="#研究路径适合做二次蒸馏">研究路径：适合做二次蒸馏</a></li>
+      <li class="lv1"><a href="#判断回答是否适合用户">判断回答是否适合用户</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="用户学习入口">用户学习入口</h1>
+<blockquote>
+<p>这是 <code>$nihaisha</code> 的用户首页。它不按课程目录组织，而是按用户“学这个是为了做什么”来组织。所有内容只用于倪海厦课程学习与中医理论整理，不作诊断、处方或个人用药建议。
+医疗边界：涉及真实症状、处方剂量、煎服方法、针灸/放血/艾灸操作、附子等毒烈药、攻下破血逐水方、肿瘤、孕产儿童老人或急危重症时，只能做课程学习索引，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员或急诊。</p>
+</blockquote>
+<h2 id="用户学这个的核心目的">用户学这个的核心目的</h2>
+<p>用户学习倪海厦《伤寒论》通常不是为了背课程目录，而是为了获得五种能力：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>学习目的</th>
+<th>用户真正想解决的问题</th>
+<th>应进入的模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建立辨证框架</td>
+<td>一个症状怎么判断太阳、少阳、阳明、三阴？</td>
+<td><code>symptom-index.md</code> + <code>six-channel.md</code></td>
+</tr>
+<tr>
+<td>掌握方证对应</td>
+<td>这个方什么时候出现，和相似方怎么分？</td>
+<td><code>formula-patterns.md</code></td>
+</tr>
+<tr>
+<td>复盘课程内容</td>
+<td>第几讲讲什么，哪些重点要记？</td>
+<td><code>lesson-map.md</code></td>
+</tr>
+<tr>
+<td>查找课程依据</td>
+<td>这句话、这个方、这个板书在哪一课？</td>
+<td><code>screenshot-evidence.md</code></td>
+</tr>
+<tr>
+<td>理解核心概念</td>
+<td>先表后里、急下存阴、热结旁流、病名拿掉是什么意思？</td>
+<td><code>shanghanlun.md</code> + <code>screenshot-evidence.md</code></td>
+</tr>
+<tr>
+<td>避免误用风险</td>
+<td>哪些内容只能学习，不能自己照做？</td>
+<td><code>formula-patterns.md</code> 高风险区 + <code>six-channel.md</code> 禁忌</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="首屏入口">首屏入口</h2>
+<h3 id="1-我有一个症状想按课程思路学习辨证">1. 我有一个症状，想按课程思路学习辨证</h3>
+<p>适合问题：</p>
+<ul>
+<li>“发烧恶寒无汗，课程里怎么辨？”</li>
+<li>“便秘但是小便清白，为什么不是阳明热实？”</li>
+<li>“拉清水是不是寒利？”</li>
+<li>“经期感冒为什么用小柴胡汤思路？”</li>
+<li>“手脚冷是四逆汤还是当归四逆汤？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>不直接给药。</li>
+<li>先列分水岭：汗、寒热、口渴、小便、大便、腹诊、脉象、经期等。</li>
+<li>再给可能的六经方向。</li>
+<li>再列候选方证和鉴别点。</li>
+<li>最后给禁忌和需要面诊的风险。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li><code>symptom-index.md</code></li>
+<li><code>six-channel.md</code></li>
+<li><code>formula-patterns.md</code></li>
+<li>用户要证据时再检索 <code>screenshot-evidence.md</code></li>
+</ol>
+<p>推荐输出格式：</p>
+<pre><code class="language-markdown">这是课程辨证学习，不是诊断。这个主诉先看几个分水岭：
+
+| 分水岭 | 偏向 A | 偏向 B |
+| --- | --- | --- |
+| 有汗/无汗 | 桂枝汤方向 | 麻黄汤方向 |
+| 小便深黄/清白 | 热实 | 寒实/虚寒 |
+| 腹部拒按/喜按 | 实证 | 虚证 |
+
+按课程可能涉及 ...，但还缺 ... 才能进一步分。
+</code></pre>
+<h3 id="2-我想查一个方子">2. 我想查一个方子</h3>
+<p>适合问题：</p>
+<ul>
+<li>“麻黄汤和桂枝汤怎么分？”</li>
+<li>“小柴胡汤的六大主症是什么？”</li>
+<li>“大承气汤什么时候停？”</li>
+<li>“四逆散和四逆汤有什么区别？”</li>
+<li>“乌梅丸在厥阴病里怎么理解？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>方剂定位：属于哪一经、哪类病机。</li>
+<li>核心方证：症状群和关键分水岭。</li>
+<li>相似方鉴别：避免错用。</li>
+<li>课程出处：课次与截图证据。</li>
+<li>风险：尤其承气汤、四逆汤辈、附子、抵当汤、大陷胸汤。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li><code>formula-patterns.md</code></li>
+<li><code>six-channel.md</code></li>
+<li>需要症状入口时看 <code>symptom-index.md</code></li>
+<li>需要板书时检索 <code>screenshot-evidence.md</code></li>
+</ol>
+<h3 id="3-我想系统学六经辨证">3. 我想系统学六经辨证</h3>
+<p>适合问题：</p>
+<ul>
+<li>“六经辨证怎么入门？”</li>
+<li>“太阳、少阳、阳明怎么分？”</li>
+<li>“太阴、少阴、厥阴的核心差别是什么？”</li>
+<li>“从表到里的传变路线是什么？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>先给六经总表。</li>
+<li>再给每一经的主症、病机、代表方、禁忌。</li>
+<li>最后给“从症状进入”的练习题。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li><code>six-channel.md</code></li>
+<li><code>formula-patterns.md</code></li>
+<li><code>lesson-map.md</code></li>
+</ol>
+<h3 id="4-我想按课程复习">4. 我想按课程复习</h3>
+<p>适合问题：</p>
+<ul>
+<li>“从第 07 讲开始复习。”</li>
+<li>“第 13 讲讲了什么？”</li>
+<li>“帮我把 15 课做一个复习计划。”</li>
+<li>“每节课给我重点方证和截图。”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>每课输出：主题、核心方证、关键分水岭、风险点、截图关键词、复习题。</li>
+<li>不把逐课复习变成流水账，要把课次内容转成可记忆的卡片。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li><code>lesson-map.md</code></li>
+<li>按课次运行 <code>python scripts/search_screenshots.py &lt;课次或主题关键词&gt;</code> 查截图证据</li>
+<li>涉及方剂时打开 <code>formula-patterns.md</code></li>
+</ol>
+<p>推荐复习卡格式：</p>
+<pre><code class="language-markdown">### 伤寒论07
+
+- 主题：蓄血、结胸、脏结、阴实
+- 必记分水岭：少腹硬满 + 小便自利 -&gt; 蓄血方向
+- 重点方证：抵当汤/丸、大陷胸汤/丸
+- 高风险：破血、攻逐、癌症/阴实只能学习
+- 截图索引：...
+- 自测题：如何区分蓄血和阳明燥屎？
+</code></pre>
+<h3 id="5-我想理解一个课程概念">5. 我想理解一个课程概念</h3>
+<p>适合问题：</p>
+<ul>
+<li>“先表后里是什么意思？”</li>
+<li>“为什么有表证时不可攻下？”</li>
+<li>“热结旁流为什么看起来像腹泻？”</li>
+<li>“急下存阴是什么意思？”</li>
+<li>“病名拿掉、中虚为明是什么意思？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>先用一句话解释概念。</li>
+<li>再说明它解决的辨证问题。</li>
+<li>给出常见误用风险，比如有表证时不可攻下、少阴不可发汗、承气汤中病即止。</li>
+<li>提供对应课次或截图证据。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li><code>shanghanlun.md</code></li>
+<li><code>lesson-map.md</code></li>
+<li><code>screenshot-evidence.md</code></li>
+</ol>
+<p>概念示例：</p>
+<pre><code class="language-markdown">先表后里：课程里指表证还在时，先处理表证；若表证未解就攻里/攻下，容易使邪气内陷，形成心下痞、结胸、下利等变证。因此用户问“能不能先攻下”时，要特别说明“有表证不可攻下”。
+</code></pre>
+<h3 id="6-我想查板书截图或课程依据">6. 我想查板书截图或课程依据</h3>
+<p>适合问题：</p>
+<ul>
+<li>“小柴胡汤加减的板书在哪？”</li>
+<li>“热结旁流有没有图？”</li>
+<li>“乌梅丸的方子截图给我。”</li>
+<li>“这个观点是哪一课讲的？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>返回 3 到 8 条最相关证据。</li>
+<li>优先返回同时命中关键方名、病机或课次的条目，不要只因为“加减”“方剂”等泛词命中就返回。</li>
+<li>每条包含：课次、时间点、说明、相对截图路径。</li>
+<li>如用户明确说“显示”，可打开对应图片。</li>
+</ul>
+<p>加载顺序：</p>
+<ol>
+<li>多关键词截图检索优先运行：<code>python scripts/search_screenshots.py &lt;自然语言问题或关键词...&gt;</code></li>
+<li>需要确认拆词时加 <code>--show-terms</code></li>
+<li>必要时回查 <code>lesson-map.md</code> 或 <code>formula-patterns.md</code></li>
+</ol>
+<p>输出格式：</p>
+<pre><code class="language-markdown">- 伤寒论05 82:42：小柴胡汤加减法板书
+  截图路径：assets/screenshots/shanghan/...
+</code></pre>
+<h3 id="7-我想做安全边界判断">7. 我想做安全边界判断</h3>
+<p>适合问题：</p>
+<ul>
+<li>“哪些方不能自己乱用？”</li>
+<li>“四逆汤为什么危险？”</li>
+<li>“急下存阴能不能照课程做？”</li>
+<li>“癌症阴实这部分怎么学习比较安全？”</li>
+</ul>
+<p>回答目标：</p>
+<ul>
+<li>明确区分“课程理论”和“真实临床”。</li>
+<li>列高风险方药与高风险场景。</li>
+<li>不提供可执行剂量和自用步骤。</li>
+<li>提醒执业医师面诊或急诊。</li>
+</ul>
+<p>高风险关键词：</p>
+<ul>
+<li>附子、生附子、炮附子、四逆汤、通脉四逆汤、白通汤、白通加猪胆汁汤、真武汤。</li>
+<li>大承气汤、小承气汤、调胃承气汤、急下存阴、热结旁流。</li>
+<li>抵当汤、大陷胸汤、桃核承气汤。</li>
+<li>癌症、肿瘤、阴实、附骨脉、主动脉剥离。</li>
+<li>孕产妇、儿童、老人、胸痛、急腹痛、神志异常、脱水、休克。</li>
+</ul>
+<p>标准安全回答：</p>
+<pre><code class="language-markdown">这部分只能作为倪海厦课程理论学习。它涉及峻烈攻下、破血、附子回阳或危重症判断，不能作为个人用药建议。真实病情必须由执业中医师面诊辨证；若有胸痛、急腹痛、意识改变、脱水或休克样表现，应立即急诊。
+</code></pre>
+<h2 id="推荐学习路径">推荐学习路径</h2>
+<h3 id="入门路径先会分辨不急着记方">入门路径：先会分辨，不急着记方</h3>
+<ol>
+<li>读 <code>six-channel.md</code> 的总览表。</li>
+<li>读 <code>symptom-index.md</code> 的快速分水岭。</li>
+<li>用 5 个问题练习：发热、便秘、下利、腹痛、手足冷。</li>
+<li>再进入 <code>formula-patterns.md</code> 看代表方。</li>
+</ol>
+<h3 id="方证路径适合已有中医基础的人">方证路径：适合已有中医基础的人</h3>
+<ol>
+<li>从桂枝汤/麻黄汤、小柴胡汤、白虎汤/承气汤、四逆汤/当归四逆汤四组开始。</li>
+<li>每组只记三个东西：主症、鉴别点、禁忌。</li>
+<li>用 <code>screenshot-evidence.md</code> 找板书证据加强记忆。</li>
+</ol>
+<h3 id="逐课路径适合跟视频复习">逐课路径：适合跟视频复习</h3>
+<ol>
+<li>用 <code>lesson-map.md</code> 看每讲主题。</li>
+<li>每讲提炼 3 张卡片：病机卡、方证卡、禁忌卡。</li>
+<li>每讲保留 3 到 5 张关键截图作为复习锚点。</li>
+</ol>
+<h3 id="研究路径适合做二次蒸馏">研究路径：适合做二次蒸馏</h3>
+<ol>
+<li>先按主题而不是课次聚合：太阳病、少阳病、阳明病、三阴病、误治变证。</li>
+<li>每个主题绑定：核心概念、关键方证、症状入口、截图证据。</li>
+<li>最后再回到课程课次，保证出处可追溯。</li>
+</ol>
+<h2 id="判断回答是否适合用户">判断回答是否适合用户</h2>
+<p>一个好的 <code>$nihaisha</code> 回答应满足：</p>
+<ul>
+<li>用户能知道下一步该看什么，而不是只看到大段课程摘要。</li>
+<li>用户能看懂分水岭，比如有汗/无汗、小便深黄/清白、腹部拒按/喜按。</li>
+<li>用户能区分相似方，而不是只知道方名。</li>
+<li>用户能追溯到课次和截图。</li>
+<li>用户不会误以为可以自行照方用药。</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/index.html"><small>上一篇</small>Nihaisha 中医资料索引</a><a class="pg next" href="../docs/beginner-questions.html"><small>下一篇</small>普通用户问法入口</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E7%94%A8%E6%88%B7%E5%AD%A6%E4%B9%A0%E5%85%A5%E5%8F%A3">💬 就「用户学习入口」提问</a>
+  <a class="btn" href="../search.html?q=%E7%94%A8%E6%88%B7%E5%AD%A6%E4%B9%A0%E5%85%A5%E5%8F%A3">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

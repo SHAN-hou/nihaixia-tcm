@@ -1,0 +1,28 @@
+PDF Evidence Index
+This directory contains public-safe distilled evidence extracted from the Nihaisha PDF source set. It is intended for source-grounded correction and citation inside the skill references.
+Citation Format
+Use pdf-evidence:<doc_id>#p<page> for page-level citations.
+Resolve <doc_id> in source-manifest.json or sources.md.
+Use evidence-cards.jsonl for the short page excerpt and detected terms.
+Use python scripts/search_pdf_evidence.py <term...> or rg to search evidence-cards.jsonl / term-index/<module>.json; avoid opening module JSON indexes wholesale.
+Example: pdf-evidence:6d7e12d9f0ab#p52 means page 52 of the PDF whose doc_id is 6d7e12d9f0ab.
+Files
+ File Purpose 
+ 
+ sources.md Human-readable public-safe PDF source list. 
+ source-manifest.json Machine-readable PDF source manifest. 
+ evidence-cards.jsonl One short evidence card per text-extractable PDF page. 
+ term-index/index.json Module index manifest for term lookup files. 
+ term-index/<module>.json Module-scoped term-to-card lookup with short snippets. 
+ modules/*.md Module-level source summaries and representative evidence cards. 
+ correction-decisions.md High-confidence corrections and evidence status notes. 
+Evidence Policy
+These files use stable document IDs rather than machine-specific paths.
+PDF pages with no extractable text are not represented here; use OCR/MinerU later for image-only pages.
+Short excerpts are for verification, not a replacement for the source PDFs.
+Repeated source watermarks are stripped from evidence card excerpts; the original PDF source may contain the watermark 学习资料成本价打印公益流通禁止加价贩卖 微信公众号:岐黄圣贤智慧、岐黄传承道法自然.
+Course-derived medical content remains educational and is not individualized medical advice.
+Coverage
+PDF sources with extractable text: 11
+Evidence cards: 3003
+Module term indexes: 6

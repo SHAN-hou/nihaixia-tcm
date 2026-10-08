@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪海厦扶阳论坛 — 课程蒸馏笔记 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-fuyang">🔥 扶阳论坛</a>
+</nav>
+
+<article class="doc" data-slug="fuyang">
+  <h1>倪海厦扶阳论坛 — 课程蒸馏笔记</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（20）</summary>
+    <ol>
+      <li class="lv1"><a href="#一课程概览">一、课程概览</a></li>
+      <li class="lv1"><a href="#二课程体系图">二、课程体系图</a></li>
+      <li class="lv2"><a href="#核心模块划分">核心模块划分</a></li>
+      <li class="lv2"><a href="#递进关系">递进关系</a></li>
+      <li class="lv1"><a href="#三逐课精要">三、逐课精要</a></li>
+      <li class="lv1"><a href="#四跨课程主题图谱">四、跨课程主题图谱</a></li>
+      <li class="lv1"><a href="#五关键概念词汇表">五、关键概念词汇表</a></li>
+      <li class="lv1"><a href="#六课程观点摘要">六、课程观点摘要</a></li>
+      <li class="lv1"><a href="#七核心金句集">七、核心金句集</a></li>
+      <li class="lv1"><a href="#附录逐课摘要">附录：逐课摘要</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲01-600分钟">倪师扶阳论坛演讲01 (60.0分钟)</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲01">倪师扶阳论坛演讲01</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲02-962分钟">倪师扶阳论坛演讲02 (96.2分钟)</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲02">倪师扶阳论坛演讲02</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲03-732分钟">倪师扶阳论坛演讲03 (73.2分钟)</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲03">倪师扶阳论坛演讲03</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲04-575分钟">倪师扶阳论坛演讲04 (57.5分钟)</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲04">倪师扶阳论坛演讲04</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲05-582分钟">倪师扶阳论坛演讲05 (58.2分钟)</a></li>
+      <li class="lv2"><a href="#倪师扶阳论坛演讲05">倪师扶阳论坛演讲05</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="倪海厦扶阳论坛-课程蒸馏笔记">倪海厦扶阳论坛 — 课程蒸馏笔记</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+</blockquote>
+<p><strong>课程规模</strong>: 5 课, 5.8 小时</p>
+<hr>
+<hr>
+<h2 id="一课程概览">一、课程概览</h2>
+<p>本课程由倪海厦及其师承团队围绕“扶阳理论”展开，系统阐述中医以阴阳辨证为核心的整体观诊疗逻辑，重点解析癌症、尿毒症、肝癌等重症的病理机制与治疗策略。通过临床案例、经方应用及中西医对比，揭示扶阳疗法“温补阳气、调和气血”的核心价值，旨在为中医临床医生提供可操作的重症治疗框架，同时为中医爱好者建立扶阳理论的实践认知。课程采用“理论阐释-案例验证-工具方法-警示反思”四维递进结构，强调从病机根本入手而非依赖仪器数据，主张回归中医传统智慧以实现现代疾病干预。</p>
+<hr>
+<h2 id="二课程体系图">二、课程体系图</h2>
+<h3 id="核心模块划分">核心模块划分</h3>
+<ol>
+<li>
+<p><strong>扶阳理论基础与辨证方法</strong>
+   - 对应课程：演讲01、02、03
+   - 内容：以阴阳虚实为根基，解析四肢温度、睡眠节律、脉象等诊断依据，建立经方治疗逻辑</p>
+</li>
+<li>
+<p><strong>重症疾病（癌症/肾病）的扶阳干预</strong>
+   - 对应课程：演讲03、04、05
+   - 内容：结合肝癌、肺癌、尿毒症、脑瘤等案例，说明毒性药材（附子、生硫磺）的精准使用及节气动态调节</p>
+</li>
+<li>
+<p><strong>中西医诊疗思维对比与中医传承</strong>
+   - 对应课程：演讲02、04、05
+   - 内容：批判西医“掩盖症状”“过度营养”等局限，提出中医标准化路径与药材种植保障机制</p>
+</li>
+</ol>
+<h3 id="递进关系">递进关系</h3>
+<p><strong>基础理论 → 临床验证 → 体系完善</strong>：从阴阳辨证工具（演讲01-02）到疾病干预策略（演讲03-04），最终落脚于中医现代化实践（演讲05），形成“认知-应用-发展”闭环。</p>
+<hr>
+<h2 id="三逐课精要">三、逐课精要</h2>
+<ul>
+<li><strong>演讲01</strong>：通过“四诊合参”判断癌症早期征兆（如凌晨1-3点异常醒转），提出“温肾阳以止尿失禁”“恢复阳气循环以截断癌肿掠夺心血”的治疗逻辑。</li>
+<li><strong>演讲02</strong>：经方需阴阳药物配比（如桂枝与白芍等量），强调附子、生半夏等攻坚药的用量把控，批判过度营养导致阴虚加重病情。</li>
+<li><strong>演讲03</strong>：血癌、红斑狼疮源于心阳不足致代谢残渣逆流，治疗需回阳潜阳（如黄连阿胶汤合温阳药），同时揭示“奶水逆流”与妇科病、肿瘤的病理关联。</li>
+<li><strong>演讲04</strong>：脑瘤与尿毒症治疗需遵循三焦理论与节气规律（冬病夏治），通过“心肺对应”调节修复肾功能，并提供肺积水分阶段治疗的经方组合。</li>
+<li><strong>演讲05</strong>：癌症治疗应以心脏功能为核心（如黄芪+生硫磺强心阳），提出建立附子种植保障机制及推动区域化疾病治疗方案的中医发展路径。</li>
+</ul>
+<hr>
+<h2 id="四跨课程主题图谱">四、跨课程主题图谱</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>核心主题</th>
+<th>出现位置</th>
+<th>核心观点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>扶阳理论</strong></td>
+<td>全5课次</td>
+<td>扶阳是逆转重症（癌症、肾病）的核心原则，强调阳气主导的代谢循环修复</td>
+</tr>
+<tr>
+<td><strong>阴阳辨证</strong></td>
+<td>演讲01-03</td>
+<td>四肢温度、脉象、时辰睡眠为判断阴阳虚实的关键指标</td>
+</tr>
+<tr>
+<td><strong>经方配伍原则</strong></td>
+<td>演讲01-02</td>
+<td>药物需“色白为阳色黑为阴”的配比逻辑，简化药物以提升疗效（如桂枝汤+郁金）</td>
+</tr>
+<tr>
+<td><strong>毒性药材的临床价值</strong></td>
+<td>演讲02-05</td>
+<td>附子、生硫磺、生半夏等需精准把控量效关系，是攻坚散结的关键药物</td>
+</tr>
+<tr>
+<td><strong>时间医学与节气治疗</strong></td>
+<td>演讲04</td>
+<td>根据子午流注规律调整药物剂量（如春季重阳药），实现动态治疗</td>
+</tr>
+<tr>
+<td><strong>中西医诊疗思维对比</strong></td>
+<td>演讲02-04-05</td>
+<td>批判西医依赖仪器数据、过度营养干预，主张中医以功能恢复替代症状维持</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="五关键概念词汇表">五、关键概念词汇表</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>术语</th>
+<th>定义要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>扶阳理论</strong></td>
+<td>通过温补阳气调和阴阳，恢复气化功能以治疗阴毒病及慢性重症</td>
+</tr>
+<tr>
+<td><strong>阴阳虚实</strong></td>
+<td>四诊（望闻问切）为基础的辨证框架，四肢温度、睡眠节律为判断关键指标</td>
+</tr>
+<tr>
+<td><strong>经方</strong></td>
+<td>以仲景方为基础的灵活加减配伍，强调药量平衡（如桂枝汤中桂枝与白芍等量）</td>
+</tr>
+<tr>
+<td><strong>附子</strong></td>
+<td>温阳第一要药，需区分生附子与制附子，用于攻坚散结及恢复肾阳</td>
+</tr>
+<tr>
+<td><strong>子午流注</strong></td>
+<td>12时辰气血循行规律，结合癌症预警（如凌晨1-3点异常醒转）制定诊疗时机</td>
+</tr>
+<tr>
+<td><strong>温阳化饮</strong></td>
+<td>通过生附子、干姜、茯苓等温阳利水药物，消除水肿、瘀血等阴实病理产物</td>
+</tr>
+<tr>
+<td><strong>心肾一体</strong></td>
+<td>心阳主导代谢产物分解，肾阳负责排泄，两者循环平衡是健康基础</td>
+</tr>
+<tr>
+<td><strong>奶水逆流</strong></td>
+<td>女性代谢残渣（如乳汁）逆流至脏腑（心脏、肝胆），解释妇科病与肿瘤的成因</td>
+</tr>
+<tr>
+<td><strong>冬病夏治</strong></td>
+<td>针对冬季易发或加重的疾病（如脑瘤），在夏季阳气升发期加重扶阳药量以固本</td>
+</tr>
+<tr>
+<td><strong>辐热损伤</strong></td>
+<td>化疗导致的体内虚热，需配合生附子、干姜等温阳药扶正祛邪</td>
+</tr>
+<tr>
+<td><strong>劫阴劫阳</strong></td>
+<td>指治疗过程中可能伤及正气的现象，强调需动态监测阳气回复指标（如盗汗减少）</td>
+</tr>
+<tr>
+<td><strong>补泻监制</strong></td>
+<td>肺积水治疗需兼顾补阳（真武汤）与利水（茯苓）的平衡</td>
+</tr>
+<tr>
+<td><strong>12时辰气血</strong></td>
+<td>中医诊断参考时间医学规律，如肝经（凌晨1-3点）、肺经（凌晨3-5点）的异常反应</td>
+</tr>
+<tr>
+<td><strong>代谢产物逆流</strong></td>
+<td>奶水、精子残渣未排泄致逆流，解释血癌、红斑狼疮等病变的中医病机</td>
+</tr>
+<tr>
+<td><strong>药物毒性把控</strong></td>
+<td>麻黄、附子等需严格用量与煎煮方法，避免伤及阳气或引发虚性出血</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="六课程观点摘要">六、课程观点摘要</h2>
+<blockquote>
+<p>本节仅将原课程中的行动和优先级表述降级为学习主题归纳，不构成可照做的健康、用药或诊疗建议。</p>
+</blockquote>
+<p><strong>课程主题</strong>
+1. 课程反复使用“四诊合参”解释四肢温度、睡眠节律、盗汗等阴阳辨证线索。
+2. 桂枝汤、真武汤等方名仅作为课程结构和配伍思想的索引，不作为处方模板。
+3. 体温差异、时辰症状等内容用于理解课程中的扶阳辨证框架。</p>
+<p><strong>延伸主题</strong>
+4. 子午流注与疾病时辰关联属于课程观点摘要，不能据此自行判断病情。
+5. 生附子等毒性药材只保留为高风险课程概念，需明确其不可自行使用。
+6. 代谢异常、水湿停聚、闭经等主题仅用于回看课程病机讨论。</p>
+<p><strong>补充主题</strong>
+7. 区域病例共享和扶阳疗法标准化保留为课程中的行业观点。
+8. “七分饱”等饮食内容保留为课程养生观点，不替代营养或医疗建议。
+9. 癌症、尿毒症等重症案例只作为课程资料索引，不能转化为个人疗效评估表。</p>
+<hr>
+<h2 id="七核心金句集">七、核心金句集</h2>
+<ol>
+<li>“<strong>中医要标准化，因为海外是孤军奋战</strong>” —— 演讲01（李海夏）</li>
+<li>“<strong>癌症病人到晚上无法睡觉是因为阴中无阳</strong>” —— 演讲02</li>
+<li>“<strong>没有附子的金方等于失去真谛</strong>” —— 演讲05</li>
+<li>“<strong>西医不知道奶水就是月经</strong>” —— 演讲03</li>
+<li>“<strong>吃我的药，半夜起来吃东西代表药有效</strong>” —— 演讲01（倪海厦）</li>
+<li>“<strong>处方要简单，我常常一个药加水煮就好</strong>” —— 演讲03</li>
+<li>“<strong>肾的气化功能停止即开始恶化</strong>” —— 演讲04</li>
+<li>“<strong>西医只看病毒不治本，中医从心脏功能切入</strong>” —— 演讲05</li>
+<li>“<strong>没有见过长寿的胖子，长寿人都是瘦</strong>” —— 演讲03</li>
+<li>“<strong>治疗如修行驶中的车，需动态调整而非被动等待</strong>” —— 演讲04</li>
+</ol>
+<hr>
+<h2 id="附录逐课摘要">附录：逐课摘要</h2>
+<h3 id="倪师扶阳论坛演讲01-600分钟">倪师扶阳论坛演讲01 (60.0分钟)</h3>
+<h3 id="倪师扶阳论坛演讲01">倪师扶阳论坛演讲01</h3>
+<p>本演讲聚焦中医扶阳理论与重症诊疗逻辑，通过倪海厦师承体系代表人物的经验交流及倪师本人的深入阐释，揭示中医以阴阳辨证为核心的诊疗思维。特邀嘉宾李海夏律师结合海外行医实践，提出中医标准化需立足“望闻问切”四诊基础，通过阴阳虚实的辨识建立系统化诊断体系。他以肝癌、肺癌及膀胱功能障碍的典型案例，说明阴虚、阳虚与气血循环障碍的病理关联，主张以桂枝汤加郁金等经方治疗，“专一气化肾水以根治尿失禁”的经验凸显了中医“简易效”的治疗智慧，并强调“癌症治疗需从阴阳根本入手”的整体观。</p>
+<p>倪师则从扶阳理论出发，剖析了生命能量的动态平衡机制。他指出“心阳是力量，肾阳是基础”，通过手掌足部温度等外诊特征判断体内阴阳状态，提出“虚胜于食”的养生观点，以动物实验佐证过饱加速衰老的理论。对于癌症早期预警，他结合子午流注规律总结出“凌晨3点准时醒需警惕肺阴实”“凌晨1点不眠或为肝癌征兆”等临床观察，并以附子、干姜等温阳药物为手段，提出“阳气回头后脉象左强右弱反转”“盗汗改善程度反映疗效”等可量化指标。他特别强调中医“截断癌肿掠夺心血”的治疗逻辑，认为“恢复阳气循环”是扭转重症的关键，直言“西医仪器测心率但不测温度，中医通过温度判断病理”，凸显了中西医学理的根本差异。</p>
+<p><strong>核心知识点</strong>：
+1. 阴阳辨证逻辑：通过四肢温度、睡眠节律等体征判定虚实状态
+2. 经方治疗原则：简化药物配伍（如桂枝汤+郁金）提升靶向疗效
+3. 癌症预警体系：结合时间医学与12时辰气血流注规律诊断早期病变
+4. 扶阳治疗指标：脉象左右手比例变化与盗汗改善作为疗效判断依据
+5. 养生哲学思想：“虚肾于食”理论主张保持适度饥饿延缓衰老</p>
+<p><strong>金句引用</strong>：
+“中医要标准化，因为海外是孤军奋战” —— 李海夏
+“吃我的药，半夜起来吃东西代表药有效” —— 倪海厦</p>
+<h3 id="倪师扶阳论坛演讲02-962分钟">倪师扶阳论坛演讲02 (96.2分钟)</h3>
+<h3 id="倪师扶阳论坛演讲02">倪师扶阳论坛演讲02</h3>
+<p>倪师在演讲中系统阐述了中医阴阳辨证与扶阳理念的临床应用，强调癌症、尿毒症等重症的本质是“阴毒病”，主张通过扶阳调和阴阳以改善病机。他批判西医过度依赖营养干预和所谓的“防癌疫苗”，指出“过度营养导致阴虚”，反主张饮食清淡、七分饱以固护本源。在药物配伍方面，倪师提出“色白为阳，色黑为阴”的辨证法则，并强调经方需平衡阴阳药力，如桂枝汤中桂枝（辛温发汗）与白芍（酸收阴药）剂量必须对等。他特别推崇生附子、制附子、生半夏的重用，认为此类药物能攻坚散结，需精准把控药性，配合芒硝、白虎汤等方剂治疗癌症患者肛管压力、肺萎缩等具体症状。金句如“癌症病人到晚上无法睡觉是因为阴中无阳”“中药可以当饭吃，停药后仍需长期调养”，凸显其“扶阳为本”的治疗逻辑。</p>
+<p>针对肿瘤与水肿等顽疾，倪师提出“温阳化饮”与“攻坚药物”需协同使用的核心原则。他举例美国肝癌患者通过经方治疗肿瘤缩小、大肠癌患者服药后排水利尿缓解水肿的案例，论证“阳气足就不会有瘀血和湿邪”的观点。在治疗手法上，主张根据时辰和症状判断时机：如早晨6点阳气升发期需用麻黄发汗，夜间6-12点纯阴时段则以扶阳化解阴实。对于药物选择，明确区分“川木通通淋优于广木通”，并强调石膏可缩小胃容量辅助糖尿病减重。诊断中，倪师以“出汗反应”“脉象”为关键指标，直言“尿毒症病人开始正常出汗即是阳气回复标志”。其理论贯穿“心肾一体”“动态循环”等整体观，批判西医“掩盖症状”的降糖方案，提出“阳气需当权才能主导病机逆转”的中医进步方向。</p>
+<h3 id="倪师扶阳论坛演讲03-732分钟">倪师扶阳论坛演讲03 (73.2分钟)</h3>
+<h3 id="倪师扶阳论坛演讲03">倪师扶阳论坛演讲03</h3>
+<p>倪师在《扶阳论坛演讲03》中深入阐述了中医扶阳疗法对重大疾病的治疗理念及实践逻辑。其核心观点认为，心脏阳气不足（君主之官失职）是多种现代疾病的根源，如血癌患者因抗生素长期伤及心阳，导致代谢产物（精子/奶水残渣）逆流至督脉及骨髓，引发白血球异常增生；而红斑狼疮则被归因为“心脏火不足致奶水逆流面部”的表现。治疗上强调以回阳潜阳为主，核心方剂多为桂枝汤类（桂枝、白芍、甘草）配合生附子、干姜等，避免使用活血化瘀药以防虚性出血。倪师通过临床案例验证疗效，如血癌患者经黄连阿胶汤合温阳药3月内恢复大小便功能、消除盗汗，凸显“心脏热能传至小肠，小肠温则脚热，阳气足则性命无忧”的扶阳逻辑。</p>
+<p>演讲中，倪师批判性对比了中西医的诊疗思维差异，指出西医过度依赖分子化研究及穿刺治疗可能损伤结缔组织，形成囊袋性病变，而中医则以整体观和经方思维直击病本。例如，肾阳不足致代谢异常的妇科病案中，患者因8年闭经、体重超标及关节疼痛被西医长期误治，转用生姜大枣汤、五苓散合制甘草、石膏等药物后，通过疏通水湿停聚恢复月经并减重。他警示“西医不知道奶水就是月经”，揭示代谢产物逆流的中医认知独特性，并强调“观手知病变”“以效为凭”的诊断原则。重要原话如“奶水逆流到心脏里边去，就是造成女人没有抽烟得了肺癌的原因”直指疾病成因的颠覆性观点，而“没有见过长寿的胖子，长寿人都是瘦”则呼应了扶阳调气与体质健康的关系。倪师主张突破传统框架，以“经方思维”结合现代临床，从病机根本入手干预癌症转移与恶化。</p>
+<h3 id="倪师扶阳论坛演讲04-575分钟">倪师扶阳论坛演讲04 (57.5分钟)</h3>
+<h3 id="倪师扶阳论坛演讲04">倪师扶阳论坛演讲04</h3>
+<p>倪师在本场演讲中深入探讨了中医扶阳理论在肿瘤及重症肾病治疗中的应用，结合两例脑瘤与两例尿毒症的实际案例，强调辨证施治与节气调候的重要性。针对脑瘤患者，他提出通过"冬病夏治"理念，结合三焦系统理论及生硫磺、生物子等扶阳药物，配合穿芎、瓦楞子活血化瘀，实现"从根治癌，冬藏夏发"。治疗过程中特别注意冬季固本、春季加重阳药量的动态调整，如案例中患者8天摆脱拐杖、肿瘤缩小停经等疗效验证了扶阳药的温肾助阳作用。倪师以"中医治疗如修行驶中的车"为喻，指出治疗需在疾病进行中及时干预，同时提醒临床需根据患者体重灵活调整剂量（如300磅患者仅用60克生硫磺）。</p>
+<p>在肺积水与尿毒症治疗中，倪师系统阐述了分阶段辨证的诊疗思路。肺积水需区分可平躺、两热间积水、心下积三个阶段，结合经方如真武汤、苓桂术甘汤实现"补泻监制"的平衡。针对化疗后的"辐热"损伤，他强调生附子、干姜、甘草组合可驱寒化饮，而尿毒症治疗则需通过调节"心肺对应"关系，以扶心阳改善小肠气化功能，从而修复肾功能。两例尿毒症患者虽未显示血肌酐数值显著下降，但贫血、恶心等症状全面改善，且4年后复查无癌细胞残留，印证了中药整体调节的优势。倪师特别警示："西医透析只是维持而非恢复功能"，并指出"药材品质直接影响疗效，需警惕麻黄、附子等毒性药材的滥用"。他通过长期疗效数据（5-6年无进展）与精准加减方案（如桂枝、白术的灵活运用），展现了中医对慢性重症的系统性治疗思维。</p>
+<p><strong>核心知识点</strong>：
+1. 冬病夏治与节气调整药量的动态治疗观
+2. 三焦系统理论指导下的肿瘤辨证思路
+3. 心肾气化关联的"补泻监制"方法在肺病中的应用
+4. 中药替代透析的可行性及"心肺对应"调节机制
+5. 毒性药材的精准把控与临床疗效关系</p>
+<p><strong>金句引用</strong>：
+"肾的气化功能停止即开始恶化，头不困、开始进食代表肾脏停止恶化"
+"肺的气化靠小肠温度，心脏阳气进入小肠"</p>
+<h3 id="倪师扶阳论坛演讲05-582分钟">倪师扶阳论坛演讲05 (58.2分钟)</h3>
+<h3 id="倪师扶阳论坛演讲05">倪师扶阳论坛演讲05</h3>
+<p>倪师在演讲中围绕中医扶阳理论在癌症治疗中的应用展开论述，通过多个临床案例阐释“辨证论治”与“恢复脏腑功能”的核心理念。他指出中医治疗癌症无需依赖西医病名，而是以症状变化为依据，强调经方“强心阳、温肝肾”的扶阳策略。在乳癌案例中，患者因阳明热证表现为口渴喜饮冰水、舌根黄厚，倪师以重剂石膏配伍阿胶、黄芪，7天内显著改善硬块硬度；对于肝癌术后患者，则主张以小建中汤加生白芍、川芎温运肝血，并特别警示附子、生硫磺等温阳药物的临床价值，认为“没有附子的金方等于失去真谛”。演讲批判了西医过度治疗和片面追求病毒清除的局限性，金句如“西医只看病毒不治本，中医从心脏功能切入”，凸显其“扶阳为本，药随证转”的治疗逻辑。</p>
+<p>演讲还聚焦中医传承与实践的现实问题。倪师提出应建立附子等重要药材的种植保障机制，通过提高药农收购价稳定优质药材供应，避免疗效因药材退化而受损。他呼吁医学教育机构结合地域高发病种制定专项治疗方案（如广西攻肝癌、河南治尿毒症），并主张通过病例资料网络共享推动中医发展。针对当前医疗体系中“滥用西药和寒凉药物”的倾向，倪师以“肝病黄尿必用大黄”为反例，强调“对阴盛阳虚及癌症肿瘤，扶阳是唯一出路”。他反复强调中医需回归整体观，以“黄芪生硫磺组合强心阳”“白芍甘草汤缓解抽筋”等配伍为例，展现中药方剂的精准性与系统性。</p></div>
+</article>
+
+<nav class="pager">
+<span></span><a class="pg next" href="../docs/fuyang-screenshot-evidence.html"><small>下一篇</small>扶阳论坛截图证据索引</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%89%B6%E9%98%B3%E8%AE%BA%E5%9D%9B%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">💬 就「倪海厦扶阳论坛 — 课程蒸馏笔记」提问</a>
+  <a class="btn" href="../search.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%89%B6%E9%98%B3%E8%AE%BA%E5%9D%9B%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Correction Decisions · 倪师课库</title>
+<meta name="description" content="Correction Decisions">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-data">🗂️ 资料与索引</a>
+</nav>
+
+<article class="doc" data-slug="pdf-evidence-correction-decisions">
+  <h1>Correction Decisions</h1>
+  <details class="toc" open>
+    <summary>本页目录（4）</summary>
+    <ol>
+      <li class="lv1"><a href="#applied-corrections-with-pdf-evidence">Applied Corrections With PDF Evidence</a></li>
+      <li class="lv1"><a href="#applied-corrections-with-public-non-pdf-evidence">Applied Corrections With Public Non-PDF Evidence</a></li>
+      <li class="lv1"><a href="#corrections-needing-source-evidence">Corrections Needing Source Evidence</a></li>
+      <li class="lv1"><a href="#evidence-limited-items">Evidence-Limited Items</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="correction-decisions">Correction Decisions</h1>
+<p>Summary of high-confidence corrections applied to production references. Citations should be resolved through <code>term-index/&lt;module&gt;.json</code> and <code>evidence-cards.jsonl</code>; machine-specific paths are not used here.</p>
+<h2 id="applied-corrections-with-pdf-evidence">Applied Corrections With PDF Evidence</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+<th>Public evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>大气浓汤</code></td>
+<td><code>大青龙汤</code></td>
+<td><code>pdf-evidence:57bd28cae94e#p33</code>; also see Shang Han Lun cards under <code>term-index/shanghan.json</code> for <code>大青龙汤</code>.</td>
+</tr>
+<tr>
+<td><code>代者石</code></td>
+<td><code>代赭石</code></td>
+<td><code>pdf-evidence:e993d4602e6f#p109</code>; screenshot cross-check: <code>references/clinical-cases-screenshot-evidence.md</code> uses <code>代赭石</code>.</td>
+</tr>
+<tr>
+<td><code>苦主发散燥湿</code></td>
+<td><code>苦主泻/坚/燥</code></td>
+<td><code>pdf-evidence:57bd28cae94e#p69</code> for 苦味能泻/燥/坚; <code>pdf-evidence:d91c6e1e158c#p161</code> for 辛味发散、酸味收敛.</td>
+</tr>
+<tr>
+<td><code>溶穴</code></td>
+<td><code>荥穴</code></td>
+<td><code>pdf-evidence:24767a80968b#p78</code> for 荥穴属性; <code>pdf-evidence:24767a80968b#p156</code> for 行间穴.</td>
+</tr>
+<tr>
+<td><code>三黄穴</code></td>
+<td><code>三皇穴</code></td>
+<td><code>pdf-evidence:24767a80968b#p211</code>.</td>
+</tr>
+<tr>
+<td><code>盲虫</code></td>
+<td><code>虻虫</code></td>
+<td><code>pdf-evidence:fcf026a0b4f9#p91</code>; <code>pdf-evidence:a47aeb66677d#p67</code>.</td>
+</tr>
+<tr>
+<td><code>芘胡</code></td>
+<td><code>茈胡</code></td>
+<td><code>pdf-evidence:e993d4602e6f#p7</code>.</td>
+</tr>
+<tr>
+<td><code>遗精失惊</code></td>
+<td><code>梦遗失精</code></td>
+<td><code>pdf-evidence:e993d4602e6f#p27</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="applied-corrections-with-public-non-pdf-evidence">Applied Corrections With Public Non-PDF Evidence</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+<th>Public evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>破菌/连针破金</code></td>
+<td><code>破军/廉贞破军</code></td>
+<td><code>references/tianji-screenshot-evidence.md</code> includes the relevant <code>廉贞 破军</code> board note; <code>references/tianji.md</code> repeatedly indexes <code>破军</code> in the same lesson family.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="corrections-needing-source-evidence">Corrections Needing Source Evidence</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+<th>Evidence gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>易肝散</code></td>
+<td><code>抑肝散</code></td>
+<td>Correction follows course transcript context, but no PDF/screenshot evidence card is available yet. Treat as evidence-limited until a source card is added.</td>
+</tr>
+<tr>
+<td><code>阳宅穴</code></td>
+<td><code>阳宅学</code></td>
+<td>Correction follows Tianji context and same-module usage, but no independent PDF/screenshot card is available yet. Treat as evidence-limited until a source card is added.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="evidence-limited-items">Evidence-Limited Items</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Reason not auto-corrected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>瓜萋10g</code></td>
+<td>疑似 <code>瓜蒌/瓜蔞實</code>，但缺少逐字唯一证据。</td>
+</tr>
+<tr>
+<td><code>红刮/蟹白</code></td>
+<td>方向可能为 <code>红花/薤白</code>，需对照原图或原片段。</td>
+</tr>
+<tr>
+<td><code>瓜蒌石/圈牛</code></td>
+<td>疑似多药名混写，当前证据不足。</td>
+</tr>
+<tr>
+<td><code>软骨穴</code></td>
+<td>需查对应课程片段确认是否为穴名或转写噪声。</td>
+</tr>
+<tr>
+<td>天纪部分星曜句</td>
+<td>ASR 破碎，需要逐句对照板书或视频。</td>
+</tr>
+<tr>
+<td>源文件名中的 <code>倪海夏...</code></td>
+<td>对应旧抽文本/源索引文件名，未同步规范源文件前不改。</td>
+</tr>
+</tbody>
+</table></div></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/pdf-evidence-modules-index.html"><small>上一篇</small>PDF Evidence Modules</a><a class="pg next" href="../docs/pdf-evidence-modules-shanghan.html"><small>下一篇</small>伤寒论 PDF Evidence</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=Correction%20Decisions">💬 就「Correction Decisions」提问</a>
+  <a class="btn" href="../search.html?q=Correction%20Decisions">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

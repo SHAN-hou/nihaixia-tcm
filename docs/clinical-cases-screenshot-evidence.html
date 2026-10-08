@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>临床案例课程截图证据索引 · 倪师课库</title>
+<meta name="description" content="临床案例课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-clinical-cases">🩺 临床案例</a>
+</nav>
+
+<article class="doc" data-slug="clinical-cases-screenshot-evidence">
+  <h1>临床案例课程截图证据索引</h1>
+<p class="lead">临床案例课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。</p>  <details class="toc" open>
+    <summary>本页目录（42）</summary>
+    <ol>
+      <li class="lv1"><a href="#01">01</a></li>
+      <li class="lv1"><a href="#01倪师医案-淋巴癌">01倪师医案--淋巴癌</a></li>
+      <li class="lv1"><a href="#02">02</a></li>
+      <li class="lv1"><a href="#02倪师医案-处方一">02倪师医案--处方一</a></li>
+      <li class="lv1"><a href="#03">03</a></li>
+      <li class="lv1"><a href="#03倪师医案-僵冻人">03倪师医案--僵冻人</a></li>
+      <li class="lv1"><a href="#04">04</a></li>
+      <li class="lv1"><a href="#04倪师医案-处方二">04倪师医案--处方二</a></li>
+      <li class="lv1"><a href="#05">05</a></li>
+      <li class="lv1"><a href="#05倪师医案-案例补充">05倪师医案--案例补充</a></li>
+      <li class="lv1"><a href="#06">06</a></li>
+      <li class="lv1"><a href="#06倪师医案-人与天地">06倪师医案--人与天地</a></li>
+      <li class="lv1"><a href="#07倪师医案-胆一阳始生">07倪师医案--胆一阳始生</a></li>
+      <li class="lv1"><a href="#08倪师医案-肝硬化">08倪师医案--肝硬化</a></li>
+      <li class="lv1"><a href="#09倪师医案-分消汤">09倪师医案--分消汤</a></li>
+      <li class="lv1"><a href="#10倪师医案-分消汤加味">10倪师医案--分消汤加味</a></li>
+      <li class="lv1"><a href="#11倪师医案-生附子硫磺">11倪师医案--生附子硫磺</a></li>
+      <li class="lv1"><a href="#13倪师医案-大柴胡汤">13倪师医案--大柴胡汤</a></li>
+      <li class="lv1"><a href="#14倪师医案-胃苓汤">14倪师医案--胃苓汤</a></li>
+      <li class="lv1"><a href="#16倪师医案-动脉血管堵塞">16倪师医案--动脉血管堵塞</a></li>
+      <li class="lv1"><a href="#17倪师医案-心脏处方">17倪师医案--心脏处方</a></li>
+      <li class="lv1"><a href="#18倪师医案-心脏处方续">18倪师医案--心脏处方续</a></li>
+      <li class="lv1"><a href="#19倪师医案-细辛_炮附子">19倪师医案--细辛_炮附子</a></li>
+      <li class="lv1"><a href="#20倪师医案-旋覆花代赭石汤">20倪师医案--旋覆花代赭石汤</a></li>
+      <li class="lv1"><a href="#23倪师医案-肝病">23倪师医案--肝病</a></li>
+      <li class="lv1"><a href="#24倪师医案-处方加减">24倪师医案--处方加减</a></li>
+      <li class="lv1"><a href="#25倪师医案-肝处方">25倪师医案--肝处方</a></li>
+      <li class="lv1"><a href="#26倪师医案-三黄泻心汤">26倪师医案--三黄泻心汤</a></li>
+      <li class="lv1"><a href="#27倪师医案-栀子豆豉汤">27倪师医案--栀子豆豉汤</a></li>
+      <li class="lv1"><a href="#28倪师医案-乳癌例">28倪师医案--乳癌例</a></li>
+      <li class="lv1"><a href="#29倪师医案-乳岩处方">29倪师医案--乳岩处方</a></li>
+      <li class="lv1"><a href="#30倪师医案-酸枣仁_知母">30倪师医案--酸枣仁_知母</a></li>
+      <li class="lv1"><a href="#31倪师医案-制鳖甲">31倪师医案--制鳖甲</a></li>
+      <li class="lv1"><a href="#32倪师医案-大黄_海藻">32倪师医案--大黄_海藻</a></li>
+      <li class="lv1"><a href="#34倪师医案-肾方">34倪师医案--肾方</a></li>
+      <li class="lv1"><a href="#35倪师医案-败龟板">35倪师医案--败龟板</a></li>
+      <li class="lv1"><a href="#36倪师医案-乌药_泽泻">36倪师医案--乌药_泽泻</a></li>
+      <li class="lv1"><a href="#38倪师医案-红斑性狼疮案">38倪师医案--红斑性狼疮案</a></li>
+      <li class="lv1"><a href="#39倪师医案-主力处方">39倪师医案--主力处方</a></li>
+      <li class="lv1"><a href="#40倪师医案-桑螵蛸">40倪师医案--桑螵蛸</a></li>
+      <li class="lv1"><a href="#41倪师医案-桔梗">41倪师医案--桔梗</a></li>
+      <li class="lv1"><a href="#42倪师医案-经方思路">42倪师医案--经方思路</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="临床案例课程截图证据索引">临床案例课程截图证据索引</h1>
+<blockquote>
+<p>来源：临床案例课程视频视觉分析与截图证据索引；公开仓库只保留相对截图路径和证据说明。
+用于检索倪师医案/临床案例课程板书、处方、病机图、肿瘤、心脏、肝病、肾病、乳癌、红斑性狼疮等案例画面证据。
+安全边界：截图条目仅用于定位课程画面证据；其中出现的病案、处方、剂量、针灸或急症内容不得作为个人医疗建议或操作依据。</p>
+</blockquote>
+<h2 id="01">01</h2>
+<ul>
+<li><code>00:00</code> [临床案例、板书/处方/病机图] 讲师在患者后头部及颈部进行手法示范与穴位定位。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0001.webp</li>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师在患者腹部进行针灸进针实操演示。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0002.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 患者腹部针灸留针特写画面，展示具体进针位置。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0003.webp</li>
+<li><code>06:00</code> [临床案例、板书/处方/病机图] 患者面部/额头区域针灸留针特写画面。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0004.webp</li>
+<li><code>08:00</code> [临床案例、板书/处方/病机图] 讲师在患者小腿下段及脚踝区域进行按压诊察与定位示范。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0005.webp</li>
+<li><code>10:00</code> [临床案例、板书/处方/病机图] 讲师在患者腰背部进行按压，寻找压痛点或进行穴位定位。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0006.webp</li>
+<li><code>12:00</code> [临床案例、板书/处方/病机图] 患者小腿后侧针灸留针特写画面。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0007.webp</li>
+<li><code>14:00</code> [临床案例、板书/处方/病机图] 患者足部特写，展示脚趾部位的具体病理特征或施针点。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0008.webp</li>
+<li><code>18:00</code> [临床案例、板书/处方/病机图] 患者足底特写画面，展示局部情况。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0009.webp</li>
+<li><code>30:00</code> [临床案例、板书/处方/病机图] 黑板板书画面，讲师正在讲解左侧梳理的“阴阳、表里、寒热、虚实”等中医辨证框架。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0010.webp</li>
+<li><code>38:00</code> [临床案例、板书/处方/病机图] 相对完整的黑板板书画面，除了左侧的辨证框架，右侧增加了“颜面潮红”等具体症状表现的板书分析。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0011.webp</li>
+</ul>
+<h2 id="01倪师医案-淋巴癌">01倪师医案--淋巴癌</h2>
+<ul>
+<li><code>06:00</code> [临床案例、板书/处方/病机图] 黑板板书画面，内容包含病案相关的日期时间记录（如“2006/10/25”等），以及讲师圈划标注的“精”、“极寒”等中医病机分析概念文字。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0012.webp</li>
+</ul>
+<h2 id="02">02</h2>
+<ul>
+<li><code>00:00</code> [临床案例、板书/处方/病机图] 面部（眼周）针灸实操定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0013.webp</li>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 头部（发际线处）针灸实操定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0014.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 面部（鼻翼旁）穴位按压或针灸定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0015.webp</li>
+<li><code>06:00</code> [临床案例、板书/处方/病机图] 后颈部穴位触摸定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0016.webp</li>
+<li><code>08:00</code> [临床案例、板书/处方/病机图] 腿部穴位触摸定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0017.webp</li>
+<li><code>10:00</code> [临床案例、板书/处方/病机图] 腹部/腰侧穴位触摸定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0018.webp</li>
+<li><code>12:00</code> [临床案例、板书/处方/病机图] 中医经络穴位人体模型展示与讲解</li>
+<li>截图路径：assets/screenshots/clinical-cases/0019.webp</li>
+<li><code>14:00</code> [临床案例、板书/处方/病机图] 颈部针灸实操画面（已扎针）</li>
+<li>截图路径：assets/screenshots/clinical-cases/0020.webp</li>
+<li><code>16:00</code> [临床案例、板书/处方/病机图] 足部穴位触摸定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0021.webp</li>
+<li><code>20:00</code> [临床案例、板书/处方/病机图] 面部（眼部）针灸实操定位示范</li>
+<li>截图路径：assets/screenshots/clinical-cases/0022.webp</li>
+<li><code>22:00</code> [临床案例、板书/处方/病机图] 面部针灸实操特写画面（额头、眼周已扎针）</li>
+<li>截图路径：assets/screenshots/clinical-cases/0023.webp</li>
+<li><code>28:00</code> [临床案例、板书/处方/病机图] 黑板板书：列有关于“肝癌”的中医症状或病理术语</li>
+<li>截图路径：assets/screenshots/clinical-cases/0024.webp</li>
+<li><code>29:30</code> [临床案例、板书/处方/病机图] 黑板板书：关于“肝癌”的中医症状或病理术语内容更加完整</li>
+<li>截图路径：assets/screenshots/clinical-cases/0025.webp</li>
+</ul>
+<h2 id="02倪师医案-处方一">02倪师医案--处方一</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师正在书写黑板板书，记录了就诊日期、患者基本信息及部分症状。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0026.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 满屏黑板板书，较为完整地记录了该医案患者的脉象、症状等详细病情分析。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0027.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 画面右侧叠加了清晰的绿色印刷体中药方剂列表，包含柴胡、黄芩、党参、瓦楞子、牡蛎、防己等药材。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0028.webp</li>
+</ul>
+<h2 id="03">03</h2>
+<ul>
+<li><code>08:00</code> [临床案例、板书/处方/病机图] 黑板板书关于“肝癌”的治疗思路，清晰可见右上角补充了“脾约麻仁丸”等方剂相关内容。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0029.webp</li>
+<li><code>26:00</code> [临床案例、板书/处方/病机图] 关于“三叉神经痛”的完整黑板板书，包含表明痛点位置的面部简图，以及右侧丰富的病机与经络分析文字（如“阳明”等）。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0030.webp</li>
+</ul>
+<h2 id="03倪师医案-僵冻人">03倪师医案--僵冻人</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 满屏黑板板书，记录了病案的基本信息（如“2006.10/25”、“1945年男”）以及密集的辨证分析文字。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0031.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 满屏黑板板书，除了详细的病案文字记录外，右侧还画出了带有圆圈连线的图解（推测为脏腑/五行关系图）。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0032.webp</li>
+</ul>
+<h2 id="04">04</h2>
+<ul>
+<li><code>06:00</code> [临床案例、板书/处方/病机图] 黑板左侧画出包含“心”、“火”、“小肠”、“虚”、“实”等字样的脏腑病机关系初步图解。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0033.webp</li>
+<li><code>14:00</code> [临床案例、板书/处方/病机图] 满屏板书，左侧为包含“木-&gt;火”、“水-&gt;木”、“阳”等字样的五行生克病机完整关系图，右侧列出“生附子”、“干姜”、“石膏”、“知母”等中药名称进行药性对比。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0034.webp</li>
+<li><code>29:29</code> [临床案例、板书/处方/病机图] 满屏板书更新，在原五行病机图和中药分析基础上，黑板左侧新增了用圆圈重点圈出的“阴”、“阳”、“虚”、“实”等辨证理论概括，且左下角有新增板书内容。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0035.webp</li>
+</ul>
+<h2 id="04倪师医案-处方二">04倪师医案--处方二</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 黑板板书医案分析，画面右侧叠加了清晰的方剂药组成：生附子、干姜、炙甘草、茯苓、白术、牛膝、桂枝、芍药、当归、细辛、补骨脂、泽泻。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0036.webp</li>
+</ul>
+<h2 id="05">05</h2>
+<ul>
+<li><code>00:00</code> [临床案例、板书/处方/病机图] 黑板板书：左侧有“阴”、“阳”、“气”、“血”等中医概念分类，下方列有一些中药名称。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0037.webp</li>
+<li><code>08:00</code> [临床案例、板书/处方/病机图] 黑板板书：写有中药方剂组成，可见“大黄”、“芒硝”等药名。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0038.webp</li>
+<li><code>18:00</code> [临床案例、板书/处方/病机图] 黑板板书：详细列出了多味中药，包括“桂枝”、“白芍”、“玉竹”、“吴茱萸”等。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0039.webp</li>
+<li><code>24:00</code> [临床案例、板书/处方/病机图] 黑板板书：展示了穴位相关的配伍或对应关系，包含“心俞”、“胃俞”、“脾俞”等穴位及箭头指向说明。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0040.webp</li>
+</ul>
+<h2 id="05倪师医案-案例补充">05倪师医案--案例补充</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板满屏板书，可见日期“3/29/07”以及“缓”、“快”、“高热”、“温病”、“四肢冰冷”等中医辨证论治相关的医案笔记内容。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0041.webp</li>
+</ul>
+<h2 id="06">06</h2>
+<ul>
+<li><code>00:00</code> [临床案例、板书/处方/病机图] 老师在黑板前讲解，黑板上写有涉及中医穴位或理论的板书（可见“第2椎”、“心俞”、“膏肓”等字样）。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0042.webp</li>
+</ul>
+<h2 id="06倪师医案-人与天地">06倪师医案--人与天地</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 老师在黑板前讲解，板书可见“大易”、“参同契”、“阴阳”等中医及道家经典著作和概念名词。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0043.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 老师正在书写板书，黑板上可见“天”、“日”、“月”、“大易”等字样，以及坎卦、离卦等八卦符号。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0044.webp</li>
+<li><code>05:50</code> [临床案例、板书/处方/病机图] 呈现较完整的板书内容，左侧画有简单的人体躯干轮廓示意图，右侧详细列有“天”、“日”、“月”、“火”、“坎”、“离”等文字及对应的八卦卦象符号，用于辅助讲解天地交融的理论。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0045.webp</li>
+</ul>
+<h2 id="07倪师医案-胆一阳始生">07倪师医案--胆一阳始生</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板板书，包含手绘的人体躯干简图，以及“初阳”、“半夜子时 胆”等中医概念文字和类似卦象的符号。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0046.webp</li>
+</ul>
+<h2 id="08倪师医案-肝硬化">08倪师医案--肝硬化</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 画面右侧通过后期绿色高亮字幕清晰列出了治疗方剂的具体药材：柴胡、黄芩、龙胆草、川芎、白芍、金铃子、延胡索、补骨脂、玉金、炮附子、桂枝。黑板上也有对应的粉笔板书。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0047.webp</li>
+</ul>
+<h2 id="09倪师医案-分消汤">09倪师医案--分消汤</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师授课画面，屏幕两侧通过绿色文本框清晰列出了详细的方剂组成，左侧包括“白术 茯苓 泽泻”等，右侧包括“柴胡 黄芩 龙胆草”等。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0048.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 讲师板书画面，黑板上写有“分消汤”等字样，屏幕右侧通过绿色文本框列出了“泽泻 猪苓 茯苓 半夏 陈皮”等方剂组成。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0049.webp</li>
+</ul>
+<h2 id="10倪师医案-分消汤加味">10倪师医案--分消汤加味</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师授课画面，右侧有后期添加的绿色字幕，清晰列出了药方内容，包括当归、巴戟天、阳起石、补骨脂、菟丝子、黄精、龟板、木香、干姜、熟地等药材。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0050.webp</li>
+</ul>
+<h2 id="11倪师医案-生附子硫磺">11倪师医案--生附子硫磺</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 满屏黑板板书，记录有医案相关内容，左侧可见日期“7/15/07”以及顶部“创伤”等字样（后续 04:00 及 05:49 为同一板书的讲解过程，不再重复截图）。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0051.webp</li>
+</ul>
+<h2 id="13倪师医案-大柴胡汤">13倪师医案--大柴胡汤</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 屏幕右侧以绿色字体清晰列出方剂药材，包括柴胡、黄芩、大黄、枳实、半夏、芒硝、玉金、龙胆草、当归、细辛、桂枝、麻黄、炮附、白术、茯苓、大枣、生姜、炙甘草。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0052.webp</li>
+</ul>
+<h2 id="14倪师医案-胃苓汤">14倪师医案--胃苓汤</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 画面右侧清晰显示方剂的药物组成：炙甘草、茯苓、白芍、猪苓、泽泻、白术、苍术、厚朴、陈皮。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0053.webp</li>
+</ul>
+<h2 id="16倪师医案-动脉血管堵塞">16倪师医案--动脉血管堵塞</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 黑板板书医案信息与症状，可见“6/8/2004 1941男”及编号列表如“1. 身冷”、“2. 心律不整”、“5. 手足冰冷”等病症记录。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0054.webp</li>
+</ul>
+<h2 id="17倪师医案-心脏处方">17倪师医案--心脏处方</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 画面右侧叠加显示清晰的方剂组成文本框，包含中药：川芎、丹皮、桃仁、红花、细辛、麦冬、薤白、桂枝。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0055.webp</li>
+</ul>
+<h2 id="18倪师医案-心脏处方续">18倪师医案--心脏处方续</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师在黑板前授课，画面右侧以绿色高亮文本框清晰展示了包含川芎、丹皮、桃仁、红花、桂枝、地龙、枳实、薤白、当归、牛膝、木通、白芍、黄连、黄芩、细辛、炮附子等中药的方剂列表。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0056.webp</li>
+</ul>
+<h2 id="19倪师医案-细辛_炮附子">19倪师医案--细辛_炮附子</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 老师在黑板前板书，记录医案信息，黑板上可见多行手写文字，包含就诊日期及患者的症状表现，为本组中板书内容最完整的一帧。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0057.webp</li>
+</ul>
+<h2 id="20倪师医案-旋覆花代赭石汤">20倪师医案--旋覆花代赭石汤</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 老师在黑板前讲解医案，黑板上有粉笔板书，记录了就诊日期（如6/8/2004）及相关病症（如“胃痛”、“打嗝”等字样）。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0058.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 画面右侧叠加了清晰的绿色方剂字幕，列出具体药物及剂量：“旋覆花3 代赭石3、半夏3 枳实3、黄连1 地龙2、薤白3 红花1”。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0059.webp</li>
+</ul>
+<h2 id="23倪师医案-肝病">23倪师医案--肝病</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板板书，列举了患者的症状表现，清晰可见“1. 睡不好 (1-3:00 AM)”、“2. 胃口好”、“3. 大便正常”、“4. 小便”。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0060.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 讲师指点黑板上的板书，黑板左侧绘有一个包含方框的脏腑图解，右侧列有多条症状相关的文字板书。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0061.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 讲师正在黑板左侧绘制带有诸多箭头的人体气机运行或脏腑关系图解，图解旁有文字标注，右侧保留了之前的症状条目板书。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0062.webp</li>
+</ul>
+<h2 id="24倪师医案-处方加减">24倪师医案--处方加减</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 讲师在黑板前讲解，画面右侧叠加绿色方剂文字“柴胡 黄芩 半夏 党参 郁金 龙胆”，黑板上有手写的症状分析板书，隐约可见“睡不好 (1-3:00 AM)”等字样。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0063.webp</li>
+</ul>
+<h2 id="25倪师医案-肝处方">25倪师医案--肝处方</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 带有绿色叠加层的授课画面，展示了详细的中药方剂，包含：柴胡、黄芩、半夏、党参、郁金、龙胆、川芎、丹皮、白芍、苍术、泽泻、白术、茯苓、茵陈、熟地、补骨脂、阳起石、续断、三七、炮附、桂枝。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0064.webp</li>
+</ul>
+<h2 id="26倪师医案-三黄泻心汤">26倪师医案--三黄泻心汤</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 完整的医案分析黑板板书，清晰可见患者症状列表（如“1. 小便好许多”、“2. 大便绿色”等）以及黑板左侧和右侧的中医理论图解与推演过程，画面带有“三黄泻心汤”特效大字。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0065.webp</li>
+</ul>
+<h2 id="27倪师医案-栀子豆豉汤">27倪师医案--栀子豆豉汤</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师在黑板前讲解，画面右侧叠加绿色字幕框，列出药方组成：大黄、白术、茯苓、茵陈、黄芩、黄连、黄柏。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0066.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 讲师在黑板前板书，画面右侧叠加绿色字幕框，列出药方组成：黄柏、大黄、黄连、栀子、豆豉。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0067.webp</li>
+</ul>
+<h2 id="28倪师医案-乳癌例">28倪师医案--乳癌例</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 老师在黑板前讲解，黑板上写有密集的粉笔板书，包含文字和圈注，疑似病机分析或理论推导。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0068.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 老师在黑板前讲解，黑板上写有日期“2/21/2007”以及带有序号的条目式板书。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0069.webp</li>
+</ul>
+<h2 id="29倪师医案-乳岩处方">29倪师医案--乳岩处方</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板板书画面，右侧有清晰的绿色字幕展示方剂药材：“柴胡 防己 黄芩 郁金 黄连 白芍 阿胶 牡蛎 紫根 瓦楞子”，画面下方有绿色字幕“疏肝气”</li>
+<li>截图路径：assets/screenshots/clinical-cases/0070.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 黑板板书画面，右侧继续保留方剂组成的绿色字幕，黑板左下方新增了相关的示意图画板书</li>
+<li>截图路径：assets/screenshots/clinical-cases/0071.webp</li>
+</ul>
+<h2 id="30倪师医案-酸枣仁_知母">30倪师医案--酸枣仁_知母</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 黑板板书展示，包含日期“2/21/2007”以及完整的药方内容，可见“柴胡”、“黄芩”、“玉金”、“龙胆草”等药材名及相关病状分析。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0072.webp</li>
+</ul>
+<h2 id="31倪师医案-制鳖甲">31倪师医案--制鳖甲</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 黑板板书，左侧记录了患者多次就诊的追踪日期（如 2/21/07、3/7/07、3/20/07、4/1/07、4/2/07 等），右侧写有对应的中药处方（依稀可见柴胡、黄芩等药名）。此画面包含了本组中最</li>
+<li>截图路径：assets/screenshots/clinical-cases/0073.webp</li>
+</ul>
+<h2 id="32倪师医案-大黄_海藻">32倪师医案--大黄_海藻</h2>
+<ul>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 老师在黑板前授课，黑板上书写了多组按日期（如2/21/2007等）排列的医案记录和处方内容。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0074.webp</li>
+</ul>
+<h2 id="34倪师医案-肾方">34倪师医案--肾方</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 画面左侧清晰列出了方剂的药材组成：炮附子、木通 当归 细辛、平姜 白术 茯苓、生姜 大枣 生附子、桂枝 白芍 炙甘草。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0075.webp</li>
+</ul>
+<h2 id="35倪师医案-败龟板">35倪师医案--败龟板</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板板书，记录了患者就诊日期及病理机制分析图解</li>
+<li>截图路径：assets/screenshots/clinical-cases/0076.webp</li>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 黑板板书，讲解检验指标的变化，底部伴有字幕“原来是4.7 掉到3.1”</li>
+<li>截图路径：assets/screenshots/clinical-cases/0077.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 黑板板书，画面右侧出现核心用药“补骨脂 败龟板”的重点提示字幕</li>
+<li>截图路径：assets/screenshots/clinical-cases/0078.webp</li>
+</ul>
+<h2 id="36倪师医案-乌药_泽泻">36倪师医案--乌药_泽泻</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板板书医案分析，左侧列出了从“2/9/2007”到“5/4/07”等多个复诊日期的时间线，中间偏右位置画有“胃→心”等脏腑病机传变示意图。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0079.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 黑板板书内容更新，老师在原有时间线右侧上方补充了新的复诊日期“6/1/07”，并指着该日期进行讲解。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0080.webp</li>
+</ul>
+<h2 id="38倪师医案-红斑性狼疮案">38倪师医案--红斑性狼疮案</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 讲师在黑板前授课，黑板上写有满屏的手写板书，记录了多个日期（如 2/19/2007, 6/1/07 等）及相关医案病程或用药记录文字。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0081.webp</li>
+</ul>
+<h2 id="39倪师医案-主力处方">39倪师医案--主力处方</h2>
+<ul>
+<li><code>04:00</code> [临床案例、板书/处方/病机图] 黑板板书，记录了医案患者的问诊症状，可见“睡眠不好：失眠”、“大便”、“胃口”、“口渴”等项目。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0082.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 画面左上角叠加了清晰的绿色底色处方方剂表，列出“生附子 细辛、石膏 知母、防己 泽泻、茯苓 黄精”等药材。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0083.webp</li>
+</ul>
+<h2 id="40倪师医案-桑螵蛸">40倪师医案--桑螵蛸</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 黑板满屏板书，左侧详细记录了Lupus（红斑狼疮）医案患者的各项症状表现（如“睡眠不好”、“胃口”、“大便”等），右侧为相关的病机或方剂分析。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0084.webp</li>
+<li><code>05:02</code> [临床案例、板书/处方/病机图] 老师结合背景板书讲解医案用药，画面右下角弹出了绿底白字的药材名称“郁金”重点提示字幕。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0085.webp</li>
+</ul>
+<h2 id="41倪师医案-桔梗">41倪师医案--桔梗</h2>
+<ul>
+<li><code>02:00</code> [临床案例、板书/处方/病机图] 老师在黑板前书写，画面右侧有醒目的绿色高亮标注“乌药 白术”中药配伍信息。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0086.webp</li>
+<li><code>05:49</code> [临床案例、板书/处方/病机图] 老师在满屏手写板书前讲解，板书内容涉及医案分析，左侧依稀可见“乌药”等中药名称。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0087.webp</li>
+</ul>
+<h2 id="42倪师医案-经方思路">42倪师医案--经方思路</h2>
+<ul>
+<li><code>05:23</code> [临床案例、板书/处方/病机图] 讲师位于画面右侧，呈现了当前时间段内被遮挡最少、最完整的黑板板书。板书左侧较为清晰，可见“乌梅丸”、带有圆圈标记的“阴”字以及其他散落的中医理论笔记文字。</li>
+<li>截图路径：assets/screenshots/clinical-cases/0088.webp</li>
+</ul></div>
+</article>
+
+<nav class="pager">
+<a class="pg prev" href="../docs/clinical-cases.html"><small>上一篇</small>倪海厦临床案例课程 — 课程蒸馏笔记</a><span></span></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E4%B8%B4%E5%BA%8A%E6%A1%88%E4%BE%8B%E8%AF%BE%E7%A8%8B%E6%88%AA%E5%9B%BE%E8%AF%81%E6%8D%AE%E7%B4%A2%E5%BC%95">💬 就「临床案例课程截图证据索引」提问</a>
+  <a class="btn" href="../search.html?q=%E4%B8%B4%E5%BA%8A%E6%A1%88%E4%BE%8B%E8%AF%BE%E7%A8%8B%E6%88%AA%E5%9B%BE%E8%AF%81%E6%8D%AE%E7%B4%A2%E5%BC%95">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

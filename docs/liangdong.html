@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪海厦梁冬对话 — 课程蒸馏笔记 · 倪师课库</title>
+<meta name="description" content="本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。">
+<meta name="theme-color" content="#1a2330">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="倪师课库">
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body data-root="../">
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="打开目录" aria-expanded="false">☰</button>
+  <a class="brand" href="../index.html">
+    <span class="brand-mark">倪</span>
+    <span class="brand-text">倪师课库<small>课程知识库</small></span>
+  </a>
+  <a class="icon-btn" href="../search.html" aria-label="搜索">🔍</a>
+</header>
+
+<div class="drawer-scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="站点目录" hidden>
+  <div class="drawer-head">
+    <strong>资料目录</strong>
+    <button class="icon-btn" id="closeBtn" aria-label="关闭">✕</button>
+  </div>
+  <nav class="drawer-nav">
+    <a class="drawer-home" href="../index.html">🏠 首页</a>
+    <a class="drawer-home" href="../gallery/shanghanlun.html">🖼️ 伤寒论截图 <span class="muted">649</span></a>
+    <a class="drawer-home" href="../gallery/jingui.html">🖼️ 金匮要略截图 <span class="muted">656</span></a>
+    <a class="drawer-home" href="../gallery/zhongjing-xinfa.html">🖼️ 仲景心法截图 <span class="muted">68</span></a>
+    <a class="drawer-home" href="../gallery/clinical-cases.html">🖼️ 临床案例截图 <span class="muted">88</span></a>
+    <a class="drawer-home" href="../gallery/bagang.html">🖼️ 八纲辨证截图 <span class="muted">33</span></a>
+    <a class="drawer-home" href="../gallery/fuyang.html">🖼️ 扶阳论坛截图 <span class="muted">37</span></a>
+    <a class="drawer-home" href="../gallery/yijinjing.html">🖼️ 易筋经截图 <span class="muted">28</span></a>
+    <a class="drawer-home" href="../gallery/tianji.html">🖼️ 天纪截图 <span class="muted">527</span></a>
+    <a class="drawer-home" href="../gallery/huangdi.html">🖼️ 黄帝内经截图 <span class="muted">272</span></a>
+    <a class="drawer-home" href="../gallery/bencao.html">🖼️ 神农本草截图 <span class="muted">127</span></a>
+    <a class="drawer-home" href="../gallery/acupuncture.html">🖼️ 针灸截图 <span class="muted">501</span></a>
+    <hr>
+    <details open>
+      <summary>🧭 总览与入门</summary>
+      <a href="../docs/index.html">Nihaisha 中医资料索引</a>
+      <a href="../docs/learning-entry.html">用户学习入口</a>
+      <a href="../docs/beginner-questions.html">普通用户问法入口</a>
+      <a href="../docs/usage-scenarios.html">用户使用场景路由</a>
+    </details>
+    <details >
+      <summary>📜 伤寒论</summary>
+      <a href="../docs/shanghanlun.html">伤寒论课程参考</a>
+      <a href="../docs/six-channel.html">六经辨证模块</a>
+      <a href="../docs/formula-patterns.html">方剂方证模块</a>
+      <a href="../docs/symptom-index.html">症状入口索引</a>
+      <a href="../docs/lesson-map.html">逐课学习地图</a>
+      <a href="../docs/screenshot-evidence.html">关键笔记截图证据索引</a>
+      <a class="ghost" href="../gallery/shanghanlun.html">🖼️ 截图画廊（649）</a>
+    </details>
+    <details >
+      <summary>🏛️ 金匮要略</summary>
+      <a href="../docs/jingui.html">倪海厦金匮要略课程 — 课程蒸馏笔记</a>
+      <a href="../docs/jingui-screenshot-evidence.html">金匮要略截图证据索引</a>
+      <a class="ghost" href="../gallery/jingui.html">🖼️ 截图画廊（656）</a>
+    </details>
+    <details >
+      <summary>💡 仲景心法</summary>
+      <a href="../docs/zhongjing-xinfa.html">倪海厦仲景心法传讲 — 课程蒸馏笔记</a>
+      <a href="../docs/zhongjing-xinfa-screenshot-evidence.html">仲景心法传讲截图证据索引</a>
+      <a class="ghost" href="../gallery/zhongjing-xinfa.html">🖼️ 截图画廊（68）</a>
+    </details>
+    <details >
+      <summary>🩺 临床案例</summary>
+      <a href="../docs/clinical-cases.html">倪海厦临床案例课程 — 课程蒸馏笔记</a>
+      <a href="../docs/clinical-cases-screenshot-evidence.html">临床案例课程截图证据索引</a>
+      <a class="ghost" href="../gallery/clinical-cases.html">🖼️ 截图画廊（88）</a>
+    </details>
+    <details >
+      <summary>⚖️ 八纲辨证</summary>
+      <a href="../docs/bagang.html">倪海厦八纲辨证课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bagang-screenshot-evidence.html">人纪八纲辨证截图证据索引</a>
+      <a class="ghost" href="../gallery/bagang.html">🖼️ 截图画廊（33）</a>
+    </details>
+    <details >
+      <summary>🔥 扶阳论坛</summary>
+      <a href="../docs/fuyang.html">倪海厦扶阳论坛 — 课程蒸馏笔记</a>
+      <a href="../docs/fuyang-screenshot-evidence.html">扶阳论坛截图证据索引</a>
+      <a class="ghost" href="../gallery/fuyang.html">🖼️ 截图画廊（37）</a>
+    </details>
+    <details >
+      <summary>🧘 易筋经</summary>
+      <a href="../docs/yijinjing.html">倪海厦易筋经 — 课程蒸馏笔记</a>
+      <a href="../docs/yijinjing-screenshot-evidence.html">倪师易筋经截图证据索引</a>
+      <a class="ghost" href="../gallery/yijinjing.html">🖼️ 截图画廊（28）</a>
+    </details>
+    <details >
+      <summary>☯️ 天纪</summary>
+      <a href="../docs/tianji.html">倪海厦天纪 — 课程蒸馏笔记</a>
+      <a href="../docs/tianji-screenshot-evidence.html">倪海厦天纪截图证据索引</a>
+      <a class="ghost" href="../gallery/tianji.html">🖼️ 截图画廊（527）</a>
+    </details>
+    <details >
+      <summary>🌿 黄帝内经</summary>
+      <a href="../docs/huangdi.html">倪海厦黄帝内经课程 — 课程蒸馏笔记</a>
+      <a href="../docs/huangdi-screenshot-evidence.html">黄帝内经课程截图证据索引</a>
+      <a class="ghost" href="../gallery/huangdi.html">🖼️ 截图画廊（272）</a>
+    </details>
+    <details >
+      <summary>🌱 神农本草</summary>
+      <a href="../docs/bencao.html">倪海厦神农本草课程 — 课程蒸馏笔记</a>
+      <a href="../docs/bencao-screenshot-evidence.html">神农本草课程截图证据索引</a>
+      <a class="ghost" href="../gallery/bencao.html">🖼️ 截图画廊（127）</a>
+    </details>
+    <details >
+      <summary>📍 针灸</summary>
+      <a href="../docs/acupuncture.html">倪海厦针灸课程 — 课程蒸馏笔记</a>
+      <a href="../docs/acupuncture-screenshot-evidence.html">针灸课程截图证据索引</a>
+      <a class="ghost" href="../gallery/acupuncture.html">🖼️ 截图画廊（501）</a>
+    </details>
+    <details >
+      <summary>🎙️ 访谈与演讲</summary>
+      <a href="../docs/liangdong.html">倪海厦梁冬对话 — 课程蒸馏笔记</a>
+      <a href="../docs/stanford.html">倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a>
+    </details>
+    <details >
+      <summary>📝 文字笔记</summary>
+      <a href="../docs/notes-acupuncture-dacheng.html">02.针灸大成笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-acupuncture-dacheng-scan-essence.html">针灸大成笔记 扫描版要点补充</a>
+      <a href="../docs/notes-huangdi.html">04.黄帝内经笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-huangdi-scan-essence.html">黄帝内经笔记 扫描版要点补充</a>
+      <a href="../docs/notes-bencao.html">06.神农本草笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-bencao-scan-essence.html">神农本草笔记 扫描版要点补充</a>
+      <a href="../docs/notes-shanghan.html">08.伤寒论笔记 — 文字资料蒸馏</a>
+      <a href="../docs/notes-shanghan-scan-essence.html">伤寒论笔记 扫描版要点补充</a>
+      <a href="../docs/notes-jingui.html">10.金匮要略笔记 — 文字资料蒸馏</a>
+    </details>
+    <details >
+      <summary>🗂️ 资料与索引</summary>
+      <a href="../docs/ebooks.html">古籍与课程 PDF 溯源索引</a>
+      <a href="../docs/audio-collection.html">12.倪师音频合集 — 音频资料蒸馏</a>
+      <a href="../docs/pdf-evidence-index.html">PDF Evidence Index</a>
+      <a href="../docs/pdf-evidence-sources.html">PDF Evidence Sources</a>
+      <a href="../docs/pdf-evidence-modules-index.html">PDF Evidence Modules</a>
+      <a href="../docs/pdf-evidence-correction-decisions.html">Correction Decisions</a>
+      <a href="../docs/pdf-evidence-modules-shanghan.html">伤寒论 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-jingui.html">金匮要略 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-zhongjing-xinfa.html">仲景心法 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-acupuncture.html">针灸 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-huangdi.html">黄帝内经 PDF Evidence</a>
+      <a href="../docs/pdf-evidence-modules-bencao.html">神农本草 PDF Evidence</a>
+    </details>
+  </nav>
+</aside>
+
+<main class="wrap">
+<nav class="crumb">
+  <a href="../index.html">首页</a>
+  <span>/</span>
+  <a href="../index.html#mod-dialogue">🎙️ 访谈与演讲</a>
+</nav>
+
+<article class="doc" data-slug="liangdong">
+  <h1>倪海厦梁冬对话 — 课程蒸馏笔记</h1>
+<p class="lead">本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>  <details class="toc" open>
+    <summary>本页目录（30）</summary>
+    <ol>
+      <li class="lv1"><a href="#一课程概览">一、课程概览</a></li>
+      <li class="lv1"><a href="#二课程体系图">二、课程体系图</a></li>
+      <li class="lv2"><a href="#模块1中医科学性与理论根基">模块1：中医科学性与理论根基</a></li>
+      <li class="lv2"><a href="#模块2中西医治疗逻辑对比">模块2：中西医治疗逻辑对比</a></li>
+      <li class="lv2"><a href="#模块3中医病理机制与诊断方法">模块3：中医病理机制与诊断方法</a></li>
+      <li class="lv2"><a href="#模块4中医与传统文化的交融">模块4：中医与传统文化的交融</a></li>
+      <li class="lv2"><a href="#模块5正统中医学习方法论">模块5：正统中医学习方法论</a></li>
+      <li class="lv1"><a href="#三逐课精要">三、逐课精要</a></li>
+      <li class="lv1"><a href="#四跨课程主题图谱">四、跨课程主题图谱</a></li>
+      <li class="lv1"><a href="#五关键概念词汇表">五、关键概念词汇表</a></li>
+      <li class="lv1"><a href="#六课程观点摘要">六、课程观点摘要</a></li>
+      <li class="lv2"><a href="#课程主题">课程主题</a></li>
+      <li class="lv2"><a href="#延伸主题">延伸主题</a></li>
+      <li class="lv2"><a href="#补充主题">补充主题</a></li>
+      <li class="lv1"><a href="#七核心金句集">七、核心金句集</a></li>
+      <li class="lv1"><a href="#附录逐课摘要">附录：逐课摘要</a></li>
+      <li class="lv2"><a href="#01國學堂梁冬對話倪海廈-中医到底科不科学-481分钟">01.國學堂梁冬對話倪海廈-中医到底科不科学 (48.1分钟)</a></li>
+      <li class="lv2"><a href="#01國學堂梁冬對話倪海廈-中医到底科不科学">01.國學堂梁冬對話倪海廈-中医到底科不科学</a></li>
+      <li class="lv2"><a href="#02國學堂梁冬對話倪海廈-續說中醫科不科學中醫如何看病失眠的成因膽固醇與癌症-524分钟">02.國學堂梁冬對話倪海廈-續說中醫科不科學、中醫如何看病（失眠的成因、膽固醇與癌症) (52.4分钟)</a></li>
+      <li class="lv2"><a href="#02國學堂梁冬對話倪海廈-續說中醫科不科學中醫如何看病失眠的成因膽固醇與癌症">02.國學堂梁冬對話倪海廈-續說中醫科不科學、中醫如何看病（失眠的成因、膽固醇與癌症)</a></li>
+      <li class="lv2"><a href="#03國學堂梁冬對話倪海廈-西醫不治之症心臟病癌症高血壓洗腎骨質疏鬆糖尿病-478分钟">03.國學堂梁冬對話倪海廈-西醫不治之症（心臟病、癌症、高血壓、洗腎、骨質疏鬆、糖尿病） (47.8分钟)</a></li>
+      <li class="lv2"><a href="#03國學堂梁冬對話倪海廈-西醫不治之症心臟病癌症高血壓洗腎骨質疏鬆糖尿病">03.國學堂梁冬對話倪海廈-西醫不治之症（心臟病、癌症、高血壓、洗腎、骨質疏鬆、糖尿病）</a></li>
+      <li class="lv2"><a href="#04國學堂梁冬對話倪海廈-中西醫之別奶水與月經癌症的生成與轉變精子與鬍鬚的關係-484分钟">04.國學堂梁冬對話倪海廈-中西醫之別（奶水與月經、癌症的生成與轉變、精子與鬍鬚的關係 (48.4分钟)</a></li>
+      <li class="lv2"><a href="#04國學堂梁冬對話倪海廈-中西醫之別奶水與月經癌症的生成與轉變精子與鬍鬚的關係">04.國學堂梁冬對話倪海廈-中西醫之別（奶水與月經、癌症的生成與轉變、精子與鬍鬚的關係）</a></li>
+      <li class="lv2"><a href="#05國學堂梁冬對話倪海廈-續說中西醫差別陰陽虛實癌症的生成與轉變和治療方式-497分钟">05.國學堂梁冬對話倪海廈-續說中西醫差別（陰陽虛實、癌症的生成與轉變和治療方式 (49.7分钟)</a></li>
+      <li class="lv2"><a href="#05國學堂梁冬對話倪海廈-續說中西醫差別陰陽虛實癌症的生成與轉變和治療方式">05.國學堂梁冬對話倪海廈-續說中西醫差別（陰陽虛實、癌症的生成與轉變和治療方式</a></li>
+      <li class="lv2"><a href="#06國學堂梁冬對話倪海廈-中醫與易經陰陽風水生男生女傳統中醫思維如何培養純-499分钟">06.國學堂梁冬對話倪海廈-中醫與易經（陰陽、風水、生男生女）傳統中醫思維、如何培養純 (49.9分钟)</a></li>
+      <li class="lv2"><a href="#06國學堂梁冬對話倪海廈-中醫與易經陰陽風水生男生女傳統中醫思維如何培養純">06.國學堂梁冬對話倪海廈-中醫與易經（陰陽、風水、生男生女）傳統中醫思維、如何培養純</a></li>
+      <li class="lv2"><a href="#07國學堂梁冬對話倪海廈-如何學習正統中醫入門經絡學習經方的順序辯證-529分钟">07.國學堂梁冬對話倪海廈-如何學習正統中醫（入門、經絡、學習經方的順序、辯證) (52.9分钟)</a></li>
+      <li class="lv2"><a href="#07國學堂梁冬對話倪海廈-如何學習正統中醫入門經絡學習經方的順序辯證">07.國學堂梁冬對話倪海廈-如何學習正統中醫（入門、經絡、學習經方的順序、辯證)</a></li>
+    </ol>
+  </details>
+  <div class="md-body"><h1 id="倪海厦梁冬对话-课程蒸馏笔记">倪海厦梁冬对话 — 课程蒸馏笔记</h1>
+<blockquote>
+<p>医疗边界：本文件仅作课程学习、资料检索和中医理论整理；涉及真实症状、诊断、处方、剂量、针灸操作、急症、孕产儿童、肿瘤或附子等高风险内容时，不能作为个人医疗建议或自行操作依据，应咨询合格医疗专业人员。</p>
+</blockquote>
+<p><strong>课程规模</strong>: 7 课, 5.8 小时</p>
+<hr>
+<hr>
+<h2 id="一课程概览">一、课程概览</h2>
+<p>本课程由倪海厦与梁冬深入对话组成，通过7课5.8小时的交流，系统解构中医的科学属性、临床思维、中西医差异及学习路径。核心讨论聚焦于中医经典经方的千年验证逻辑、阴阳五行与生理解构的关联、慢性病与癌症的中医认知体系，以及如何回归《黄帝内经》《伤寒论》等经典培养正统中医思维。课程适合对中医理论、实践及传统文化关联感兴趣的听众，尤其是希望理解中西医分歧、探索疾病预防与治疗新路径的医学生、从业者及大众健康学习者。  </p>
+<hr>
+<h2 id="二课程体系图">二、课程体系图</h2>
+<h3 id="模块1中医科学性与理论根基">模块1：中医科学性与理论根基</h3>
+<ul>
+<li><strong>课程01-02</strong>：  </li>
+<li>01：中医是否科学？通过经方验证、阴阳表里理论、科学逻辑辨析展开。  </li>
+<li>02：失眠成因解析、胆固醇与癌症的中医认知，强调辨证论治与代谢规律。  </li>
+</ul>
+<h3 id="模块2中西医治疗逻辑对比">模块2：中西医治疗逻辑对比</h3>
+<ul>
+<li><strong>课程03-04</strong>：  </li>
+<li>03：心脏病、糖尿病、肾病等“西医不治之症”的中医辨证框架与案例。  </li>
+<li>04：奶水与月经的生理关联、癌症逆流理论、荷尔蒙污染的警示。  </li>
+</ul>
+<h3 id="模块3中医病理机制与诊断方法">模块3：中医病理机制与诊断方法</h3>
+<ul>
+<li><strong>课程05</strong>：  </li>
+<li>阴阳虚实的病理转化、癌症治疗的“驱寒化水”策略、症状与脉象的辨证关系。  </li>
+</ul>
+<h3 id="模块4中医与传统文化的交融">模块4：中医与传统文化的交融</h3>
+<ul>
+<li><strong>课程06</strong>：  </li>
+<li>《易经》方位与人体疾病的关联、中药配伍的阴阳平衡原则、中医教育回归经典的必要性。  </li>
+</ul>
+<h3 id="模块5正统中医学习方法论">模块5：正统中医学习方法论</h3>
+<ul>
+<li><strong>课程07</strong>：  </li>
+<li>五部经典的学习顺序、经络与六经辨证的实践逻辑、经方应用的实操要点。  </li>
+</ul>
+<p><strong>递进关系</strong>：从理论根基（模块1）→ 疾病认知对比（模块2-3）→ 文化关联（模块4）→ 学习路径（模块5），逐步深化中医思维体系。  </p>
+<hr>
+<h2 id="三逐课精要">三、逐课精要</h2>
+<ol>
+<li><strong>01课</strong>：中医经方体系的千年验证本质与西医“局部治疗”模式的对比。  </li>
+<li><strong>02课</strong>：失眠、胆固醇与癌症的中医辨证逻辑，强调时间性病灶与代谢修复。  </li>
+<li><strong>03课</strong>：慢性病（高血压、糖尿病）的中医“治本”策略，批判西药对气血的耗损。  </li>
+<li><strong>04课</strong>：中医对奶水与月经关联的解析，癌症的“脏腑逆流”生成理论。  </li>
+<li><strong>05课</strong>：阴阳虚实动态平衡的核心原则，癌症治疗需切断病理物质供给。  </li>
+<li><strong>06课</strong>：《易经》方位、中药配伍与传统中医教育方法论对现代医学的反思。  </li>
+<li><strong>07课</strong>：正统中医学习路径（针灸→本草→内经→伤寒金匮）与六经辨证的实践框架。  </li>
+</ol>
+<hr>
+<h2 id="四跨课程主题图谱">四、跨课程主题图谱</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>核心主题</th>
+<th>出现位置</th>
+<th>核心观点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>辨证论治</strong></td>
+<td>02、03、04、07</td>
+<td>通过症状判断体质与病因，强调整体观而非单一指标（如舌象、脉象、时辰病灶）。</td>
+</tr>
+<tr>
+<td><strong>阴阳五行平衡</strong></td>
+<td>01、02、04、05、06</td>
+<td>阴阳失衡是疾病根源，治疗需调和而非对抗（如心脏病属“心阳虚”）。</td>
+</tr>
+<tr>
+<td><strong>经方疗效验证</strong></td>
+<td>01、02、07</td>
+<td>经方（如大青龙汤、当归四逆汤）因千年临床验证，代表中医的“科学性”。</td>
+</tr>
+<tr>
+<td><strong>中西医治疗逻辑差异</strong></td>
+<td>01、03、04、07</td>
+<td>西医“缓解症状”vs中医“恢复自调节能力”（如癌症治疗中的阳药驱寒化水）。</td>
+</tr>
+<tr>
+<td><strong>代谢与津液理论</strong></td>
+<td>02、03、04</td>
+<td>中医强调津液平衡（如糖尿病本质为“血液含水不足”），与西医营养学视角对立。</td>
+</tr>
+<tr>
+<td><strong>治未病与预防医学</strong></td>
+<td>03、04、07</td>
+<td>通过生活习惯（饮食、作息）与经典方剂（如四物汤退奶）实现疾病预防。</td>
+</tr>
+<tr>
+<td><strong>经典回归必要性</strong></td>
+<td>06、07</td>
+<td>西医分割式教育偏离中医整体观，需以《黄帝内经》《伤寒论》为根基。</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="五关键概念词汇表">五、关键概念词汇表</h2>
+<ol>
+<li><strong>经方</strong>：源自《伤寒论》《千金方》的定型药方，强调体质辨证与剂量恒定。  </li>
+<li><strong>辨证论治</strong>：根据症状、脉象、时辰等综合判断体质与病因，制定个体化治疗方案。  </li>
+<li><strong>阴阳虚实</strong>：中医病理分类，阴虚（体液不足）与阳虚（元气不足）可转化为阴实（实质性病变）。  </li>
+<li><strong>六经辨证</strong>：《伤寒论》疾病传变理论（太阳→阳明→少阳→太阴→少阴→厥阴），反映表里层次。  </li>
+<li><strong>阿是穴</strong>：以疼痛点为实据的经络穴位，无固定位置，需结合症状定位（课程07）。  </li>
+<li><strong>生附子/生半夏</strong>：温热类“阳药”，用于驱寒化水，如癌症治疗中的关键药物（课程05）。  </li>
+<li><strong>当归四逆汤</strong>：温阳化寒方剂，用于治疗末梢循环障碍（如手足厥冷）（课程07）。  </li>
+<li><strong>白色病点</strong>：指甲、头发等白色异常反映脏腑虚寒（如肝白为肝虚）（课程04）。  </li>
+<li><strong>撞墙法</strong>：通过特定运动疏通动脉，体现中医“运动活血”的养生逻辑（课程05）。  </li>
+<li><strong>五色观</strong>：面部颜色与五脏对应（青-肝、白-肺、黑-肾）用于疾病诊断（课程05）。  </li>
+</ol>
+<hr>
+<h2 id="六课程观点摘要">六、课程观点摘要</h2>
+<blockquote>
+<p>本节仅将原课程中的行动和优先级表述降级为学习主题归纳，不构成可照做的健康、用药或诊疗建议。</p>
+</blockquote>
+<h3 id="课程主题">课程主题</h3>
+<ol>
+<li>作息、睡眠、主食、寒凉食物等内容保留为对话中的课程观点。</li>
+<li>《伤寒论》《金匮要略》作为学习入口，而非经方应用指引。</li>
+<li>睡眠、食欲、排便、尿量、手脚温度等只作为课程观察语言。</li>
+</ol>
+<h3 id="延伸主题">延伸主题</h3>
+<ol start="4">
+<li>穴位、当归四逆汤、时辰症状等内容只保留为课程索引，不作为操作建议。</li>
+<li>后天八卦和阳宅内容属于传统文化视角。</li>
+</ol>
+<h3 id="补充主题">补充主题</h3>
+<ol start="6">
+<li>白虎汤、黄连阿胶汤、桂枝汤等方名仅作课程检索入口。</li>
+<li>锻炼、失眠、降压药、牛奶消费等内容不能转化为个人方案，需咨询专业人员。</li>
+<li>耳针、艾灸、退烧等内容只作为课程话题索引，不能用于自检或急救。</li>
+<li>“舍脉取证”和“未病先防”保留为课程观点，不用于自行判断病灶或预防疾病。</li>
+</ol>
+<hr>
+<h2 id="七核心金句集">七、核心金句集</h2>
+<ol>
+<li><strong>“科学是不存在的东西”</strong>（01）：强调中医千年验证的科学性远超现代界定。  </li>
+<li><strong>“中医的智慧在于重建身体自调节能力”</strong>（04）：批判西医制造新病名推动治疗的逻辑。  </li>
+<li><strong>“总胆固醇低于100mg/dL反成癌症风险”</strong>（02）：颠覆对胆固醇的传统认知。  </li>
+<li><strong>“对抗超级细菌的钥匙在厨房与餐桌”</strong>（04）：揭示饮食与疾病管理的关联。  </li>
+<li><strong>“中医不是不科学，而是科学的方式不同”</strong>（02）：直指医学范式冲突本质。  </li>
+<li><strong>“切片检查如同打开潘多拉盒子”</strong>（05）：警示病理检查可能加速癌细胞扩散。  </li>
+<li><strong>“高血压不是血压高而是肾虚”</strong>（03）：强调中医病因溯源的治疗观。  </li>
+<li><strong>“科学定义是假设验证结果，未验证就否定不是科学家精神”</strong>（06）：批判盲目否定中医的思维定式。  </li>
+<li><strong>“六经传变不是经络→经络，而是表→里的层次变化”</strong>（07）：明确辨证论治的逻辑框架。  </li>
+<li><strong>“西医分割治疗破坏气血运行，中医需整体观视角”</strong>（06）：对比中西医诊断思维差异。  </li>
+<li><strong>“中医治疗腹水用苍术、灯芯草，因阴阳需调和而非消除症状”</strong>（06）：体现中医治本理念。  </li>
+<li><strong>“针灸是中医门槛，需先理解经络运行才能进阶”</strong>（07）：说明学习路径的底层逻辑。  </li>
+<li><strong>“治未病的关键在感冒未解就伤阳气”</strong>（07）：强调外感病失治的长期危害性。  </li>
+<li><strong>“补钙片如狼牙子打牆，越打越鬆”</strong>（03）：批判西医骨质疏鬆治疗的机械性。  </li>
+<li><strong>“八成前列腺癌无需干预”</strong>（04）：对过度诊断的反思。</li>
+</ol>
+<hr>
+<h2 id="附录逐课摘要">附录：逐课摘要</h2>
+<h3 id="01國學堂梁冬對話倪海廈-中医到底科不科学-481分钟">01.國學堂梁冬對話倪海廈-中医到底科不科学 (48.1分钟)</h3>
+<h3 id="01國學堂梁冬對話倪海廈-中医到底科不科学">01.國學堂梁冬對話倪海廈-中医到底科不科学</h3>
+<p>在对话中，倪海厦与梁冬围绕中医是否符合科学定义展开深度探讨。倪老师以自身行医经历为切入点，指出中医经方体系（源自张仲景《伤寒论》、孙思邈《千金方》）已有千年临床验证基础，其疗效逻辑与西医“假设-验证-结果”的科学方法论本质上一致。通过治疗姐姐月经痛的案例，他强调经方“三汤”（葛根汤、麻黄汤、桂枝汤）能精准对应表症，而温病派过度依赖寒凉药物导致疗效有限的现象，反映出中医理论传承的断裂。倪海厦主张应跳脱用现代科技标准评判中医的误区，指出“科学是不存在的东西”“用大青龙汤2000多年仍有效”等观点，强调经典经方的反复验证过程本身就是科学态度的体现。</p>
+<p>对话深入分析了中医与西医对抗病毒的根本差异。以甲流治疗为例，中医通过大青龙汤（麻黄、杏仁、石膏等七味药组合）宣肺发汗、驱邪外出，而非单纯依赖抗生素或疫苗的灭杀策略。倪海厦提出病毒变异是西医“直接攻击”模式的必然结果，而中医通过恢复人体阳气与津液平衡实现“正气内存，邪不可干”。他对比了西医解剖学对疾病的局部视角，指出中医对人体阴阳、表里寒热的系统性认知更具优势，并强调癌症治疗中“半夜饥饿感”“食欲恢复”等指标背后的中医整体观。同时，他揭示了台湾师承制（如周佐宇、徐继明传承）在保留古典经方体系中的关键作用，认为华人社会对抗生素的盲目依赖反而忽视了中医“治未病”的科学价值。</p>
+<h3 id="02國學堂梁冬對話倪海廈-續說中醫科不科學中醫如何看病失眠的成因膽固醇與癌症-524分钟">02.國學堂梁冬對話倪海廈-續說中醫科不科學、中醫如何看病（失眠的成因、膽固醇與癌症)  (52.4分钟)</h3>
+<h3 id="02國學堂梁冬對話倪海廈-續說中醫科不科學中醫如何看病失眠的成因膽固醇與癌症">02.國學堂梁冬對話倪海廈-續說中醫科不科學、中醫如何看病（失眠的成因、膽固醇與癌症)</h3>
+<p>倪海厦与梁冬探讨中医的科学性与临床逻辑，通过失眠、胆固醇及癌症案例揭示中医"辨证论治"的深度。他指出中医经方疗法（如黄连阿胶汤）以"心藏神"为核心理论，强调失血导致的虚症需用苦寒药入心补火，配合阿胶生血、蛋黄导引药力直达心脏，形成系统化治疗方案。针对西医将高胆固醇与心脏病直接关联的误区，倪海厦以美国癌症中心研究数据反驳，并提出"胆固醇是血液载体，低胆固醇反成癌症风险指标"的观点，颠覆传统认知。金句如"中医不是不科学，而是科学的方式不同"直指医学范式的本质冲突。</p>
+<p>核心观点聚焦中医时空诊疗体系与代谢理论：通过气血流注规律，倪海厦解析脏腑病灶对应特定时辰的失眠预警（如丑时1-3点对应肝病），并主张针灸“荥穴”（如行间穴）可校正时间性病灶。对肥胖与皮肤问题的论述中，他批判牛奶摄入加重代谢负担，强调阳明经热症与里寒症的对立治疗（白虎汤vs当归四逆汤）；将面部斑症划分"肺寒、心热、脾虚"三类，归因女性情志郁结。同时以肝癌患者经方治愈案例证明中医循证价值，金句"总胆固醇低于100mg/dL反成癌症风险"引发对现代饮食健康的反思，最终呼吁建立分级医疗体系，践行"未病先防、即病防变"的中医智慧。</p>
+<h3 id="03國學堂梁冬對話倪海廈-西醫不治之症心臟病癌症高血壓洗腎骨質疏鬆糖尿病-478分钟">03.國學堂梁冬對話倪海廈-西醫不治之症（心臟病、癌症、高血壓、洗腎、骨質疏鬆、糖尿病） (47.8分钟)</h3>
+<h3 id="03國學堂梁冬對話倪海廈-西醫不治之症心臟病癌症高血壓洗腎骨質疏鬆糖尿病">03.國學堂梁冬對話倪海廈-西醫不治之症（心臟病、癌症、高血壓、洗腎、骨質疏鬆、糖尿病）</h3>
+<p>本视频中，倪海厦围绕现代医学难以根治的慢性病（如心脏病、糖尿病等），系统阐述了中医“辨证施治”的核心理念。他指出，西医以“病名”诊断为导向，仅通过药物压制症状（如用利尿剂强行降压），反而耗损人体气血本源，导致肾功能退化、血管钙化等次生问题；而中医则强调“气先行，血跟随”，通过调节脏腑功能、疏通气血循环来根本性改善疾病。以心脏病为例，他分享了通过针灸内关、公孙等穴位并辅以活血化瘀方剂（如川芎、丹皮、桃仁），帮助美国患者缓解心绞痛的案例，证明中医对血管硬化问题的针对性治疗效果。  </p>
+<p>倪海厦对糖尿病、骨质疏鬆等疾病的中医认知同样颠覆常规。他认为糖尿病患者“喝一杯水，小便排掉的水超过一杯”，本质是血液含水量不足，需通过饮食补精液（如白饭、白面）和运动调节能量代谢，而非单纯依赖降糖药。他批评西药（如胰岛素）可能由疫苗含汞导致胰脏损伤，并提倡使用白虎汤生津止渴，从根源恢复血液平衡。针对骨质疏鬆，他以“补钙片如狼牙子打牆，越打越鬆”讽刺西医人工干预的局限性，主张通过增强肾阳（如八极铅、肉苁蓉）自然修复骨骼。他总结道：“高血压不是血压高而是肾虚，糖尿病不是血糖高而是血液缺水”，并强调“宁可虚不可食”的哲学，主张以自然疗法替代过度药物治疗，结合深度睡眠（23点至5点）、规律作息和适度运动预防疾病。视频通过具体案例与理论对比，凸显中医整体观和病因溯源的治疗思维优势。</p>
+<h3 id="04國學堂梁冬對話倪海廈-中西醫之別奶水與月經癌症的生成與轉變精子與鬍鬚的關係-484分钟">04.國學堂梁冬對話倪海廈-中西醫之別（奶水與月經、癌症的生成與轉變、精子與鬍鬚的關係 (48.4分钟)</h3>
+<h3 id="04國學堂梁冬對話倪海廈-中西醫之別奶水與月經癌症的生成與轉變精子與鬍鬚的關係">04.國學堂梁冬對話倪海廈-中西醫之別（奶水與月經、癌症的生成與轉變、精子與鬍鬚的關係）</h3>
+<p>倪海厦与梁冬对话中，系统阐述了中医与西医在疾病认知和治疗逻辑上的根本差异。中医强调从整体环境出发，认为心脏功能是调控奶水与月经转化的核心，通过清除体内“垃圾”改善代谢环境、增强自主免疫力，而非仅对抗病毒。以母乳喂养期间女性无月经、结扎后仍正常排经为例，说明奶水生成与排卵无关，印证中医“心主血脉，肾主生殖”的理论框架。同时，他以以色列河流中因荷尔蒙污染导致鱼类同性恋现象为引，警示环境激素（包括牛奶中人工合成荷尔蒙）对健康的潜在危害，指出“对抗病毒如同试图用对抗的方式解决洪水，只会形成恶性循环”。</p>
+<p>针对癌症生成机制，倪海厦提出“脏腑逆流致病”理论：心脏功能不足导致奶水/精液等体液滞留并逆流至其他器官，可能引发红斑性狼疮（心液逆流至脸）、肺癌（胸腔积液逆流）、肝癌（肝经代谢紊乱）等七种癌症。他特别强调男性乳癌与荷尔蒙污染相关，将胡须视为“男性月经”，认为其是精子残渣的代谢通道，若功能失衡则可能导致疾病。在治疗上，中医注重阴阳平衡的动态调整，如桂枝汤中桂枝（心阳）与白芍（肝阴）等量配伍，配合生姜红枣补体液，通过灵活调整比例应对不同症状。倪师总结道：“中医的智慧在于重建身体自调节能力，而非制造新的病名推动治疗。”</p>
+<p>核心知识点包括：1. 中西医对抗疾病逻辑的根本分歧（整体调节vs靶向对抗）；2. 奶水与月经的生理关联及环境荷尔蒙污染的警示；3. 癌症的“逆流理论”及其与脏腑功能失衡的关系；4. 健康自检六项指标（睡眠、食欲、排便、尿量、口渴频率、手脚温度）；5. “治未病”理念与对现代医学过度诊断的反思（如80%的前列腺癌无需干预）。金句如“对抗超级细菌的钥匙在厨房与餐桌”，生动揭示生活方式与药物干预的辩证关系。</p>
+<h3 id="05國學堂梁冬對話倪海廈-續說中西醫差別陰陽虛實癌症的生成與轉變和治療方式-497分钟">05.國學堂梁冬對話倪海廈-續說中西醫差別（陰陽虛實、癌症的生成與轉變和治療方式 (49.7分钟)</h3>
+<h3 id="05國學堂梁冬對話倪海廈-續說中西醫差別陰陽虛實癌症的生成與轉變和治療方式">05.國學堂梁冬對話倪海廈-續說中西醫差別（陰陽虛實、癌症的生成與轉變和治療方式</h3>
+<p>本视频围绕中医"阴阳虚实"理论与西医治疗癌症的思维差异展开深度探讨。倪海厦指出，中医认为癌症本质是阴阳失衡的终局表现，从阴虚（血液/体液不足）到阳虚（元气衰弱），最终形成"阴实"——即脏腑内持续存在的实证病理。他强调中医治疗癌症的核心是"驱寒化水"，通过生附子、生半夏等阳药将体内冷水转化为热水，同时切断人工营养供给以遏制癌细胞对病理物质的吸收。在案例中，兽医脑瘤患者通过生硫磺气化水分、活血化瘀等疗法实现康复，佐证了中医"调阴阳、化阴实"的治疗逻辑。倪师警示"切片检查如同打开潘多拉盒子"，认为病理切片可能加速癌细胞扩散，主张以症状判断脏腑病变而非依赖仪器检查。</p>
+<p>视频进一步解析中医独特的诊断与预防体系，揭示"望闻问切"的临床价值。通过五色观（青、白、黑等）在面部的呈现可直接判断五脏状态，如面色青为肝病征兆，肾病可能导致面色黑。倪海厦提出"舍脉取证"原则，强调症状比脉象更可靠。同时，他结合节气规律指出心脏病夏季（属心）恢复更快、冬季（属肾）治效较慢，体现中医"天人相应"的治疗观。预防方面，创新性提出"撞墙法"疏通动脉、四物汤加草麦芽退奶防乳腺癌等方法，并倡导艾灸关元穴、静坐马步的"固阳"养生。对话中反复强调阴阳辨证的重要性，指出阴虚（体液缺失）与阴实（实质性病变）的区别，认为过度依赖现代仪器可能错失早期治疗时机。</p>
+<h3 id="06國學堂梁冬對話倪海廈-中醫與易經陰陽風水生男生女傳統中醫思維如何培養純-499分钟">06.國學堂梁冬對話倪海廈-中醫與易經（陰陽、風水、生男生女）傳統中醫思維、如何培養純 (49.9分钟)</h3>
+<h3 id="06國學堂梁冬對話倪海廈-中醫與易經陰陽風水生男生女傳統中醫思維如何培養純">06.國學堂梁冬對話倪海廈-中醫與易經（陰陽、風水、生男生女）傳統中醫思維、如何培養純</h3>
+<p><strong>核心主题</strong>：本场对话围绕中医与传统文化（《易经》《黄帝内经》）的深层关联展开，探讨阴阳五行、风水布局、生男生女等现象背后的中医思维逻辑，同时批判现代医学教育对西化理论的过度依赖，强调回归经典研习以培养真正中医的理念。  </p>
+<p><strong>关键知识点</strong>：<br>
+1. <strong>后天八卦的实用价值</strong>：倪海厦以房屋方位举例，指出厨房位于西方可能影响父亲肝胆气血（如肝癌风险），东方厕所易导致长子鼻窦问题，新生儿性别与父母住房方位（北房生男孩、南房生女孩）存在传统关联。<br>
+2. <strong>中药阴阳属性的配伍原则</strong>：阳药（如桂枝、当归、细辛）能助阳促孕，而阴药（如白芍）性寒需搭配温热药材平衡。以“当归四逆汤”为例，仅白芍属纯阴药，其余均为阳药，体现调和阴阳的核心思想。<br>
+3. <strong>剖腹产时间的命理争议</strong>：若时间由医生根据意外决定，可视为“天意”；刻意挑选则需通过事后结果验证其准确性。倪反驳“命理不科学”的观点，认为科学应基于假设验证而非预设立场否定未知。<br>
+4. <strong>中医教育的方向批判</strong>：主张以《黄帝内经》《易经》《神农本草经》为根基，强调中医巨视整体观（如治疗腹水用苍术、灯芯草等淡渗利湿的“阳药”调和阴阳，而非直接消除症状），反对西医分割式诊断与治疗模式。<br>
+5. <strong>中医的成本优势与未来趋势</strong>：以美国为例指出西医高成本问题，认为针灸等中医手段可有效降低医疗负担，并预测中医将在21世纪成为主流医学解决方案。  </p>
+<p><strong>金句</strong>：<br>
+- “科学定义是假设验证结果，未验证就否定不是科学家精神。”<br>
+- “中医治疗需整体观视角，西医的分割治疗反而可能破坏人体气血运行。”</p>
+<h3 id="07國學堂梁冬對話倪海廈-如何學習正統中醫入門經絡學習經方的順序辯證-529分钟">07.國學堂梁冬對話倪海廈-如何學習正統中醫（入門、經絡、學習經方的順序、辯證)  (52.9分钟)</h3>
+<h3 id="07國學堂梁冬對話倪海廈-如何學習正統中醫入門經絡學習經方的順序辯證">07.國學堂梁冬對話倪海廈-如何學習正統中醫（入門、經絡、學習經方的順序、辯證)</h3>
+<p>倪海厦与梁冬在对话中系统阐述了正统中医的学习路径与核心思维。他提出中医学习应以《针灸》《神农本草经》《黄帝内经》《伤寒论》《金匮要略》五部经典为根基，并强调需按“针灸→本草→内经→伤寒金匮”的顺序循序渐进。入门阶段，《针灸》是关键，因其理论源自《难经》，能帮助学习者建立经络认知框架。他解释十二经脉与脏腑的表里关系（如足太阳膀胱经属表，足少阴肾经属里），并以“竹竿的固定圈”比喻奇经八脉对十二经络的统摄作用，形成完整的运行网络。对于《神农本草经》，倪海厦主张回归原文理解药性规律，如酸味入肝、苦味入心，并通过经方（如桂枝汤、麻黄汤）治疗感冒等表证，指出西药虽解表但易伤正气。他特别强调六经辨证的本质是疾病从表到里的传变层次，而非单纯经络定位，需结合《黄帝内经》的“图景式”思维把握整体规律，金句如“六经传变不是指经络→经络，而是指表→里的层次变化”。</p>
+<p>在具体实践方法上，倪海厦解析了六经辨证的分层体系：太阳经分为伤寒（无汗用麻黄汤）、中风（有汗用桂枝汤）和温病（葛根汤）；阳明症涉及肠胃病症（如大承气汤治便秘），少阳症关联三焦水汽与寒热往来；厥阴症需处理寒热错杂（如石膏配附子）。他提出辨证的实操依据：表症通过汗与恶寒区分，寒热通过小便颜色判断（深黄为热，苍白为寒），并强调经络是水气运行的通道，需在活人状态下通过气感体验。针对经方应用，他指出需“冷服”石膏汤以引导药性精准入上焦，且学习伤寒方剂必须结合针灸与本草理论，不可孤立研读。此外，“阿是穴”应以疼痛点为实据而非固定位置，耳针则通过倒影原理定位脏腑。倪海厦提醒，长期失眠、身体不适等早期信号常被忽视，而“免疫系统差始于感冒未解”揭示了外感病失治的危害性，最终呼吁中医教育应以经典原文为“最经典的图景”，并通过集体研读深化理解。</p></div>
+</article>
+
+<nav class="pager">
+<span></span><a class="pg next" href="../docs/stanford.html"><small>下一篇</small>倪海厦斯坦福大学演讲 — 课程蒸馏笔记</a></nav>
+
+<div class="ask-hint">
+  <a class="btn primary" href="../ask.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%A2%81%E5%86%AC%E5%AF%B9%E8%AF%9D%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">💬 就「倪海厦梁冬对话 — 课程蒸馏笔记」提问</a>
+  <a class="btn" href="../search.html?q=%E5%80%AA%E6%B5%B7%E5%8E%A6%E6%A2%81%E5%86%AC%E5%AF%B9%E8%AF%9D%20%E2%80%94%20%E8%AF%BE%E7%A8%8B%E8%92%B8%E9%A6%8F%E7%AC%94%E8%AE%B0">🔍 在站内检索相关词</a>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-links">
+    <a href="../index.html">首页</a>
+    <a href="../search.html">检索</a>
+    <a href="../gallery/index.html">截图</a>
+    <a href="../evidence.html">PDF证据</a>
+    <a href="../ask.html">AI问答</a>
+  </div>
+  <p class="notice">⚠️ 本站仅供课程学习与中医理论整理，不提供诊断、处方、剂量或针灸操作指导。涉及真实症状、急症、孕产儿童、肿瘤或附子等高风险内容时，请咨询合格医疗专业人员。</p>
+  <p class="muted small">
+    资料整理自 <a href="https://github.com/JuneYaooo/nihaisha-nishi-tcm" rel="noreferrer noopener" target="_blank">nihaisha-nishi-tcm</a>
+    Skill 包 · 课程蒸馏 53 篇 · 板书截图 2986 张 · PDF 页级证据 3003 条
+  </p>
+</footer>
+
+<script src="../assets/js/core.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

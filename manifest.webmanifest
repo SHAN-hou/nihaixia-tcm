@@ -1,0 +1,23 @@
+{
+  "name": "倪海厦中医课程知识库",
+  "short_name": "倪师课库",
+  "description": "倪海厦《伤寒论》《金匮要略》《针灸》《神农本草》《黄帝内经》《天纪》课程资料检索与板书证据索引",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fbf7f1",
+  "theme_color": "#1a2330",
+  "categories": ["education", "books", "medical"],
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "全站检索", "url": "./search.html" },
+    { "name": "截图画廊", "url": "./gallery/index.html" },
+    { "name": "提问式查阅", "url": "./ask.html" }
+  ]
+}
